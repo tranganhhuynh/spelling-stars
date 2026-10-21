@@ -1,0 +1,17 @@
+bird
+mammal
+amphibian
+reptile
+insect
+fish
+penguin
+chick
+colony
+huddle
+hatch
+breed
+mate
+stone
+protect
+temperature
+freezing

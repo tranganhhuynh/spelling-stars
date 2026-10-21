@@ -1,0 +1,458 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Spelling Stars</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;800&family=Nunito:wght@600;800&display=swap">
+<style>
+/* Layout: one centered column of chunky "sticker" cards; start screen, quiz screen, score screen swap in place. */
+:root {
+  --ink: #26214f;
+  --sky: #d9f1ff;
+  --paper: #ffffff;
+  --sun: #ffc82e;
+  --coral: #ff5d73;
+  --mint: #19c58c;
+  --grape: #7a4dff;
+  --ocean: #1f9bff;
+  --mint-soft: #d7f8ec;
+  --coral-soft: #ffe0e5;
+  --font-display: "Baloo 2", "Trebuchet MS", "Comic Sans MS", system-ui, sans-serif;
+  --font-body: "Nunito", "Trebuchet MS", system-ui, sans-serif;
+  color-scheme: light;
+}
+* { box-sizing: border-box; }
+html, body { min-height: 100%; }
+body {
+  margin: 0;
+  background: var(--sky);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.4;
+  padding-block: 20px 40px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  background-image:
+    radial-gradient(circle at 8% 12%, var(--sun) 0 38px, transparent 39px),
+    radial-gradient(circle at 94% 22%, var(--coral) 0 26px, transparent 27px),
+    radial-gradient(circle at 90% 78%, var(--mint) 0 44px, transparent 45px),
+    radial-gradient(circle at 4% 86%, var(--grape) 0 30px, transparent 31px);
+  background-attachment: fixed;
+}
+.wrap { max-width: 640px; margin: 0 auto; display: grid; gap: 18px; }
+h1, h2, h3 { font-family: var(--font-display); font-weight: 800; margin: 0; text-wrap: balance; line-height: 1.1; }
+
+.brand { text-align: center; font-size: clamp(2.4rem, 9vw, 3.6rem); letter-spacing: 1px; }
+.brand span { display: inline-block; }
+.brand span:nth-child(5n+1) { color: var(--coral); transform: rotate(-4deg); }
+.brand span:nth-child(5n+2) { color: var(--ocean); transform: rotate(3deg); }
+.brand span:nth-child(5n+3) { color: var(--mint); transform: rotate(-2deg); }
+.brand span:nth-child(5n+4) { color: var(--grape); transform: rotate(4deg); }
+.brand span:nth-child(5n+5) { color: #e59c00; transform: rotate(-3deg); }
+.brand .gap { width: 0.3em; }
+.tag { text-align: center; margin: -8px 0 0; font-size: 1.1rem; }
+
+.card {
+  background: var(--paper);
+  border: 4px solid var(--ink);
+  border-radius: 28px;
+  box-shadow: 0 8px 0 var(--ink);
+  padding: 22px;
+  display: grid;
+  gap: 16px;
+  min-width: 0;
+}
+.card h2 { font-size: 1.7rem; }
+.muted { font-size: 0.95rem; opacity: 0.8; margin: 0; }
+
+.btn {
+  font: inherit;
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 1.35rem;
+  color: var(--ink);
+  background: var(--sun);
+  border: 4px solid var(--ink);
+  border-radius: 999px;
+  padding: 12px 26px;
+  box-shadow: 0 6px 0 var(--ink);
+  cursor: pointer;
+  transition: transform 0.08s, box-shadow 0.08s;
+  min-height: 56px;
+}
+.btn:hover { transform: translateY(-2px); box-shadow: 0 8px 0 var(--ink); }
+.btn:active { transform: translateY(5px); box-shadow: 0 1px 0 var(--ink); }
+.btn:focus-visible, .field:focus-visible, textarea:focus-visible { outline: 4px solid var(--grape); outline-offset: 3px; }
+.btn.go { background: var(--mint); }
+.btn.alt { background: var(--paper); font-size: 1.05rem; min-height: 46px; padding: 8px 18px; }
+.btn.blue { background: var(--ocean); color: #fff; }
+.btn.big { font-size: 1.8rem; padding: 14px 34px; width: 100%; }
+.btn[disabled] { opacity: 0.45; cursor: not-allowed; transform: none; box-shadow: 0 6px 0 var(--ink); }
+.row { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; align-items: center; }
+
+/* word list editor */
+textarea {
+  width: 100%;
+  min-height: 190px;
+  resize: vertical;
+  font: inherit;
+  font-weight: 700;
+  color: var(--ink);
+  background: #f3f9ff;
+  border: 3px solid var(--ink);
+  border-radius: 18px;
+  padding: 12px 14px;
+  line-height: 1.5;
+}
+.count { font-weight: 800; }
+.note { font-weight: 800; color: var(--coral); margin: 0; min-height: 1.4em; }
+
+/* quiz */
+.top { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+.pill { font-family: var(--font-display); font-weight: 800; background: var(--grape); color: #fff; border: 3px solid var(--ink); border-radius: 999px; padding: 2px 16px; font-size: 1.15rem; }
+.dots { display: flex; gap: 6px; flex-wrap: wrap; }
+.dot { width: 22px; height: 22px; border-radius: 50%; border: 3px solid var(--ink); background: #fff; }
+.dot.now { background: var(--sun); transform: scale(1.2); }
+.dot.ok { background: var(--mint); }
+.dot.bad { background: var(--coral); }
+
+.listen {
+  justify-self: center;
+  width: 156px; height: 156px;
+  border-radius: 50%;
+  background: var(--ocean);
+  border: 5px solid var(--ink);
+  box-shadow: 0 9px 0 var(--ink);
+  cursor: pointer;
+  display: grid; place-items: center;
+  color: #fff;
+  transition: transform 0.08s, box-shadow 0.08s;
+}
+.listen:hover { transform: translateY(-2px); }
+.listen:active { transform: translateY(7px); box-shadow: 0 2px 0 var(--ink); }
+.listen:focus-visible { outline: 4px solid var(--grape); outline-offset: 5px; }
+.listen svg { width: 78px; height: 78px; }
+.listen.playing { animation: pulse 0.7s ease-in-out infinite; }
+@keyframes pulse { 50% { transform: scale(1.07); } }
+.hint { text-align: center; margin: 0; font-size: 1.05rem; }
+
+.field {
+  width: 100%;
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: clamp(2rem, 9vw, 3rem);
+  letter-spacing: 0.12em;
+  text-align: center;
+  color: var(--ink);
+  background: #fffbe3;
+  border: 4px solid var(--ink);
+  border-radius: 22px;
+  padding: 10px 12px;
+  min-width: 0;
+}
+.field:disabled { background: #f0f0f6; }
+
+.reveal { border: 4px dashed var(--ink); border-radius: 22px; padding: 16px; text-align: center; display: grid; gap: 8px; }
+.reveal.ok { background: var(--mint-soft); }
+.reveal.bad { background: var(--coral-soft); }
+.verdict { font-family: var(--font-display); font-weight: 800; font-size: 1.9rem; }
+.reveal.ok .verdict { color: #0b8a62; }
+.reveal.bad .verdict { color: #d52a46; }
+.answer { font-family: var(--font-display); font-weight: 800; font-size: clamp(2.2rem, 10vw, 3.4rem); letter-spacing: 0.1em; overflow-wrap: anywhere; }
+.answer span:nth-child(4n+1) { color: var(--coral); }
+.answer span:nth-child(4n+2) { color: var(--ocean); }
+.answer span:nth-child(4n+3) { color: var(--mint); }
+.answer span:nth-child(4n+4) { color: var(--grape); }
+.yours { margin: 0; font-size: 1rem; }
+
+/* score */
+.score { text-align: center; display: grid; gap: 10px; }
+.big-score { font-family: var(--font-display); font-weight: 800; font-size: clamp(4rem, 20vw, 6.5rem); line-height: 1; color: var(--grape); }
+.big-score small { font-size: 0.4em; color: var(--ink); }
+.stars { display: flex; flex-wrap: wrap; gap: 4px; justify-content: center; }
+.stars svg { width: 38px; height: 38px; }
+.star-on { fill: var(--sun); stroke: var(--ink); stroke-width: 12; stroke-linejoin: round; }
+.star-off { fill: #fff; stroke: var(--ink); stroke-width: 12; stroke-linejoin: round; opacity: 0.35; }
+.cheer { font-family: var(--font-display); font-weight: 800; font-size: 1.7rem; }
+.review { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+.review li { display: flex; justify-content: space-between; align-items: center; gap: 10px; flex-wrap: wrap; border: 3px solid var(--ink); border-radius: 16px; padding: 8px 14px; }
+.review li.ok { background: var(--mint-soft); }
+.review li.bad { background: var(--coral-soft); }
+.review b { font-family: var(--font-display); font-size: 1.3rem; }
+.review .you { font-size: 0.95rem; }
+
+[hidden] { display: none !important; }
+@media (prefers-reduced-motion: reduce) {
+  .listen.playing { animation: none; }
+  .btn, .listen { transition: none; }
+}
+@media (max-width: 420px) {
+  .card { padding: 16px; border-radius: 22px; }
+  .listen { width: 132px; height: 132px; }
+  .listen svg { width: 64px; height: 64px; }
+  .dot { width: 18px; height: 18px; }
+}
+</style>
+
+<body>
+<main class="wrap">
+  <h1 class="brand" id="brand" aria-label="Spelling Stars"></h1>
+  <p class="tag">Listen, spell, and win stars!</p>
+
+  <!-- START -->
+  <section id="screen-start" class="wrap" style="gap:18px">
+    <div class="card">
+      <h2>Ready to spell?</h2>
+      <p class="muted" id="roundInfo"></p>
+      <button class="btn go big" id="startBtn" type="button">Start</button>
+    </div>
+</section>
+
+  <!-- QUIZ -->
+  <section id="screen-quiz" class="card" hidden>
+    <div class="top">
+      <span class="pill" id="wordNum"></span>
+      <div class="dots" id="dots" aria-hidden="true"></div>
+    </div>
+    <button class="listen" id="listenBtn" type="button" aria-label="Listen to the word">
+      <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M8 24h10l14-12v40L18 40H8z" fill="currentColor"/>
+        <path d="M42 22a14 14 0 0 1 0 20"/>
+        <path d="M49 14a24 24 0 0 1 0 36"/>
+      </svg>
+    </button>
+    <p class="hint">Tap the speaker to hear the word.</p>
+    <div class="row">
+      <button class="btn alt" id="slowBtn" type="button">Say it slowly</button>
+    </div>
+    <label for="answer" class="hint">Write the letters here:</label>
+    <input class="field" id="answer" type="text" inputmode="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" maxlength="30">
+    <button class="btn go big" id="showBtn" type="button">Show the word</button>
+    <div class="reveal" id="reveal" hidden aria-live="polite">
+      <div class="verdict" id="verdict"></div>
+      <div class="answer" id="correctWord"></div>
+      <p class="yours" id="yours"></p>
+    </div>
+    <button class="btn blue big" id="nextBtn" type="button" hidden>Next word</button>
+  </section>
+
+  <!-- SCORE -->
+  <section id="screen-score" class="wrap" style="gap:18px" hidden>
+    <div class="card score">
+      <h2>Your score</h2>
+      <div class="big-score" id="bigScore"></div>
+      <div class="stars" id="stars" aria-hidden="true"></div>
+      <div class="cheer" id="cheer"></div>
+      <div class="row">
+        <button class="btn go" id="againBtn" type="button">Play again</button>
+        <button class="btn alt" id="homeBtn" type="button">Back to start</button>
+      </div>
+    </div>
+    <div class="card">
+      <h2>Let's look at the words</h2>
+      <ul class="review" id="review"></ul>
+    </div>
+  </section>
+</main>
+
+<script>
+(function () {
+  var SAMPLE = ["bird", "mammal", "amphibian", "reptile", "insect", "fish", "penguin", "chick", "colony", "huddle", "hatch", "breed", "mate", "stone", "protect", "temperature", "freezing"];
+  var PER_ROUND = 10;
+  var loaded = false;
+
+  var $ = function (id) { return document.getElementById(id); };
+  var words = [], session = [], idx = 0, results = [], revealed = false, audioCtx = null;
+
+  /* title letters */
+  var brand = $("brand");
+  "Spelling Stars".split("").forEach(function (ch) {
+    var s = document.createElement("span");
+    if (ch === " ") { s.className = "gap"; } else { s.textContent = ch; }
+    brand.appendChild(s);
+  });
+
+  /* The word list lives in words.txt next to this page (one word per line).
+     If it cannot be read, the built-in list below is used. */
+  function loadWords() {
+    return fetch("words.txt", { cache: "no-store" })
+      .then(function (r) { if (!r.ok) throw new Error("no list"); return r.text(); })
+      .then(function (t) { var arr = parseWords(t); if (arr.length) return arr; throw new Error("empty"); })
+      .catch(function () { return SAMPLE.slice(); });
+  }
+
+  function parseWords(text) {
+    var seen = {}, out = [];
+    text.split(/[\n,;]+/).forEach(function (w) {
+      w = w.trim().toLowerCase().replace(/\s+/g, " ");
+      if (!w || w.length > 30) return;
+      if (!/^[a-z][a-z' -]*$/.test(w)) return;
+      if (!seen[w]) { seen[w] = 1; out.push(w); }
+    });
+    return out;
+  }
+
+  function show(name) {
+    ["start", "quiz", "score"].forEach(function (n) { $("screen-" + n).hidden = (n !== name); });
+    window.scrollTo(0, 0);
+  }
+
+  function refreshStart() {
+    var n = words.length;
+    $("roundInfo").textContent = !loaded
+      ? "Getting the words ready..."
+      : n >= PER_ROUND
+        ? "Each round has " + PER_ROUND + " words. Listen carefully!"
+        : "Each round has " + n + (n === 1 ? " word" : " words") + ". Listen carefully!";
+    $("startBtn").disabled = !loaded || n < 1;
+  }
+
+  /* sound */
+  function beep(good) {
+    try {
+      audioCtx = audioCtx || new (window.AudioContext || window.webkitAudioContext)();
+      var notes = good ? [660, 880] : [300, 220];
+      notes.forEach(function (f, i) {
+        var o = audioCtx.createOscillator(), g = audioCtx.createGain();
+        o.type = good ? "triangle" : "sine"; o.frequency.value = f;
+        var t = audioCtx.currentTime + i * 0.14;
+        g.gain.setValueAtTime(0.0001, t);
+        g.gain.exponentialRampToValueAtTime(0.18, t + 0.02);
+        g.gain.exponentialRampToValueAtTime(0.0001, t + 0.18);
+        o.connect(g); g.connect(audioCtx.destination);
+        o.start(t); o.stop(t + 0.2);
+      });
+    } catch (e) {}
+  }
+
+  /* speech */
+  function pickVoice() {
+    try {
+      var vs = window.speechSynthesis.getVoices();
+      var best = null;
+      vs.forEach(function (v) {
+        if (/^en[-_]/i.test(v.lang) && (!best || /en[-_]US/i.test(v.lang) && !/en[-_]US/i.test(best.lang))) best = v;
+      });
+      return best;
+    } catch (e) { return null; }
+  }
+  function speak(text, slow) {
+    var btn = $("listenBtn");
+    if (!("speechSynthesis" in window)) {
+      $("note").textContent = "";
+      return false;
+    }
+    try {
+      window.speechSynthesis.cancel();
+      var u = new SpeechSynthesisUtterance(text);
+      u.lang = "en-US";
+      u.rate = slow ? 0.45 : 0.8;
+      u.pitch = 1.05;
+      var v = pickVoice(); if (v) u.voice = v;
+      u.onstart = function () { btn.classList.add("playing"); };
+      u.onend = u.onerror = function () { btn.classList.remove("playing"); };
+      window.speechSynthesis.speak(u);
+      return true;
+    } catch (e) { return false; }
+  }
+  if ("speechSynthesis" in window) { try { window.speechSynthesis.onvoiceschanged = function () {}; window.speechSynthesis.getVoices(); } catch (e) {} }
+
+  /* quiz */
+  function shuffle(a) {
+    a = a.slice();
+    for (var i = a.length - 1; i > 0; i--) { var j = Math.floor(Math.random() * (i + 1)); var t = a[i]; a[i] = a[j]; a[j] = t; }
+    return a;
+  }
+  function startRound() {
+    session = shuffle(words).slice(0, PER_ROUND);
+    idx = 0; results = [];
+    show("quiz");
+    loadWord();
+  }
+  function drawDots() {
+    var box = $("dots"); box.textContent = "";
+    session.forEach(function (_, i) {
+      var d = document.createElement("span");
+      d.className = "dot" + (results[i] ? (results[i].ok ? " ok" : " bad") : (i === idx ? " now" : ""));
+      box.appendChild(d);
+    });
+  }
+  function loadWord() {
+    revealed = false;
+    $("wordNum").textContent = "Word " + (idx + 1) + " of " + session.length;
+    drawDots();
+    var inp = $("answer"); inp.value = ""; inp.disabled = false;
+    $("reveal").hidden = true;
+    $("nextBtn").hidden = true;
+    $("showBtn").hidden = false;
+    $("nextBtn").textContent = idx === session.length - 1 ? "See my score" : "Next word";
+    speak(session[idx], false);
+    inp.focus();
+  }
+  function showWord() {
+    if (revealed) return;
+    revealed = true;
+    var target = session[idx];
+    var mine = $("answer").value.trim().toLowerCase().replace(/\s+/g, " ");
+    var ok = mine === target;
+    results[idx] = { word: target, mine: mine, ok: ok };
+    $("answer").disabled = true;
+    var r = $("reveal");
+    r.hidden = false;
+    r.className = "reveal " + (ok ? "ok" : "bad");
+    $("verdict").textContent = ok ? "Correct! Great job!" : "Not quite. Look closely!";
+    var cw = $("correctWord"); cw.textContent = "";
+    target.split("").forEach(function (ch) { var s = document.createElement("span"); s.textContent = ch === " " ? " " : ch; cw.appendChild(s); });
+    $("yours").textContent = ok ? "" : (mine ? "You wrote: " + mine : "You did not write anything.");
+    $("showBtn").hidden = true;
+    $("nextBtn").hidden = false;
+    drawDots();
+    beep(ok);
+    $("nextBtn").focus();
+  }
+  function next() {
+    if (!revealed) return;
+    if (idx < session.length - 1) { idx++; loadWord(); } else { finish(); }
+  }
+
+  var STAR = '<svg viewBox="0 0 200 190" aria-hidden="true"><path class="CLS" d="M100 14l24 54 58 6-43 40 12 58-51-30-51 30 12-58-43-40 58-6z"/></svg>';
+  function finish() {
+    try { window.speechSynthesis.cancel(); } catch (e) {}
+    var total = results.length;
+    var score = results.filter(function (r) { return r.ok; }).length;
+    $("bigScore").innerHTML = score + ' <small>out of ' + total + '</small>';
+    var st = $("stars"); st.innerHTML = "";
+    for (var i = 0; i < total; i++) st.insertAdjacentHTML("beforeend", STAR.replace("CLS", i < score ? "star-on" : "star-off"));
+    var pct = total ? score / total : 0;
+    $("cheer").textContent = pct === 1 ? "Perfect! You are a spelling star!" : pct >= 0.8 ? "Fantastic work!" : pct >= 0.5 ? "Good job! Keep practising!" : "Nice try! Let's practise again!";
+    var ul = $("review"); ul.textContent = "";
+    results.forEach(function (r) {
+      var li = document.createElement("li"); li.className = r.ok ? "ok" : "bad";
+      var b = document.createElement("b"); b.textContent = r.word;
+      var y = document.createElement("span"); y.className = "you";
+      y.textContent = r.ok ? "Correct" : (r.mine ? "You wrote: " + r.mine : "No answer");
+      li.appendChild(b); li.appendChild(y); ul.appendChild(li);
+    });
+    show("score");
+    if (pct === 1) beep(true);
+  }
+
+  /* events */
+  $("startBtn").addEventListener("click", function () { if (words.length) startRound(); });
+  $("listenBtn").addEventListener("click", function () { speak(session[idx], false); $("answer").focus(); });
+  $("slowBtn").addEventListener("click", function () { speak(session[idx], true); $("answer").focus(); });
+  $("showBtn").addEventListener("click", showWord);
+  $("nextBtn").addEventListener("click", next);
+  $("answer").addEventListener("keydown", function (e) { if (e.key === "Enter") { e.preventDefault(); showWord(); } });
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Enter" && revealed && !$("screen-quiz").hidden && document.activeElement !== $("nextBtn")) { e.preventDefault(); next(); }
+  });
+  $("againBtn").addEventListener("click", startRound);
+  $("homeBtn").addEventListener("click", function () { refreshStart(); show("start"); });
+  refreshStart();
+  loadWords().then(function (list) { words = list; loaded = true; refreshStart(); });
+})();
+</script>
+
+</body></html>
