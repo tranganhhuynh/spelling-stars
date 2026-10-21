@@ -192,6 +192,27 @@ textarea {
 .review b { font-family: var(--font-display); font-size: 1.3rem; }
 .review .you { font-size: 0.95rem; }
 
+.modes { display: flex; flex-wrap: wrap; gap: 10px; }
+.mode {
+  font-family: var(--font-display); font-weight: 800; font-size: 1.25rem; color: var(--ink);
+  background: var(--paper); border: 4px solid var(--ink); border-radius: 18px;
+  padding: 8px 16px; min-height: 52px; cursor: pointer;
+  box-shadow: 0 5px 0 var(--ink); flex: 1 1 28%; transition: transform 0.08s, box-shadow 0.08s;
+}
+.mode:hover { transform: translateY(-2px); }
+.mode:focus-visible { outline: 4px solid var(--grape); outline-offset: 3px; }
+.mode[aria-pressed="true"] { background: var(--c); color: #fff; transform: translateY(4px); box-shadow: 0 1px 0 var(--ink); }
+.switch {
+  display: flex; align-items: center; justify-content: space-between; gap: 14px; width: 100%;
+  font: inherit; font-family: var(--font-display); font-weight: 800; font-size: 1.2rem; color: var(--ink);
+  background: #f3f9ff; border: 4px solid var(--ink); border-radius: 18px; padding: 10px 16px; min-height: 56px; cursor: pointer; text-align: left;
+}
+.switch:focus-visible { outline: 4px solid var(--grape); outline-offset: 3px; }
+.switch .track { flex: none; width: 66px; height: 34px; border-radius: 999px; border: 4px solid var(--ink); background: #fff; position: relative; transition: background 0.15s; }
+.switch .track::after { content: ""; position: absolute; top: 2px; left: 2px; width: 22px; height: 22px; border-radius: 50%; background: var(--ink); transition: transform 0.15s; }
+.switch[aria-checked="true"] .track { background: var(--mint); }
+.switch[aria-checked="true"] .track::after { transform: translateX(32px); }
+.switch .state { font-size: 1rem; min-width: 2.2em; }
 [hidden] { display: none !important; }
 @media (prefers-reduced-motion: reduce) {
   .listen.playing { animation: none; }
@@ -213,11 +234,33 @@ textarea {
   <!-- START -->
   <section id="screen-start" class="wrap" style="gap:18px">
     <div class="card">
-      <h2>Ready to spell?</h2>
+      <h2>Choose your level</h2>
+      <div class="modes" id="modes" role="group" aria-label="Level"></div>
       <p class="muted" id="roundInfo"></p>
+      <button class="switch" id="spellToggle" type="button" role="switch" aria-checked="true">
+        <span>Say each letter out loud</span>
+        <span class="state" id="spellState">On</span>
+        <span class="track" aria-hidden="true"></span>
+      </button>
+      <button class="switch" id="boxToggle" type="button" role="switch" aria-checked="true">
+        <span>Show empty letter boxes</span>
+        <span class="state" id="boxState">On</span>
+        <span class="track" aria-hidden="true"></span>
+      </button>
       <button class="btn go big" id="startBtn" type="button">Start</button>
     </div>
-</section>
+    <div class="card" id="customCard" hidden>
+      <h2>My word list</h2>
+      <p class="muted">Type one word on each line. Your list is saved on this device only.</p>
+      <label for="wordsBox" class="count" id="countLabel"></label>
+      <textarea id="wordsBox" spellcheck="false" autocapitalize="off" autocomplete="off"></textarea>
+      <p class="note" id="note" role="status"></p>
+      <div class="row">
+        <button class="btn alt blue" id="saveBtn" type="button">Save words</button>
+        <button class="btn alt" id="resetBtn" type="button">Back to class list</button>
+      </div>
+    </div>
+  </section>
 
   <!-- QUIZ -->
   <section id="screen-quiz" class="card" hidden>
@@ -286,11 +329,67 @@ textarea {
 
   /* The word list lives in words.txt next to this page (one word per line).
      If it cannot be read, the built-in list below is used. */
-  function loadWords() {
-    return fetch("words.txt", { cache: "no-store" })
-      .then(function (r) { if (!r.ok) throw new Error("no list"); return r.text(); })
-      .then(function (t) { var arr = parseWords(t); if (arr.length) return arr; throw new Error("empty"); })
-      .catch(function () { return SAMPLE.slice(); });
+  var MODES = [
+    { id: "starters", label: "Starters", file: "words-starters.txt", color: "#ff5d73" },
+    { id: "movers",   label: "Movers",   file: "words-movers.txt",   color: "#e59c00" },
+    { id: "flyers",   label: "Flyers",   file: "words-flyers.txt",   color: "#19c58c" },
+    { id: "ket",      label: "KET",      file: "words-ket.txt",      color: "#1f9bff" },
+    { id: "pet",      label: "PET",      file: "words-pet.txt",      color: "#7a4dff" },
+    { id: "custom",   label: "Custom",   file: "words.txt",          color: "#26214f" }
+  ];
+  var CUSTOM_KEY = "spellingStars.custom.v1", MODE_KEY = "spellingStars.mode.v1";
+  var mode = "custom", pick = 0;
+  var SPELL_KEY = "spellingStars.spell.v1", spellOn = true;
+  function applySpell() {
+    $("spellToggle").setAttribute("aria-checked", spellOn ? "true" : "false");
+    $("spellState").textContent = spellOn ? "On" : "Off";
+    $("spellBtn").hidden = !spellOn;
+  }
+  var BOX_KEY = "spellingStars.boxes.v1", boxesOn = true;
+  function applyBoxes() {
+    $("boxToggle").setAttribute("aria-checked", boxesOn ? "true" : "false");
+    $("boxState").textContent = boxesOn ? "On" : "Off";
+    $("tiles").hidden = !boxesOn;
+  }
+
+  function fetchList(file) {
+    return fetch(file, { cache: "no-store" })
+      .then(function (r) { if (!r.ok) throw new Error("missing"); return r.text(); })
+      .then(function (t) { return parseWords(t); })
+      .catch(function () { return []; });
+  }
+  /* Custom: the device's own saved list, else the class list in words.txt */
+  function loadList(m) {
+    if (m.id === "custom") {
+      try {
+        var raw = localStorage.getItem(CUSTOM_KEY);
+        if (raw) { var arr = JSON.parse(raw); if (Array.isArray(arr) && arr.length) return Promise.resolve(arr); }
+      } catch (e) {}
+      return fetchList("words.txt").then(function (l) { return l.length ? l : SAMPLE.slice(); });
+    }
+    return fetchList(m.file);
+  }
+  function selectMode(id) {
+    var m = MODES.filter(function (x) { return x.id === id; })[0] || MODES[MODES.length - 1];
+    mode = m.id; loaded = false; words = [];
+    try { localStorage.setItem(MODE_KEY, mode); } catch (e) {}
+    var my = ++pick;
+    drawModes(); refreshStart();
+    loadList(m).then(function (list) {
+      if (my !== pick) return;
+      words = list; loaded = true; refreshStart();
+    });
+  }
+  function drawModes() {
+    var box = $("modes"); box.textContent = "";
+    MODES.forEach(function (m) {
+      var b = document.createElement("button");
+      b.type = "button"; b.className = "mode"; b.textContent = m.label;
+      b.style.setProperty("--c", m.color);
+      b.setAttribute("aria-pressed", m.id === mode ? "true" : "false");
+      b.addEventListener("click", function () { selectMode(m.id); });
+      box.appendChild(b);
+    });
   }
 
   function parseWords(text) {
@@ -311,11 +410,20 @@ textarea {
 
   function refreshStart() {
     var n = words.length;
+    var isCustom = mode === "custom";
+    $("customCard").hidden = !isCustom;
+    if (isCustom && loaded) {
+      var box = $("wordsBox");
+      if (document.activeElement !== box) box.value = words.join("\n");
+      $("countLabel").textContent = n + (n === 1 ? " word" : " words") + " in your list";
+    }
     $("roundInfo").textContent = !loaded
       ? "Getting the words ready..."
-      : n >= PER_ROUND
-        ? "Each round has " + PER_ROUND + " words. Listen carefully!"
-        : "Each round has " + n + (n === 1 ? " word" : " words") + ". Listen carefully!";
+      : n < 1
+        ? "No words in this level yet. Ask your teacher!"
+        : n >= PER_ROUND
+          ? "Each round has " + PER_ROUND + " words. Listen carefully!"
+          : "Each round has " + n + (n === 1 ? " word" : " words") + ". Listen carefully!";
     $("startBtn").disabled = !loaded || n < 1;
   }
 
@@ -448,7 +556,7 @@ textarea {
     $("nextBtn").textContent = idx === session.length - 1 ? "See my score" : "Next word";
     cancelSpeech();
     drawTiles(session[idx], false);
-    spellWord(session[idx], true, true);
+    if (spellOn) spellWord(session[idx], true, true); else speakWord(session[idx]);
     inp.focus();
   }
   function showWord() {
@@ -472,7 +580,7 @@ textarea {
     beep(ok);
     cancelSpeech();
     drawTiles(target, true);
-    setTimeout(function () { if (revealed && session[idx] === target) spellWord(target, false, true); }, 900);
+    setTimeout(function () { if (revealed && spellOn && session[idx] === target) spellWord(target, false, true); }, 900);
     $("nextBtn").focus();
   }
   function next() {
@@ -515,8 +623,43 @@ textarea {
   });
   $("againBtn").addEventListener("click", startRound);
   $("homeBtn").addEventListener("click", function () { refreshStart(); show("start"); });
-  refreshStart();
-  loadWords().then(function (list) { words = list; loaded = true; refreshStart(); });
+  var BAD = "#d52a46", GOOD = "#0b8a62";
+  $("saveBtn").addEventListener("click", function () {
+    var list = parseWords($("wordsBox").value), note = $("note");
+    if (!list.length) { note.style.color = BAD; note.textContent = "Please add at least one word using letters."; return; }
+    var saved = true;
+    try { localStorage.setItem(CUSTOM_KEY, JSON.stringify(list)); } catch (e) { saved = false; }
+    words = list; $("wordsBox").value = list.join("\n"); refreshStart();
+    note.style.color = saved ? GOOD : BAD;
+    note.textContent = saved ? "Saved! " + list.length + (list.length === 1 ? " word is" : " words are") + " ready."
+                             : "Words are ready for now, but this browser could not save them.";
+  });
+  $("resetBtn").addEventListener("click", function () {
+    try { localStorage.removeItem(CUSTOM_KEY); } catch (e) {}
+    var note = $("note"); note.style.color = GOOD; note.textContent = "The class list is back.";
+    $("wordsBox").value = "";
+    selectMode("custom");
+  });
+  $("wordsBox").addEventListener("input", function () { $("note").textContent = ""; });
+
+  $("spellToggle").addEventListener("click", function () {
+    spellOn = !spellOn;
+    try { localStorage.setItem(SPELL_KEY, spellOn ? "1" : "0"); } catch (e) {}
+    applySpell();
+  });
+  try { spellOn = localStorage.getItem(SPELL_KEY) !== "0"; } catch (e) {}
+  applySpell();
+  $("boxToggle").addEventListener("click", function () {
+    boxesOn = !boxesOn;
+    try { localStorage.setItem(BOX_KEY, boxesOn ? "1" : "0"); } catch (e) {}
+    applyBoxes();
+  });
+  try { boxesOn = localStorage.getItem(BOX_KEY) !== "0"; } catch (e) {}
+  applyBoxes();
+
+  var first = "custom";
+  try { first = localStorage.getItem(MODE_KEY) || "custom"; } catch (e) {}
+  selectMode(first);
 })();
 </script>
 
