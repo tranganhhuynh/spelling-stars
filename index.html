@@ -178,6 +178,7 @@ textarea {
 
 /* score */
 .score { text-align: center; display: grid; gap: 10px; }
+.when { font-family: var(--font-display); font-weight: 800; font-size: 1.15rem; background: #fffbe3; border: 3px solid var(--ink); border-radius: 999px; padding: 4px 16px; justify-self: center; }
 .big-score { font-family: var(--font-display); font-weight: 800; font-size: clamp(4rem, 20vw, 6.5rem); line-height: 1; color: var(--grape); }
 .big-score small { font-size: 0.4em; color: var(--ink); }
 .stars { display: flex; flex-wrap: wrap; gap: 4px; justify-content: center; }
@@ -295,6 +296,7 @@ textarea {
   <section id="screen-score" class="wrap" style="gap:18px" hidden>
     <div class="card score">
       <h2>Your score</h2>
+      <div class="when" id="scoreWhen"></div>
       <div class="big-score" id="bigScore"></div>
       <div class="stars" id="stars" aria-hidden="true"></div>
       <div class="cheer" id="cheer"></div>
@@ -593,6 +595,11 @@ textarea {
   function finish() {
     cancelSpeech();
     var total = results.length;
+    var now = new Date(), when;
+    try { when = now.toLocaleDateString("en-GB", { weekday: "short", day: "numeric", month: "short", year: "numeric" }); }
+    catch (e) { when = now.toDateString(); }
+    var lvl = MODES.filter(function (m) { return m.id === mode; })[0];
+    $("scoreWhen").textContent = when + (lvl ? " \u00b7 " + lvl.label : "");
     var score = results.filter(function (r) { return r.ok; }).length;
     $("bigScore").innerHTML = score + ' <small>out of ' + total + '</small>';
     var st = $("stars"); st.innerHTML = "";
