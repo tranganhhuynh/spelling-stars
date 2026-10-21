@@ -144,6 +144,7 @@ textarea {
   background: #fffbe3; border: 4px solid var(--ink); border-radius: 14px; box-shadow: 0 4px 0 var(--ink);
   transition: transform 0.12s, background 0.12s;
 }
+.tile-gap { width: clamp(14px, 4vw, 24px); }
 .tile.on { background: var(--sun); transform: translateY(-6px) scale(1.15); }
 .tile.c0 { color: var(--coral); } .tile.c1 { color: var(--ocean); } .tile.c2 { color: var(--mint); } .tile.c3 { color: var(--grape); }
 
@@ -493,8 +494,9 @@ textarea {
     var box = $("tiles"); box.textContent = "";
     word.split("").forEach(function (ch, i) {
       var d = document.createElement("span");
+      if (ch === " ") { d.className = "tile-gap"; box.appendChild(d); return; }
       d.className = "tile c" + (i % 4);
-      d.textContent = showLetters ? (ch === " " ? "\u00a0" : ch) : "";
+      d.textContent = showLetters ? ch : "";
       box.appendChild(d);
     });
   }
