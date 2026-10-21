@@ -136,6 +136,16 @@ textarea {
 .listen.playing { animation: pulse 0.7s ease-in-out infinite; }
 @keyframes pulse { 50% { transform: scale(1.07); } }
 .hint { text-align: center; margin: 0; font-size: 1.05rem; }
+.tiles { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; min-height: 66px; }
+.tile {
+  width: clamp(38px, 11vw, 56px); height: clamp(46px, 13vw, 64px);
+  display: grid; place-items: center;
+  font-family: var(--font-display); font-weight: 800; font-size: clamp(1.7rem, 7vw, 2.4rem);
+  background: #fffbe3; border: 4px solid var(--ink); border-radius: 14px; box-shadow: 0 4px 0 var(--ink);
+  transition: transform 0.12s, background 0.12s;
+}
+.tile.on { background: var(--sun); transform: translateY(-6px) scale(1.15); }
+.tile.c0 { color: var(--coral); } .tile.c1 { color: var(--ocean); } .tile.c2 { color: var(--mint); } .tile.c3 { color: var(--grape); }
 
 .field {
   width: 100%;
@@ -223,8 +233,9 @@ textarea {
       </svg>
     </button>
     <p class="hint">Tap the speaker to hear the word.</p>
+    <div class="tiles" id="tiles" aria-hidden="true"></div>
     <div class="row">
-      <button class="btn alt" id="slowBtn" type="button">Say it slowly</button>
+      <button class="btn blue" id="spellBtn" type="button">Spell it out</button>
     </div>
     <label for="answer" class="hint">Write the letters here:</label>
     <input class="field" id="answer" type="text" inputmode="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" maxlength="30">
@@ -326,37 +337,85 @@ textarea {
     } catch (e) {}
   }
 
-  /* speech */
+  /* speech: the word, then every letter, then the word again */
+  var LETTER_NAMES = { a:"ay", b:"bee", c:"see", d:"dee", e:"ee", f:"eff", g:"jee", h:"aitch", i:"eye", j:"jay", k:"kay", l:"ell", m:"em", n:"en", o:"oh", p:"pee", q:"cue", r:"ar", s:"ess", t:"tee", u:"you", v:"vee", w:"double you", x:"ex", y:"why", z:"zee" };
+  var voice = null, speechToken = 0;
+  var hasSpeech = "speechSynthesis" in window;
   function pickVoice() {
     try {
-      var vs = window.speechSynthesis.getVoices();
       var best = null;
-      vs.forEach(function (v) {
-        if (/^en[-_]/i.test(v.lang) && (!best || /en[-_]US/i.test(v.lang) && !/en[-_]US/i.test(best.lang))) best = v;
+      window.speechSynthesis.getVoices().forEach(function (v) {
+        if (/^en[-_]/i.test(v.lang) && (!best || (/en[-_]US/i.test(v.lang) && !/en[-_]US/i.test(best.lang)))) best = v;
       });
       return best;
     } catch (e) { return null; }
   }
-  function speak(text, slow) {
-    var btn = $("listenBtn");
-    if (!("speechSynthesis" in window)) {
-      $("note").textContent = "";
-      return false;
-    }
-    try {
-      window.speechSynthesis.cancel();
-      var u = new SpeechSynthesisUtterance(text);
-      u.lang = "en-US";
-      u.rate = slow ? 0.45 : 0.8;
-      u.pitch = 1.05;
-      var v = pickVoice(); if (v) u.voice = v;
-      u.onstart = function () { btn.classList.add("playing"); };
-      u.onend = u.onerror = function () { btn.classList.remove("playing"); };
-      window.speechSynthesis.speak(u);
-      return true;
-    } catch (e) { return false; }
+  if (hasSpeech) { try { window.speechSynthesis.onvoiceschanged = function () { voice = pickVoice(); }; voice = pickVoice(); } catch (e) {} }
+
+  function say(text, rate, onStart) {
+    return new Promise(function (resolve) {
+      if (!hasSpeech) { resolve(); return; }
+      var done = false;
+      function end() { if (!done) { done = true; resolve(); } }
+      try {
+        var u = new SpeechSynthesisUtterance(text);
+        u.lang = "en-US"; u.rate = rate; u.pitch = 1.05;
+        if (voice) u.voice = voice;
+        u.onstart = function () { if (onStart) onStart(); };
+        u.onend = end; u.onerror = end;
+        window.speechSynthesis.speak(u);
+        setTimeout(end, 6000);
+      } catch (e) { end(); }
+    });
   }
-  if ("speechSynthesis" in window) { try { window.speechSynthesis.onvoiceschanged = function () {}; window.speechSynthesis.getVoices(); } catch (e) {} }
+  function pause(ms) { return new Promise(function (r) { setTimeout(r, ms); }); }
+  function cancelSpeech() {
+    speechToken++;
+    try { window.speechSynthesis.cancel(); } catch (e) {}
+    lightTile(-1);
+    $("listenBtn").classList.remove("playing");
+  }
+  function lightTile(i) {
+    var t = $("tiles").children;
+    for (var k = 0; k < t.length; k++) t[k].classList.toggle("on", k === i);
+  }
+  function drawTiles(word, showLetters) {
+    var box = $("tiles"); box.textContent = "";
+    word.split("").forEach(function (ch, i) {
+      var d = document.createElement("span");
+      d.className = "tile c" + (i % 4);
+      d.textContent = showLetters ? (ch === " " ? "\u00a0" : ch) : "";
+      box.appendChild(d);
+    });
+  }
+  /* parts: "word" = say the word, "letters" = spell it, in the order given */
+  function speakWord(word) {
+    cancelSpeech(); var tk = speechToken; var btn = $("listenBtn");
+    if (!hasSpeech) return;
+    say(word, 0.8, function () { if (tk === speechToken) btn.classList.add("playing"); })
+      .then(function () { if (tk === speechToken) btn.classList.remove("playing"); });
+  }
+  function spellWord(word, wordFirst, wordAfter) {
+    cancelSpeech(); var tk = speechToken; var btn = $("listenBtn");
+    if (!hasSpeech) return Promise.resolve();
+    var p = Promise.resolve();
+    if (wordFirst) p = p.then(function () { if (tk !== speechToken) return; btn.classList.add("playing"); return say(word, 0.75).then(function () { btn.classList.remove("playing"); return pause(500); }); });
+    word.split("").forEach(function (ch, i) {
+      p = p.then(function () {
+        if (tk !== speechToken) return;
+        if (ch === " " || ch === "-" || ch === "'") { return pause(300); }
+        var name = LETTER_NAMES[ch];
+        if (!name) return;
+        lightTile(i);
+        return say(name, 0.7).then(function () { return pause(350); });
+      });
+    });
+    return p.then(function () {
+      if (tk !== speechToken) return;
+      lightTile(-1);
+      if (wordAfter) { return pause(400).then(function () { if (tk === speechToken) { btn.classList.add("playing"); return say(word, 0.75).then(function () { btn.classList.remove("playing"); }); } }); }
+    });
+  }
 
   /* quiz */
   function shuffle(a) {
@@ -387,7 +446,9 @@ textarea {
     $("nextBtn").hidden = true;
     $("showBtn").hidden = false;
     $("nextBtn").textContent = idx === session.length - 1 ? "See my score" : "Next word";
-    speak(session[idx], false);
+    cancelSpeech();
+    drawTiles(session[idx], false);
+    spellWord(session[idx], true, true);
     inp.focus();
   }
   function showWord() {
@@ -409,16 +470,20 @@ textarea {
     $("nextBtn").hidden = false;
     drawDots();
     beep(ok);
+    cancelSpeech();
+    drawTiles(target, true);
+    setTimeout(function () { if (revealed && session[idx] === target) spellWord(target, false, true); }, 900);
     $("nextBtn").focus();
   }
   function next() {
     if (!revealed) return;
+    cancelSpeech();
     if (idx < session.length - 1) { idx++; loadWord(); } else { finish(); }
   }
 
   var STAR = '<svg viewBox="0 0 200 190" aria-hidden="true"><path class="CLS" d="M100 14l24 54 58 6-43 40 12 58-51-30-51 30 12-58-43-40 58-6z"/></svg>';
   function finish() {
-    try { window.speechSynthesis.cancel(); } catch (e) {}
+    cancelSpeech();
     var total = results.length;
     var score = results.filter(function (r) { return r.ok; }).length;
     $("bigScore").innerHTML = score + ' <small>out of ' + total + '</small>';
@@ -440,8 +505,8 @@ textarea {
 
   /* events */
   $("startBtn").addEventListener("click", function () { if (words.length) startRound(); });
-  $("listenBtn").addEventListener("click", function () { speak(session[idx], false); $("answer").focus(); });
-  $("slowBtn").addEventListener("click", function () { speak(session[idx], true); $("answer").focus(); });
+  $("listenBtn").addEventListener("click", function () { speakWord(session[idx]); $("answer").focus(); });
+  $("spellBtn").addEventListener("click", function () { spellWord(session[idx], true, true); $("answer").focus(); });
   $("showBtn").addEventListener("click", showWord);
   $("nextBtn").addEventListener("click", next);
   $("answer").addEventListener("keydown", function (e) { if (e.key === "Enter") { e.preventDefault(); showWord(); } });
