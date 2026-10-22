@@ -1,1 +1,1607 @@
-# Add one word per line below. Lines starting with # are ignored.
+# B1 Preliminary (PET) word list: one word per line. Lines starting with # are ignored.
+able
+abroad
+absent
+access
+accident
+accommodation
+ache
+act
+action
+actor
+actress
+ad
+address
+admission
+advanced
+adventure
+advert
+advertise
+advertisement
+aeroplane
+afraid
+africa
+afternoon
+ages
+air
+air conditioning
+airline
+airplane
+airport
+alarm
+alarm clock
+alone
+amazed
+amazing
+ambulance
+amusing
+angry
+animal
+ankle
+announcement
+annoyed
+answer
+antarctica
+antique
+anxious
+apartment
+apartment block
+app
+apple
+application
+apply
+appointment
+approximately
+april
+architect
+area
+argue
+arithmetic
+arm
+armchair
+army
+arrival
+arrive
+art
+article
+artist
+ashamed
+asia
+ask
+aspirin
+assistant
+astronaut
+at
+at sea
+athlete
+athletics
+audience
+august
+australia
+autumn
+awesome
+awful
+baby
+babysitter
+backpack
+backpacker
+backpacking
+bad
+badminton
+bag
+baggage
+bake
+balcony
+ball
+ballet
+banana
+band
+bandage
+bank
+banker
+barbecue
+barber
+bargain
+baseball
+basin
+basketball
+bat
+bath
+bathing suit
+bathroom
+bathtub
+bay
+beach
+bean
+beautiful
+bed
+bedroom
+bee
+beginner
+bell
+belt
+bestseller
+better
+bicycle
+bike
+bill
+bin
+biology
+bird
+birthday
+biscuit
+bitter
+black
+blackboard
+blanket
+bleed
+blind
+block
+blog
+blogger
+blood
+blouse
+blow
+blue
+board
+board game
+boarding pass
+boat
+body
+boil
+boiled
+bone
+book
+bookcase
+booking office
+bookshelf
+bookshop
+bookstore
+boot
+border
+bored
+boring
+boss
+bossy
+bottle
+bottle bank
+bowl
+box
+boxing
+bracelet
+brain
+branch
+brave
+brazil
+brazilian
+bread
+break
+break up
+breakfast
+breaktime
+breath
+breathe
+breeze
+bridge
+brilliant
+broccoli
+brochure
+brown
+brush
+bucket
+building
+bulb
+bunch
+burger
+bus
+bus service
+bus station
+bus stop
+bush
+businessman
+businesswoman
+busy
+butcher
+butter
+butterfly
+button
+buy
+by air
+by land
+by post
+by rail
+by road
+by sea
+cab
+cabbage
+cabin
+cafe
+cafeteria
+cake
+calculator
+call
+call back
+calm
+camera
+cameraman
+camp
+camping
+campsite
+can
+canada
+canadian
+canal
+candidate
+candle
+candy
+canteen
+cap
+capital city
+captain
+car
+car alarm
+car park
+card
+career
+careful
+carpet
+carrot
+cartoon
+case
+cash
+cash machine
+cashpoint
+castle
+catch
+cave
+ceiling
+celebrity
+cell phone
+cellar
+cent
+centigrade
+central heating
+centre
+century
+cereal
+certificate
+chain
+chair
+challenging
+champion
+championship
+change
+changing room
+channel
+charming
+charter
+chat
+chat room
+chat show
+cheap
+check
+check in
+check out
+check-in
+cheerful
+cheese
+chef
+chemist
+chemistry
+cheque
+chess
+chest of drawers
+chicken
+chilli
+chin
+china
+chinese
+chips
+chocolate
+choose
+cinema
+circus
+city centre
+class
+classical music
+classroom
+clean
+cleaner
+clear
+clever
+click
+cliff
+climate
+climate change
+climb
+climbing
+clinic
+clock
+close
+closed
+clothes
+clothes line
+cloud
+cloudy
+club
+coach
+coast
+coat
+coconut
+coffee
+cola
+cold
+collar
+colleague
+collect
+collection
+collector
+college
+comb
+comedy
+comic
+communicate
+communication
+company
+compete
+competition
+competitor
+complain
+composition
+computer
+concert
+conference
+confident
+confirm
+confused
+confusing
+connect
+connection
+contest
+continent
+contract
+cook
+cooker
+cookie
+cool
+corn
+corner
+cost
+costume
+cottage
+cotton
+cough
+country
+countryside
+course
+court
+crazy
+cream
+credit card
+crew
+cricket
+crossing
+crossroads
+cruel
+cruise
+cucumber
+cup
+cupboard
+curious
+currency
+curriculum
+curry
+curtain
+cushion
+customer
+customs
+customs officer
+cut
+cute
+cycle
+cycling
+cyclist
+daily
+damage
+damaged
+dance
+dancer
+dancing
+danger
+dangerous
+dark
+data
+date
+day
+dead
+dear
+december
+degree
+degrees
+delay
+delayed
+delete
+delicious
+delighted
+deliver
+dentist
+depart
+department
+departure
+deposit
+depressed
+desert
+designer
+desk
+dessert
+destination
+detective
+dial
+dial up
+diary
+dictionary
+die
+diet
+different
+difficult
+digital
+digital camera
+dining room
+dinner
+diploma
+direction
+director
+disappointed
+disappointing
+disc
+disc jockey
+disco
+dish
+dishwasher
+disk
+display
+diver
+diving
+doctor
+document
+documentary
+documents
+doll
+dollar
+dolphin
+donkey
+door
+dot
+double room
+download
+downstairs
+drag
+drama
+draw
+drawer
+drawing
+dress
+drink
+drive
+driver
+driver's
+driving
+dry
+duck
+due
+dustbin
+duty-free
+duvet
+ear
+earache
+earn
+earring
+earth
+east
+easy
+eat
+economics
+egg
+electric
+electrical
+electronic
+electronics
+elementary
+elephant
+elevator
+email
+embarrassed
+embarrassing
+embassy
+emergency
+employ
+employee
+employer
+employment
+engaged
+engineer
+enjoyable
+enter
+entrance
+envelope
+environment
+environmental
+equipment
+essay
+euro
+europe
+evening
+excellent
+exchange
+exchange rate
+excited
+exciting
+exercise
+exhibition
+exit
+expensive
+explore
+explorer
+extreme sports
+eye
+face
+facilities
+factory
+fall
+famous
+fan
+fantastic
+far
+fare
+farm
+farmer
+farmland
+fashion
+fasten
+favourite
+fax
+february
+feel better
+feel ill
+feel sick
+ferry
+festival
+fever
+fiction
+field
+file
+film
+film maker
+film star
+fine
+finger
+fire
+fire alarm
+firefighter
+fireworks
+fish
+fishing
+fit
+fitness
+flat
+flatmate
+flavour
+flight
+flood
+floor
+flour
+flower
+flu
+fly
+fog
+foggy
+fold
+folk music
+fond
+food
+foot
+football
+football player
+footballer
+for sale
+forecast
+foreign
+forest
+fork
+fountain
+france
+free
+freeze
+freezer
+freezing
+french
+french fries
+fresh
+friday
+fridge
+fried
+friendly
+frightened
+frightening
+frog
+frozen
+fruit
+fruit juice
+fry
+frying pan
+fuel
+full time
+fun
+funny
+fur
+furniture
+gale
+gallery
+game
+garage
+garden
+garlic
+gas
+gas station
+gate
+generous
+gentle
+geography
+get better
+get dressed
+get wet
+get worse
+giraffe
+glad
+glass
+glasses
+glove
+go
+go jogging
+go out
+go shopping
+goal
+goalkeeper
+gold
+golden
+golf
+good
+grammar
+grape
+grass
+gray
+great
+green
+grey
+grill
+grilled
+grocery store
+ground
+ground floor
+group
+grow
+guard
+guest
+guest-house
+guide
+guidebook
+guilty
+guitar
+guitarist
+gym
+gymnastics
+hair
+hairdresser
+half
+hall
+hand
+handbag
+handkerchief
+handle
+handlebars
+handwriting
+hang out
+hang up
+happy
+harbour
+hard
+hardware
+hat
+head
+headache
+headline
+headphones
+health
+healthy
+hear
+heart
+heat
+heater
+heating
+heavy
+heel
+helicopter
+helmet
+herbs
+hero
+heroine
+hi-fi
+high
+high jump
+hike
+hill
+hip hop
+hire
+history
+hit
+hit song
+hitchhike
+hobby
+hockey
+holidays
+home
+homepage
+homework
+honey
+horror
+horse-riding
+hospital
+hot
+hotel
+hour
+house
+housewife
+housework
+humid
+hungry
+hurt
+ice
+ice cream
+ice hockey
+ice skates
+ice skating
+icy
+ill
+illness
+immigration
+important
+impressed
+india
+indian
+inexpensive
+information
+ingredients
+injure
+install
+instructions
+instructor
+instrument
+intelligent
+interested
+interesting
+intermediate
+internet
+interval
+interview
+interviewer
+invent
+invention
+ireland
+irish
+iron
+island
+italian
+italy
+jacket
+jam
+january
+jazz music
+jealous
+jeans
+jet
+jewellery
+jewelry
+job
+jogging
+join in
+joke
+journalist
+journey
+judge
+jug
+juice
+july
+jumper
+june
+jungle
+kangaroo
+keen
+keen on
+keep fit
+kettle
+key
+keyboard
+kick
+kind
+king
+kit
+kitchen
+knee
+knife
+knit
+know
+lab
+label
+laboratory
+ladder
+lake
+lamb
+lamp
+land
+language
+laptop
+laugh
+laundry
+lawyer
+lazy
+leaf
+league
+learn
+leather
+leave
+lecturer
+left
+leg
+lemon
+lemonade
+lesson
+letter
+lettuce
+level
+librarian
+library
+licence
+lie down
+lift
+light
+lightning
+line
+lion
+listen to
+litter
+living-room
+lock
+locker
+locker room
+logo
+long jump
+look at
+lorry
+lovely
+luck
+lucky
+luggage
+lunch
+luxury
+machine
+mad
+magazine
+magic
+main course
+make-up
+mall
+manager
+map
+march
+mark
+market
+married
+match
+material
+math
+mathematics
+maths
+may
+meal
+mean
+meaning
+meat
+mechanic
+medicine
+meeting
+melon
+member
+membership
+mention
+menu
+message
+mice
+microwave
+midnight
+mild
+milk
+mineral water
+minute
+mirror
+miserable
+miss
+mobile phone
+model
+modern
+moment
+monday
+money
+monkey
+month
+monthly
+monument
+moon
+morning
+mosquito
+motor-racing
+motorbike
+motorway
+mountain
+mouse
+mouse mat
+move
+mug
+museum
+mushroom
+music
+musician
+nationality
+nature
+nature studies
+necklace
+negative
+neighbour
+nervous
+net
+news
+newspaper
+nice
+night
+nightlife
+noisy
+noon
+normal
+north
+north america
+nose
+note
+notice board
+novelist
+november
+nurse
+o'clock
+occupation
+ocean
+october
+office
+officer
+oil
+old
+old-fashioned
+omelette
+on board
+on business
+on foot
+on holiday
+on time
+on vacation
+onion
+online
+opening hours
+opera
+operate
+operation
+operator
+orange
+orchestra
+order
+ordinary
+original
+out of work
+oven
+overnight
+owner
+pain
+painful
+paint
+painter
+painting
+palace
+pale
+pan
+pants
+parcel
+park
+parking lot
+parking space
+parrot
+part time
+party
+passenger
+passport
+password
+past
+pasta
+path
+patient
+pattern
+pavement
+pay
+pea
+peach
+peanut
+pear
+pencil case
+penguin
+penny
+pepper
+perform
+performance
+performer
+perfume
+personal
+petrol
+petrol station
+pharmacy
+phone
+photograph
+photographer
+photography
+physics
+picnic
+pie
+piece of cake
+pill
+pillow
+pilot
+pineapple
+pink
+pipe
+pitch
+pizza
+planet
+plant
+plastic
+plate
+platform
+play
+playground
+pleasant
+plug
+plug in
+pocket
+podcast
+poem
+poet
+point
+points
+police officer
+police station
+policeman
+policewoman
+politician
+pollution
+poor
+pop music
+port
+porter
+positive
+post office
+postcard
+postman
+potato
+pound
+practice
+practise
+prescription
+presenter
+president
+pretty
+price
+primary school
+print
+printer
+prison
+prize
+problem
+production
+profession
+professional
+professor
+program
+programme
+programmer
+prohibited
+project
+pronounce
+pronunciation
+property
+public transport
+publisher
+pullover
+pupil
+purple
+purse
+put on
+qualification
+quarter
+queen
+question
+quick
+quiet
+quit
+quiz
+rabbit
+race
+race track
+racing
+racket
+radio
+rail
+railroad
+railway
+railway station
+rain
+raincoat
+rainforest
+range
+read
+ready
+real
+realistic
+reasonable
+receipt
+reception
+receptionist
+recipe
+recording
+recover
+recycle
+recycled
+recycling
+red
+reduce
+reduced
+refreshments
+refrigerator
+region
+register
+relaxed
+reliable
+relieved
+remember
+remote control
+rent
+repair
+reply
+reporter
+research
+reservation
+reserve
+rest
+restaurant
+retire
+retirement
+return
+review
+rice
+rich
+ride
+rider
+riding
+right
+ring
+ring up
+river
+road
+road sign
+roast
+robot
+rock
+rock music
+rocket
+roll
+romantic
+roof
+room
+roommate
+rope
+roundabout
+route
+row
+rubber
+rubbish
+rubbish bin
+rude
+rugby
+ruin
+ruler
+run
+running
+sad
+safe
+sail
+sailing
+sailor
+salad
+salary
+sales assistant
+salesman
+saleswoman
+salmon
+salt
+sand
+sandal
+sandwich
+satisfied
+saturday
+sauce
+saucepan
+saucer
+sausage
+save
+say
+scarf
+scene
+scenery
+school
+science
+scientist
+scooter
+score
+screen
+sculpture
+sea
+seaside
+season
+seat
+second
+second-hand
+secondary
+secretary
+security guard
+selfie
+sell
+sentence
+september
+series
+serious
+server
+service
+shark
+sheet
+shelf
+ship
+shirt
+shoe
+shoot
+shooting
+shop
+shop assistant
+shopper
+shopping
+shopping centre
+shopping mall
+shorts
+shoulder
+shout
+shower
+sick
+sightseeing
+sign up
+signpost
+silk
+silver
+singer
+single room
+sink
+sitting room
+size
+skateboard
+skating
+skiing
+skin
+skirt
+sky
+sleeve
+sleeveless
+slice
+slide
+slim
+slow
+small
+smart
+smartphone
+snack
+snow
+snowboard
+snowboarding
+snowfall
+soap
+soap opera
+soccer
+social media
+socks
+sofa
+soft
+soft drink
+software
+soldier
+sore throat
+sorry
+soundtrack
+soup
+sour
+south
+south america
+space
+spaceship
+spain
+spanish
+speak
+special
+species
+speed
+spend
+spicy
+spinach
+spoon
+sport
+sports
+sports centre
+sports facilities
+spring
+square
+squash
+stadium
+staff
+stage
+stairs
+star
+station
+stay
+steak
+step
+stomach
+stomach ache
+stone
+store
+storm
+strange
+strawberry
+stream
+street
+stress
+stripe
+strong
+student
+studies
+studio
+study
+stupid
+subject
+subway
+sugar
+suit
+suitcase
+summer
+sun
+sunbathe
+sunday
+sunglasses
+sunny
+sunrise
+sunset
+sunshine
+supermarket
+sure
+surf
+surfboard
+surfboarding
+surfing
+surprised
+surround
+sweater
+sweatshirt
+sweet
+swim
+swimming
+swimming costume
+swimming pool
+swimsuit
+switch
+switch off
+switch on
+t-shirt
+table
+table tennis
+tablet
+take exercise
+take off
+take part
+takeaway
+talk
+talk show
+tall
+tap
+taste
+tasty
+taxi
+taxi driver
+tea
+teach
+teacher
+team
+technology
+telephone
+television
+tell
+temperature
+tennis
+tennis player
+tent
+term
+terrible
+test
+text
+text message
+theatre
+thirsty
+thriller
+throw
+thumb
+thunder
+thunderstorm
+thursday
+ticket
+tie
+tiger
+tights
+time
+tire
+tired
+toast
+today
+toes
+toilet
+tomato
+tomorrow
+tonight
+tooth
+toothache
+toothbrush
+torch
+tour
+tour guide
+tourist
+tourist information
+towel
+tower
+town
+toy
+track
+tracksuit
+trade
+traffic
+traffic jam
+traffic lights
+train
+trainer
+trainers
+training
+tram
+translate
+translation
+travel
+travel agent
+tree
+trip
+trousers
+true
+try on
+tuesday
+tuna
+tunnel
+turkey
+turn off
+turn on
+turning
+typical
+tyre
+umbrella
+unable
+underground
+underpants
+underwear
+undress
+unemployed
+unhappy
+uniform
+university
+unusual
+upload
+upstairs
+useful
+valley
+vase
+vegetable
+vegetarian
+vehicle
+versus
+video
+video clip
+village
+visa
+visit
+visitor
+vocabulary
+volleyball
+volume
+volunteer
+wage
+wages
+waiter
+waiting room
+waitress
+walk
+wall
+wallet
+warm
+wash up
+washing
+watch
+water
+water skiing
+waterfall
+waves
+way
+wear
+weather
+web
+web page
+webcam
+website
+wednesday
+week
+weekday
+weekend
+weekly
+well
+west
+wet
+wheel
+white
+wild
+wildlife
+win
+wind
+window
+windscreen
+windy
+winter
+wonderful
+wood
+wool
+woollen
+word
+work
+worker
+working hours
+workout
+world
+worried
+wrong
+year
+yellow
+yesterday
+yoga
+yoghurt
+yogurt
+young
+zebra
+zoo

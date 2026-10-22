@@ -204,6 +204,20 @@ textarea {
 .mode:hover { transform: translateY(-2px); }
 .mode:focus-visible { outline: 4px solid var(--grape); outline-offset: 3px; }
 .mode[aria-pressed="true"] { background: var(--c); color: #fff; transform: translateY(4px); box-shadow: 0 1px 0 var(--ink); }
+.count-row { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+.count-row label { font-family: var(--font-display); font-weight: 800; font-size: 1.2rem; }
+.stepper { display: flex; align-items: center; gap: 8px; }
+.stepper button {
+  width: 48px; height: 48px; border-radius: 50%; border: 4px solid var(--ink); background: var(--sun); color: var(--ink);
+  font-family: var(--font-display); font-weight: 800; font-size: 1.7rem; line-height: 1; cursor: pointer; box-shadow: 0 4px 0 var(--ink);
+}
+.stepper button:active { transform: translateY(3px); box-shadow: 0 1px 0 var(--ink); }
+.stepper button:focus-visible, .stepper input:focus-visible { outline: 4px solid var(--grape); outline-offset: 3px; }
+.stepper button[disabled] { opacity: 0.4; cursor: not-allowed; }
+.stepper input {
+  width: 4.4em; text-align: center; font-family: var(--font-display); font-weight: 800; font-size: 1.5rem; color: var(--ink);
+  background: #f3f9ff; border: 3px solid var(--ink); border-radius: 14px; padding: 6px 4px;
+}
 .switch {
   display: flex; align-items: center; justify-content: space-between; gap: 14px; width: 100%;
   font: inherit; font-family: var(--font-display); font-weight: 800; font-size: 1.2rem; color: var(--ink);
@@ -239,6 +253,14 @@ textarea {
       <h2>Choose your level</h2>
       <div class="modes" id="modes" role="group" aria-label="Level"></div>
       <p class="muted" id="roundInfo"></p>
+      <div class="count-row">
+        <label for="countInput">Words in a round</label>
+        <div class="stepper">
+          <button type="button" id="countMinus" aria-label="Fewer words">&minus;</button>
+          <input id="countInput" type="number" inputmode="numeric" min="10" step="5" value="10">
+          <button type="button" id="countPlus" aria-label="More words">+</button>
+        </div>
+      </div>
       <button class="switch" id="spellToggle" type="button" role="switch" aria-checked="true">
         <span>Say each letter out loud</span>
         <span class="state" id="spellState">On</span>
@@ -267,6 +289,7 @@ textarea {
   <!-- QUIZ -->
   <section id="screen-quiz" class="card" hidden>
     <div class="top">
+      <button class="btn alt" id="quizHome" type="button">Home</button>
       <span class="pill" id="wordNum"></span>
       <div class="dots" id="dots" aria-hidden="true"></div>
     </div>
@@ -301,7 +324,9 @@ textarea {
       <div class="big-score" id="bigScore"></div>
       <div class="stars" id="stars" aria-hidden="true"></div>
       <div class="cheer" id="cheer"></div>
+      <p class="muted" id="saveNote" role="status"></p>
       <div class="row">
+        <button class="btn blue" id="saveImgBtn" type="button">Save as picture</button>
         <button class="btn go" id="againBtn" type="button">Play again</button>
         <button class="btn alt" id="homeBtn" type="button">Back to start</button>
       </div>
@@ -316,7 +341,20 @@ textarea {
 <script>
 (function () {
   var SAMPLE = ["bird", "mammal", "amphibian", "reptile", "insect", "fish", "penguin", "chick", "colony", "huddle", "hatch", "breed", "mate", "stone", "protect", "temperature", "freezing"];
-  var PER_ROUND = 10;
+  var COUNT_KEY = "spellingStars.count.v1", perRound = 10;
+  try { var sv = parseInt(localStorage.getItem(COUNT_KEY), 10); if (sv >= 10) perRound = sv; } catch (e) {}
+  function roundSize() {
+    var n = words.length;
+    if (n < 10) return n;
+    return Math.min(Math.max(10, perRound), n);
+  }
+  function setRound(v) {
+    v = parseInt(v, 10);
+    if (!(v >= 10)) v = 10;
+    perRound = v;
+    try { localStorage.setItem(COUNT_KEY, String(v)); } catch (e) {}
+    refreshStart();
+  }
   var loaded = false;
 
   var $ = function (id) { return document.getElementById(id); };
@@ -420,13 +458,19 @@ textarea {
       if (document.activeElement !== box) box.value = words.join("\n");
       $("countLabel").textContent = n + (n === 1 ? " word" : " words") + " in your list";
     }
+    var size = roundSize();
     $("roundInfo").textContent = !loaded
       ? "Getting the words ready..."
       : n < 1
         ? "No words in this level yet. Ask your teacher!"
-        : n >= PER_ROUND
-          ? "Each round has " + PER_ROUND + " words. Listen carefully!"
-          : "Each round has " + n + (n === 1 ? " word" : " words") + ". Listen carefully!";
+        : "Each round has " + size + (size === 1 ? " word" : " words") + ". Listen carefully!";
+    var ci = $("countInput");
+    if (document.activeElement !== ci) ci.value = size || 10;
+    ci.max = Math.max(10, n);
+    var locked = !loaded || n <= 10;
+    ci.disabled = locked;
+    $("countMinus").disabled = locked || size <= 10;
+    $("countPlus").disabled = locked || size >= n;
     $("startBtn").disabled = !loaded || n < 1;
   }
 
@@ -536,8 +580,9 @@ textarea {
     return a;
   }
   function startRound() {
-    session = shuffle(words).slice(0, PER_ROUND);
+    session = shuffle(words).slice(0, roundSize());
     idx = 0; results = [];
+    disarmHome();
     show("quiz");
     loadWord();
   }
@@ -594,6 +639,10 @@ textarea {
   }
 
   var STAR = '<svg viewBox="0 0 200 190" aria-hidden="true"><path class="CLS" d="M100 14l24 54 58 6-43 40 12 58-51-30-51 30 12-58-43-40 58-6z"/></svg>';
+  var homeTimer = null;
+  function disarmHome() { clearTimeout(homeTimer); $("quizHome").textContent = "Home"; }
+  function leaveQuiz() { cancelSpeech(); disarmHome(); refreshStart(); show("start"); }
+
   function finish() {
     cancelSpeech();
     var total = results.length;
@@ -616,11 +665,167 @@ textarea {
       y.textContent = r.ok ? "Correct" : (r.mine ? "You wrote: " + r.mine : "No answer");
       li.appendChild(b); li.appendChild(y); ul.appendChild(li);
     });
+    lastResult = { when: when, level: lvl ? lvl.label : "", levelId: mode, score: score, total: total, cheer: $("cheer").textContent,
+                   results: results.map(function (r) { return { word: r.word, mine: r.mine, ok: r.ok }; }) };
+    $("saveNote").textContent = "";
     show("score");
     if (pct === 1) beep(true);
   }
 
+  /* result picture, drawn with canvas so it needs no extra library */
+  var lastResult = null;
+  var INK = "#26214f", SKY = "#d9f1ff", SUN = "#ffc82e", CORAL = "#ff5d73", MINT = "#19c58c", GRAPE = "#7a4dff", OCEAN = "#1f9bff";
+  var FD = '"Baloo 2","Trebuchet MS","Comic Sans MS",system-ui,sans-serif', FB = '"Nunito","Trebuchet MS",system-ui,sans-serif';
+  function rrect(ctx, x, y, w, h, r) {
+    ctx.beginPath(); ctx.moveTo(x + r, y);
+    ctx.arcTo(x + w, y, x + w, y + h, r); ctx.arcTo(x + w, y + h, x, y + h, r);
+    ctx.arcTo(x, y + h, x, y, r); ctx.arcTo(x, y, x + w, y, r); ctx.closePath();
+  }
+  function fit(ctx, text, maxW) {
+    if (ctx.measureText(text).width <= maxW) return text;
+    while (text.length > 1 && ctx.measureText(text + "\u2026").width > maxW) text = text.slice(0, -1);
+    return text + "\u2026";
+  }
+  function starShape(ctx, cx, cy, R) {
+    ctx.beginPath();
+    for (var i = 0; i < 10; i++) {
+      var a = -Math.PI / 2 + i * Math.PI / 5, r = i % 2 ? R * 0.46 : R;
+      var x = cx + Math.cos(a) * r, y = cy + Math.sin(a) * r;
+      if (i) ctx.lineTo(x, y); else ctx.moveTo(x, y);
+    }
+    ctx.closePath();
+  }
+  function card(ctx, x, y, w, h) {
+    ctx.fillStyle = INK; rrect(ctx, x, y + 10, w, h, 40); ctx.fill();
+    ctx.fillStyle = "#fff"; ctx.strokeStyle = INK; ctx.lineWidth = 6; rrect(ctx, x, y, w, h, 40); ctx.fill(); ctx.stroke();
+  }
+  function paint(ctx, W, d, L, real) {
+    var pad = 48, cw = W - pad * 2, inner = 48;
+    if (real) {
+      ctx.fillStyle = SKY; ctx.fillRect(0, 0, W, L.H);
+      [[90, 110, 62, SUN], [W - 80, 200, 42, CORAL], [W - 90, L.H - 300, 74, MINT], [70, L.H - 160, 50, GRAPE]].forEach(function (c) {
+        ctx.fillStyle = c[3]; ctx.beginPath(); ctx.arc(c[0], c[1], c[2], 0, 7); ctx.fill();
+      });
+    }
+    ctx.textBaseline = "alphabetic";
+    /* brand */
+    ctx.font = "800 88px " + FD;
+    var title = "Spelling Stars", cols = [CORAL, OCEAN, MINT, GRAPE, "#e59c00"], tw = ctx.measureText(title).width, x = (W - tw) / 2;
+    title.split("").forEach(function (ch, i) {
+      ctx.fillStyle = cols[i % 5]; ctx.textAlign = "left"; ctx.fillText(ch, x, 118); x += ctx.measureText(ch).width;
+    });
+    ctx.textAlign = "center"; ctx.fillStyle = INK; ctx.font = "700 30px " + FB;
+    ctx.fillText("Listen, spell, and win stars!", W / 2, 166);
+    /* score card */
+    var top1 = 205, cy = top1 + inner;
+    if (real) card(ctx, pad, top1, cw, L.c1h);
+    ctx.fillStyle = INK; ctx.textAlign = "center"; ctx.font = "800 56px " + FD;
+    ctx.fillText("Your score", W / 2, cy + 40); cy += 74;
+    var label = d.when + (d.level ? " \u00b7 " + d.level : "");
+    ctx.font = "800 32px " + FD;
+    var pw = ctx.measureText(label).width + 64;
+    ctx.fillStyle = "#fffbe3"; ctx.strokeStyle = INK; ctx.lineWidth = 4; rrect(ctx, (W - pw) / 2, cy, pw, 58, 29); ctx.fill(); ctx.stroke();
+    ctx.fillStyle = INK; ctx.fillText(label, W / 2, cy + 41); cy += 58 + 20;
+    var big = String(d.score), small = " out of " + d.total;
+    ctx.font = "800 190px " + FD; var bw = ctx.measureText(big).width;
+    ctx.font = "800 64px " + FD; var sw = ctx.measureText(small).width;
+    var sx = (W - bw - sw - 16) / 2;
+    ctx.textAlign = "left"; ctx.font = "800 190px " + FD; ctx.fillStyle = GRAPE; ctx.fillText(big, sx, cy + 150);
+    ctx.font = "800 64px " + FD; ctx.fillStyle = INK; ctx.fillText(small, sx + bw + 16, cy + 150); cy += 150 + 36;
+    var step = 66, perRow = 10, rows = Math.max(1, Math.ceil(d.total / perRow));
+    for (var r = 0; r < rows; r++) {
+      var cnt = Math.min(perRow, d.total - r * perRow), x0 = (W - cnt * step) / 2 + step / 2;
+      for (var k = 0; k < cnt; k++) {
+        var on = r * perRow + k < d.score;
+        starShape(ctx, x0 + k * step, cy + 32, 29);
+        ctx.globalAlpha = on ? 1 : 0.35; ctx.fillStyle = on ? SUN : "#fff"; ctx.fill();
+        ctx.strokeStyle = INK; ctx.lineWidth = 4; ctx.lineJoin = "round"; ctx.stroke(); ctx.globalAlpha = 1;
+      }
+      cy += step;
+    }
+    cy += 14;
+    ctx.textAlign = "center"; ctx.fillStyle = INK; ctx.font = "800 50px " + FD;
+    ctx.fillText(fit(ctx, d.cheer, cw - 2 * inner), W / 2, cy + 40); cy += 40 + inner;
+    L.c1h = cy - top1;
+    /* word list card */
+    var top2 = cy + 32; cy = top2 + inner;
+    if (real) card(ctx, pad, top2, cw, L.c2h);
+    ctx.textAlign = "left"; ctx.fillStyle = INK; ctx.font = "800 46px " + FD;
+    ctx.fillText("Let's look at the words", pad + inner, cy + 38); cy += 38 + 30;
+    var rx = pad + inner, rw = cw - 2 * inner, rh = 70;
+    d.results.forEach(function (it) {
+      ctx.fillStyle = it.ok ? "#d7f8ec" : "#ffe0e5"; ctx.strokeStyle = INK; ctx.lineWidth = 4; rrect(ctx, rx, cy, rw, rh, 20); ctx.fill(); ctx.stroke();
+      ctx.font = "800 38px " + FD; ctx.fillStyle = INK; ctx.textAlign = "left";
+      var wd = ctx.measureText(it.word).width;
+      ctx.fillText(fit(ctx, it.word, rw * 0.5), rx + 26, cy + 47);
+      ctx.font = "700 29px " + FB; ctx.textAlign = "right";
+      var note = it.ok ? "Correct" : (it.mine ? "You wrote: " + it.mine : "No answer");
+      ctx.fillText(fit(ctx, note, rw - 26 - 26 - Math.min(wd, rw * 0.5) - 20), rx + rw - 26, cy + 45);
+      cy += rh + 14;
+    });
+    cy += inner - 14;
+    L.c2h = cy - top2; L.H = cy + pad;
+    return L;
+  }
+  function makeImage() {
+    var W = 1080, L = {};
+    var m = document.createElement("canvas"); m.width = W; m.height = 10;
+    paint(m.getContext("2d"), W, lastResult, L, false);
+    var cv = document.createElement("canvas"); cv.width = W; cv.height = L.H;
+    paint(cv.getContext("2d"), W, lastResult, L, true);
+    return cv;
+  }
+  function fileName() {
+    var n = new Date(), p = function (v) { return (v < 10 ? "0" : "") + v; };
+    return "spelling-stars-" + n.getFullYear() + "-" + p(n.getMonth() + 1) + "-" + p(n.getDate()) + "-" + lastResult.levelId + ".png";
+  }
+  function saveImage() {
+    if (!lastResult) return;
+    var note = $("saveNote"), btn = $("saveImgBtn");
+    btn.disabled = true; note.textContent = "Making your picture...";
+    var wait = function (p) { return Promise.race([p, new Promise(function (r) { setTimeout(r, 1500); })]); };
+    var loads = [];
+    try { loads = [document.fonts.load('800 40px "Baloo 2"'), document.fonts.load('700 28px "Nunito"')]; } catch (e) {}
+    wait(Promise.all(loads)).catch(function () {}).then(function () {
+      var cv = makeImage();
+      cv.toBlob(function (blob) {
+        btn.disabled = false;
+        if (!blob) { note.textContent = "Sorry, the picture could not be made."; return; }
+        var name = fileName();
+        var coarse = window.matchMedia && window.matchMedia("(pointer: coarse)").matches;
+        function download() {
+          var a = document.createElement("a"), url = URL.createObjectURL(blob);
+          a.href = url; a.download = name; document.body.appendChild(a); a.click(); a.remove();
+          setTimeout(function () { URL.revokeObjectURL(url); }, 5000);
+          note.textContent = "Saved! Look in your Downloads folder.";
+        }
+        try {
+          var file = new File([blob], name, { type: "image/png" });
+          if (coarse && navigator.canShare && navigator.share && navigator.canShare({ files: [file] })) {
+            navigator.share({ files: [file] }).then(function () { note.textContent = "Done!"; })
+              .catch(function (e) { if (e && e.name === "AbortError") { note.textContent = ""; } else { download(); } });
+            return;
+          }
+        } catch (e) {}
+        download();
+      }, "image/png");
+    });
+  }
+
   /* events */
+  $("saveImgBtn").addEventListener("click", saveImage);
+  $("quizHome").addEventListener("click", function () {
+    var answered = results.filter(Boolean).length;
+    if (!answered || $("quizHome").textContent !== "Home") { leaveQuiz(); return; }
+    $("quizHome").textContent = "Leave? Tap again";
+    clearTimeout(homeTimer); homeTimer = setTimeout(disarmHome, 3000);
+  });
+  $("countMinus").addEventListener("click", function () { setRound(Math.max(10, roundSize() - 5)); });
+  $("countPlus").addEventListener("click", function () { setRound(Math.min(words.length, roundSize() + 5)); });
+  $("countInput").addEventListener("change", function () {
+    var v = parseInt($("countInput").value, 10);
+    setRound(isNaN(v) ? 10 : Math.min(Math.max(10, v), Math.max(10, words.length)));
+  });
   $("startBtn").addEventListener("click", function () { if (words.length) startRound(); });
   $("listenBtn").addEventListener("click", function () { speakWord(session[idx]); $("answer").focus(); });
   $("spellBtn").addEventListener("click", function () { spellWord(session[idx], true, true); $("answer").focus(); });
