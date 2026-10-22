@@ -218,6 +218,14 @@ textarea {
   width: 4.4em; text-align: center; font-family: var(--font-display); font-weight: 800; font-size: 1.5rem; color: var(--ink);
   background: #f3f9ff; border: 3px solid var(--ink); border-radius: 14px; padding: 6px 4px;
 }
+.sel {
+  flex: 1 1 200px; min-width: 0; max-width: 100%;
+  font-family: var(--font-body); font-weight: 800; font-size: 1.05rem; color: var(--ink);
+  background: #f3f9ff; border: 3px solid var(--ink); border-radius: 14px; padding: 10px 12px; min-height: 48px;
+}
+.sel:focus-visible { outline: 4px solid var(--grape); outline-offset: 3px; }
+.voice-box { display: grid; gap: 12px; border: 4px dashed var(--ink); border-radius: 22px; padding: 14px; }
+.voice-box .btn { justify-self: start; }
 .switch {
   display: flex; align-items: center; justify-content: space-between; gap: 14px; width: 100%;
   font: inherit; font-family: var(--font-display); font-weight: 800; font-size: 1.2rem; color: var(--ink);
@@ -271,6 +279,22 @@ textarea {
         <span class="state" id="boxState">On</span>
         <span class="track" aria-hidden="true"></span>
       </button>
+      <div class="voice-box" id="voiceBox" hidden>
+        <div class="count-row">
+          <label for="voiceSel">Voice</label>
+          <select id="voiceSel" class="sel"></select>
+        </div>
+        <div class="count-row">
+          <label for="speedSel">Speed</label>
+          <select id="speedSel" class="sel">
+            <option value="0.7">Very slow</option>
+            <option value="0.85">Slow</option>
+            <option value="1">Normal</option>
+          </select>
+        </div>
+        <button class="btn alt blue" id="voiceTest" type="button">Hear this voice</button>
+        <p class="muted" id="voiceNote"></p>
+      </div>
       <button class="btn go big" id="startBtn" type="button">Start</button>
     </div>
     <div class="card" id="customCard" hidden>
@@ -496,16 +520,52 @@ textarea {
   var LETTER_NAMES = { a:"ay", b:"bee", c:"see", d:"dee", e:"ee", f:"eff", g:"jee", h:"aitch", i:"eye", j:"jay", k:"kay", l:"ell", m:"em", n:"en", o:"oh", p:"pee", q:"cue", r:"ar", s:"ess", t:"tee", u:"you", v:"vee", w:"double you", x:"ex", y:"why", z:"zee" };
   var voice = null, speechToken = 0;
   var hasSpeech = "speechSynthesis" in window;
-  function pickVoice() {
-    try {
-      var best = null;
-      window.speechSynthesis.getVoices().forEach(function (v) {
-        if (/^en[-_]/i.test(v.lang) && (!best || (/en[-_]US/i.test(v.lang) && !/en[-_]US/i.test(best.lang)))) best = v;
-      });
-      return best;
-    } catch (e) { return null; }
+  var VOICE_KEY = "spellingStars.voice.v1", SPEED_KEY = "spellingStars.speed.v1", savedVoice = "auto", speedMul = 1;
+  try {
+    savedVoice = localStorage.getItem(VOICE_KEY) || "auto";
+    var sp = parseFloat(localStorage.getItem(SPEED_KEY)); if (sp > 0) speedMul = sp;
+  } catch (e) {}
+  function englishVoices() {
+    try { return window.speechSynthesis.getVoices().filter(function (v) { return /^en[-_]/i.test(v.lang) || /^English/i.test(v.name); }); }
+    catch (e) { return []; }
   }
-  if (hasSpeech) { try { window.speechSynthesis.onvoiceschanged = function () { voice = pickVoice(); }; voice = pickVoice(); } catch (e) {} }
+  function rank(v) {
+    var s = 0;
+    if (/natural|neural|premium|enhanced|online/i.test(v.name)) s += 4;
+    if (/google/i.test(v.name)) s += 3;
+    if (/samantha|\bava\b|allison|aria|jenny|sonia|libby|karen|serena|daniel|moira|tessa/i.test(v.name)) s += 2;
+    if (/en[-_]US/i.test(v.lang)) s += 2; else if (/en[-_](GB|AU)/i.test(v.lang)) s += 1;
+    if (/compact|espeak|robot|bad news|whisper|bells|zarvox|trinoids|albert|boing|cellos|organ|jester|bubbles|deranged|hysterical|good news|superstar/i.test(v.name)) s -= 6;
+    return s;
+  }
+  function applyVoice() {
+    var list = englishVoices(); voice = null;
+    if (savedVoice !== "auto") voice = list.filter(function (v) { return v.voiceURI === savedVoice || v.name === savedVoice; })[0] || null;
+    if (!voice && list.length) voice = list.slice().sort(function (a, b) { return rank(b) - rank(a); })[0];
+  }
+  function fillVoices() {
+    if (!hasSpeech) return;
+    var sel = $("voiceSel"), list = englishVoices().sort(function (a, b) { return rank(b) - rank(a) || a.name.localeCompare(b.name); });
+    sel.textContent = "";
+    var auto = document.createElement("option"); auto.value = "auto"; auto.textContent = "Automatic (best voice on this device)"; sel.appendChild(auto);
+    list.forEach(function (v) {
+      var o = document.createElement("option"); o.value = v.voiceURI || v.name; o.textContent = v.name + " (" + v.lang + ")"; sel.appendChild(o);
+    });
+    var ok = Array.prototype.some.call(sel.options, function (o) { return o.value === savedVoice; });
+    sel.value = ok ? savedVoice : "auto";
+    $("speedSel").value = String(speedMul);
+    if (!$("speedSel").value) $("speedSel").value = "1";
+    applyVoice();
+    $("voiceBox").hidden = false;
+    $("voiceNote").textContent = list.length === 0
+      ? "No English voice was found on this device, so the words may not be spoken."
+      : list.length === 1 ? "This device has only one English voice." : "Tip: voices with Natural, Google or Enhanced in the name are usually the clearest.";
+  }
+  if (hasSpeech) {
+    try { window.speechSynthesis.onvoiceschanged = fillVoices; } catch (e) {}
+    fillVoices(); setTimeout(fillVoices, 700);
+  }
+  function testVoice() { spellWord("apple", true, true); }
 
   function say(text, rate, onStart) {
     return new Promise(function (resolve) {
@@ -514,7 +574,7 @@ textarea {
       function end() { if (!done) { done = true; resolve(); } }
       try {
         var u = new SpeechSynthesisUtterance(text);
-        u.lang = "en-US"; u.rate = rate; u.pitch = 1.05;
+        u.lang = "en-US"; u.rate = rate * speedMul; u.pitch = 1.05;
         if (voice) u.voice = voice;
         u.onstart = function () { if (onStart) onStart(); };
         u.onend = end; u.onerror = end;
@@ -813,6 +873,17 @@ textarea {
   }
 
   /* events */
+  $("voiceSel").addEventListener("change", function () {
+    savedVoice = $("voiceSel").value;
+    try { localStorage.setItem(VOICE_KEY, savedVoice); } catch (e) {}
+    applyVoice(); testVoice();
+  });
+  $("speedSel").addEventListener("change", function () {
+    speedMul = parseFloat($("speedSel").value) || 1;
+    try { localStorage.setItem(SPEED_KEY, String(speedMul)); } catch (e) {}
+    testVoice();
+  });
+  $("voiceTest").addEventListener("click", testVoice);
   $("saveImgBtn").addEventListener("click", saveImage);
   $("quizHome").addEventListener("click", function () {
     var answered = results.filter(Boolean).length;
