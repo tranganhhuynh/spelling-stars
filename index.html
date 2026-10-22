@@ -241,6 +241,12 @@ textarea {
 .switch[aria-checked="true"] .track::after { transform: translateX(32px); }
 .switch > span:first-child { flex: 1 1 auto; min-width: 0; }
 .switch .state { font-size: 1rem; min-width: 2.2em; }
+.key { display: inline-block; font: 800 0.62em var(--font-body); border: 2px solid currentColor; border-radius: 6px; padding: 1px 6px; margin-left: 0.55em; opacity: 0.8; vertical-align: middle; letter-spacing: 0; }
+.keys { font-size: 0.95rem; }
+.keys summary { cursor: pointer; font-family: var(--font-display); font-weight: 800; font-size: 1.15rem; }
+.keys summary:focus-visible { outline: 4px solid var(--grape); outline-offset: 3px; }
+.keys ul { margin: 10px 0 0; padding-left: 1.2em; display: grid; gap: 6px; }
+@media (pointer: coarse) { .key, .keys { display: none; } }
 [hidden] { display: none !important; }
 @media (prefers-reduced-motion: reduce) {
   .listen.playing { animation: none; }
@@ -268,18 +274,18 @@ textarea {
       <div class="count-row">
         <label for="countInput">Words in a round</label>
         <div class="stepper">
-          <button type="button" id="countMinus" aria-label="Fewer words">&minus;</button>
+          <button type="button" id="countMinus" aria-label="Fewer words" title="Fewer words (-)">&minus;</button>
           <input id="countInput" type="number" inputmode="numeric" min="10" step="5" value="10">
-          <button type="button" id="countPlus" aria-label="More words">+</button>
+          <button type="button" id="countPlus" aria-label="More words" title="More words (+)">+</button>
         </div>
       </div>
       <button class="switch" id="spellToggle" type="button" role="switch" aria-checked="true">
-        <span>Say each letter out loud</span>
+        <span>Say each letter out loud<kbd class="key">L</kbd></span>
         <span class="state" id="spellState">On</span>
         <span class="track" aria-hidden="true"></span>
       </button>
       <button class="switch" id="boxToggle" type="button" role="switch" aria-checked="true">
-        <span>Show empty letter boxes</span>
+        <span>Show empty letter boxes<kbd class="key">B</kbd></span>
         <span class="state" id="boxState">On</span>
         <span class="track" aria-hidden="true"></span>
       </button>
@@ -299,8 +305,16 @@ textarea {
         <button class="btn alt blue" id="voiceTest" type="button">Hear this voice</button>
         <p class="muted" id="voiceNote"></p>
       </div>
-      <button class="btn go big" id="startBtn" type="button">Start</button>
+      <button class="btn go big" id="startBtn" type="button">Start<kbd class="key">Enter</kbd></button>
     </div>
+    <details class="card keys" id="keysHelp">
+      <summary>Keyboard shortcuts</summary>
+      <ul>
+        <li><b>Start screen:</b> 1 to 6 choose a level, + or &minus; change the number of words, L letters on or off, B boxes on or off, Enter to start.</li>
+        <li><b>During a test:</b> Up arrow hears the word, Down arrow spells it out, Enter shows the word and then goes to the next word, Esc goes home.</li>
+        <li><b>Score page:</b> Enter plays again, S saves the picture, H or Esc goes back to the start.</li>
+      </ul>
+    </details>
     <div class="card" id="customCard" hidden>
       <h2>My word list</h2>
       <p class="muted">Type one word on each line. Your list is saved on this device only.</p>
@@ -317,11 +331,11 @@ textarea {
   <!-- QUIZ -->
   <section id="screen-quiz" class="card" hidden>
     <div class="top">
-      <button class="btn alt" id="quizHome" type="button">Home</button>
+      <button class="btn alt" id="quizHome" type="button"><span id="homeLabel">Home</span><kbd class="key">Esc</kbd></button>
       <span class="pill" id="wordNum"></span>
       <div class="dots" id="dots" aria-hidden="true"></div>
     </div>
-    <button class="listen" id="listenBtn" type="button" aria-label="Listen to the word">
+    <button class="listen" id="listenBtn" type="button" aria-label="Listen to the word" title="Hear the word (Up arrow)">
       <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
         <path d="M8 24h10l14-12v40L18 40H8z" fill="currentColor"/>
         <path d="M42 22a14 14 0 0 1 0 20"/>
@@ -331,17 +345,17 @@ textarea {
     <p class="hint">Tap the speaker to hear the word.</p>
     <div class="tiles" id="tiles" aria-hidden="true"></div>
     <div class="row">
-      <button class="btn blue" id="spellBtn" type="button">Spell it out</button>
+      <button class="btn blue" id="spellBtn" type="button" title="Spell it out (Down arrow)">Spell it out<kbd class="key">&darr;</kbd></button>
     </div>
     <label for="answer" class="hint">Write the letters here:</label>
     <input class="field" id="answer" type="text" inputmode="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" maxlength="30">
-    <button class="btn go big" id="showBtn" type="button">Show the word</button>
+    <button class="btn go big" id="showBtn" type="button">Show the word<kbd class="key">Enter</kbd></button>
     <div class="reveal" id="reveal" hidden aria-live="polite">
       <div class="verdict" id="verdict"></div>
       <div class="answer" id="correctWord"></div>
       <p class="yours" id="yours"></p>
     </div>
-    <button class="btn blue big" id="nextBtn" type="button" hidden>Next word</button>
+    <button class="btn blue big" id="nextBtn" type="button" hidden><span id="nextLabel">Next word</span><kbd class="key">Enter</kbd></button>
   </section>
 
   <!-- SCORE -->
@@ -354,9 +368,9 @@ textarea {
       <div class="cheer" id="cheer"></div>
       <p class="muted" id="saveNote" role="status"></p>
       <div class="row">
-        <button class="btn blue" id="saveImgBtn" type="button">Save as picture</button>
-        <button class="btn go" id="againBtn" type="button">Play again</button>
-        <button class="btn alt" id="homeBtn" type="button">Back to start</button>
+        <button class="btn blue" id="saveImgBtn" type="button">Save as picture<kbd class="key">S</kbd></button>
+        <button class="btn go" id="againBtn" type="button">Play again<kbd class="key">Enter</kbd></button>
+        <button class="btn alt" id="homeBtn" type="button">Back to start<kbd class="key">H</kbd></button>
       </div>
     </div>
     <div class="card">
@@ -453,7 +467,8 @@ textarea {
     var box = $("modes"); box.textContent = "";
     MODES.forEach(function (m) {
       var b = document.createElement("button");
-      b.type = "button"; b.className = "mode"; b.textContent = m.label;
+      b.type = "button"; b.className = "mode"; b.appendChild(document.createTextNode(m.label));
+      var kk = document.createElement("kbd"); kk.className = "key"; kk.textContent = String(MODES.indexOf(m) + 1); b.appendChild(kk);
       b.style.setProperty("--c", m.color);
       b.setAttribute("aria-pressed", m.id === mode ? "true" : "false");
       b.addEventListener("click", function () { selectMode(m.id); });
@@ -666,7 +681,7 @@ textarea {
     $("reveal").hidden = true;
     $("nextBtn").hidden = true;
     $("showBtn").hidden = false;
-    $("nextBtn").textContent = idx === session.length - 1 ? "See my score" : "Next word";
+    $("nextLabel").textContent = idx === session.length - 1 ? "See my score" : "Next word";
     cancelSpeech();
     drawTiles(session[idx], false);
     if (spellOn) spellWord(session[idx], true, true); else speakWord(session[idx]);
@@ -704,7 +719,7 @@ textarea {
 
   var STAR = '<svg viewBox="0 0 200 190" aria-hidden="true"><path class="CLS" d="M100 14l24 54 58 6-43 40 12 58-51-30-51 30 12-58-43-40 58-6z"/></svg>';
   var homeTimer = null;
-  function disarmHome() { clearTimeout(homeTimer); $("quizHome").textContent = "Home"; }
+  function disarmHome() { clearTimeout(homeTimer); $("homeLabel").textContent = "Home"; }
   function leaveQuiz() { cancelSpeech(); disarmHome(); refreshStart(); show("start"); }
 
   function finish() {
@@ -891,8 +906,8 @@ textarea {
   $("saveImgBtn").addEventListener("click", saveImage);
   $("quizHome").addEventListener("click", function () {
     var answered = results.filter(Boolean).length;
-    if (!answered || $("quizHome").textContent !== "Home") { leaveQuiz(); return; }
-    $("quizHome").textContent = "Leave? Tap again";
+    if (!answered || $("homeLabel").textContent !== "Home") { leaveQuiz(); return; }
+    $("homeLabel").textContent = "Leave? Tap again";
     clearTimeout(homeTimer); homeTimer = setTimeout(disarmHome, 3000);
   });
   $("countMinus").addEventListener("click", function () { setRound(Math.max(10, roundSize() - 5)); });
@@ -906,9 +921,32 @@ textarea {
   $("spellBtn").addEventListener("click", function () { spellWord(session[idx], true, true); $("answer").focus(); });
   $("showBtn").addEventListener("click", showWord);
   $("nextBtn").addEventListener("click", next);
-  $("answer").addEventListener("keydown", function (e) { if (e.key === "Enter") { e.preventDefault(); showWord(); } });
   document.addEventListener("keydown", function (e) {
-    if (e.key === "Enter" && revealed && !$("screen-quiz").hidden && document.activeElement !== $("nextBtn")) { e.preventDefault(); next(); }
+    if (e.ctrlKey || e.metaKey || e.altKey || e.isComposing) return;
+    var t = e.target, tag = (t && t.tagName || "").toLowerCase(), key = e.key;
+    var typing = tag === "input" || tag === "textarea" || tag === "select";
+    var onButton = tag === "button" || tag === "summary";
+    if (!$("screen-quiz").hidden) {
+      if (key === "Enter") { if (onButton) return; e.preventDefault(); if (revealed) next(); else showWord(); }
+      else if (key === "ArrowUp") { e.preventDefault(); speakWord(session[idx]); }
+      else if (key === "ArrowDown") { e.preventDefault(); if (spellOn) spellWord(session[idx], true, true); }
+      else if (key === "Escape") { e.preventDefault(); $("quizHome").click(); }
+    } else if (!$("screen-score").hidden) {
+      if (typing) return;
+      var k = key.toLowerCase();
+      if (key === "Enter") { if (onButton) return; e.preventDefault(); startRound(); }
+      else if (k === "s") { e.preventDefault(); saveImage(); }
+      else if (k === "h" || key === "Escape") { e.preventDefault(); $("homeBtn").click(); }
+    } else {
+      if (typing) return;
+      var k2 = key.toLowerCase();
+      if (/^[1-9]$/.test(key) && MODES[+key - 1]) { e.preventDefault(); selectMode(MODES[+key - 1].id); }
+      else if (key === "Enter") { if (onButton) return; e.preventDefault(); if (!$("startBtn").disabled) startRound(); }
+      else if (key === "+" || key === "=") { if (!$("countPlus").disabled) $("countPlus").click(); }
+      else if (key === "-" || key === "_") { if (!$("countMinus").disabled) $("countMinus").click(); }
+      else if (k2 === "l") { $("spellToggle").click(); }
+      else if (k2 === "b") { $("boxToggle").click(); }
+    }
   });
   $("againBtn").addEventListener("click", startRound);
   $("homeBtn").addEventListener("click", function () { refreshStart(); show("start"); });
