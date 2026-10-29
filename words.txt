@@ -1,72 +1,18 @@
-bird
-mammal
-amphibian
-reptile
-insect
-fish
-penguin
-chick
-colony
-huddle
-hatch
-breed
-mate
-stone
-protect
-temperature
-freezing
-sport
-equipment
-football
-judo
-gymnastics
-basketball
-tennis
-swimming
-badminton
-volleyball
-athletics
-hockey
-shuttlecock
-belt
-goalposts
-net
-shin pads
-racquet
-hockey stick
-goggles
-carbohydrates
-oxygen
-nutrients
-digest
-heart
-ankle
-shoulder
-thighs
-hamstrings
-hip
-bottom
-toes
-knees
-town
-city
-country
-street
-province
-district
-continent
-famous building
-mountain range
-volcano
-happy
-nervous
-angry
-scared
-excited
-interested
-brave
-proud
-amazing
-beautiful
-satisfied
-mean
+# Class list. One word per line. A meaning can follow after a tab or a | sign (it is optional).
+bird	An animal with feathers and wings. Most birds can fly. Birds lay eggs.
+mammal	An animal with fur or hair. A mother mammal feeds her baby with milk. Dogs and cats are mammals.
+amphibian	An animal that lives in water and on land. Frogs are amphibians.
+reptile	An animal with dry, hard skin (scales). Snakes and crocodiles are reptiles.
+insect	A very small animal with six legs. Ants and bees are insects.
+fish	An animal that lives in water. It swims and has fins.
+penguin	A black and white bird. It cannot fly, but it can swim very well. It lives in cold places.
+chick	A baby bird.
+colony	A big group of animals that live together. A penguin colony has many penguins.
+huddle	When animals or people stand close together to stay warm.
+hatch	When a baby bird comes out of its egg.
+breed	When animals make babies.
+mate	When a male and a female animal come together to have babies.
+stone	A small, hard piece of rock.
+protect	To keep someone or something safe.
+temperature	How hot or cold something is. Example: "The temperature is 30 degrees."
+freezing	Very, very cold. Water turns to ice.

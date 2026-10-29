@@ -221,6 +221,10 @@ textarea {
   width: 4.4em; text-align: center; font-family: var(--font-display); font-weight: 800; font-size: 1.5rem; color: var(--ink);
   background: #f3f9ff; border: 3px solid var(--ink); border-radius: 14px; padding: 6px 4px;
 }
+.meaning { background: #eef6ff; border: 3px solid var(--ink); border-radius: 18px; padding: 12px 16px; text-align: center; display: grid; gap: 4px; }
+.meaning-label { font-family: var(--font-display); font-weight: 800; font-size: 0.85rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--grape); }
+.meaning p { margin: 0; font-weight: 700; font-size: 1.2rem; line-height: 1.35; overflow-wrap: anywhere; }
+.meaning p.none { opacity: 0.65; font-size: 1rem; }
 .sel {
   flex: 1 1 200px; min-width: 0; max-width: 100%;
   font-family: var(--font-body); font-weight: 800; font-size: 1.05rem; color: var(--ink);
@@ -279,9 +283,19 @@ textarea {
           <button type="button" id="countPlus" aria-label="More words" title="More words (+)">+</button>
         </div>
       </div>
+      <button class="switch" id="wordToggle" type="button" role="switch" aria-checked="true">
+        <span>Say the word out loud<kbd class="key">W</kbd></span>
+        <span class="state" id="wordState">On</span>
+        <span class="track" aria-hidden="true"></span>
+      </button>
       <button class="switch" id="spellToggle" type="button" role="switch" aria-checked="true">
         <span>Say each letter out loud<kbd class="key">L</kbd></span>
         <span class="state" id="spellState">On</span>
+        <span class="track" aria-hidden="true"></span>
+      </button>
+      <button class="switch" id="meaningToggle" type="button" role="switch" aria-checked="false">
+        <span>Show the meaning<kbd class="key">M</kbd></span>
+        <span class="state" id="meaningState">Off</span>
         <span class="track" aria-hidden="true"></span>
       </button>
       <button class="switch" id="boxToggle" type="button" role="switch" aria-checked="true">
@@ -289,6 +303,7 @@ textarea {
         <span class="state" id="boxState">On</span>
         <span class="track" aria-hidden="true"></span>
       </button>
+      <p class="muted" id="hintNote" role="status"></p>
       <div class="voice-box" id="voiceBox" hidden>
         <div class="count-row">
           <label for="voiceSel">Voice</label>
@@ -310,14 +325,14 @@ textarea {
     <details class="card keys" id="keysHelp">
       <summary>Keyboard shortcuts</summary>
       <ul>
-        <li><b>Start screen:</b> 1 to 6 choose a level, + or &minus; change the number of words, L letters on or off, B boxes on or off, Enter to start.</li>
+        <li><b>Start screen:</b> 1 to 6 choose a level, + or &minus; change the number of words, W word sound, L letters, M meaning and B boxes on or off, Enter to start.</li>
         <li><b>During a test:</b> Up arrow hears the word, Down arrow spells it out, Enter shows the word and then goes to the next word, Esc goes home.</li>
         <li><b>Score page:</b> Enter plays again, S saves the picture, H or Esc goes back to the start.</li>
       </ul>
     </details>
     <div class="card" id="customCard" hidden>
       <h2>My word list</h2>
-      <p class="muted">Type one word on each line. Your list is saved on this device only.</p>
+      <p class="muted">Type one word on each line. To add a meaning, write it after a | sign, like: bird | An animal with feathers and wings. Your list is saved on this device only.</p>
       <label for="wordsBox" class="count" id="countLabel"></label>
       <textarea id="wordsBox" spellcheck="false" autocapitalize="off" autocomplete="off"></textarea>
       <p class="note" id="note" role="status"></p>
@@ -342,7 +357,8 @@ textarea {
         <path d="M49 14a24 24 0 0 1 0 36"/>
       </svg>
     </button>
-    <p class="hint">Tap the speaker to hear the word.</p>
+    <p class="hint" id="hearHint">Tap the speaker to hear the word.</p>
+    <div class="meaning" id="meaningBox" hidden><div class="meaning-label">Meaning</div><p id="meaningText"></p></div>
     <div class="tiles" id="tiles" aria-hidden="true"></div>
     <div class="row">
       <button class="btn blue" id="spellBtn" type="button" title="Spell it out (Down arrow)">Spell it out<kbd class="key">&darr;</kbd></button>
@@ -382,6 +398,7 @@ textarea {
 
 <script>
 (function () {
+  var SAMPLE_M = {"bird":"An animal with feathers and wings. Most birds can fly. Birds lay eggs.","mammal":"An animal with fur or hair. A mother mammal feeds her baby with milk. Dogs and cats are mammals.","amphibian":"An animal that lives in water and on land. Frogs are amphibians.","reptile":"An animal with dry, hard skin (scales). Snakes and crocodiles are reptiles.","insect":"A very small animal with six legs. Ants and bees are insects.","fish":"An animal that lives in water. It swims and has fins.","penguin":"A black and white bird. It cannot fly, but it can swim very well. It lives in cold places.","chick":"A baby bird.","colony":"A big group of animals that live together. A penguin colony has many penguins.","huddle":"When animals or people stand close together to stay warm.","hatch":"When a baby bird comes out of its egg.","breed":"When animals make babies.","mate":"When a male and a female animal come together to have babies.","stone":"A small, hard piece of rock.","protect":"To keep someone or something safe.","temperature":"How hot or cold something is. Example: \"The temperature is 30 degrees.\"","freezing":"Very, very cold. Water turns to ice."};
   var SAMPLE = ["bird", "mammal", "amphibian", "reptile", "insect", "fish", "penguin", "chick", "colony", "huddle", "hatch", "breed", "mate", "stone", "protect", "temperature", "freezing"];
   var COUNT_KEY = "spellingStars.count.v1", perRound = 10;
   try { var sv = parseInt(localStorage.getItem(COUNT_KEY), 10); if (sv >= 10) perRound = sv; } catch (e) {}
@@ -400,7 +417,7 @@ textarea {
   var loaded = false;
 
   var $ = function (id) { return document.getElementById(id); };
-  var words = [], session = [], idx = 0, results = [], revealed = false, audioCtx = null;
+  var words = [], meanings = {}, session = [], idx = 0, results = [], revealed = false, audioCtx = null;
 
   /* title letters */
   var brand = $("brand");
@@ -427,18 +444,43 @@ textarea {
     $("spellToggle").setAttribute("aria-checked", spellOn ? "true" : "false");
     $("spellState").textContent = spellOn ? "On" : "Off";
     $("spellBtn").hidden = !spellOn;
+    if (typeof updateNotes === "function") updateNotes();
+  }
+  var WORD_KEY = "spellingStars.word.v1", MEAN_KEY = "spellingStars.meaning.v1", wordOn = true, meaningOn = false;
+  function applyWord() {
+    $("wordToggle").setAttribute("aria-checked", wordOn ? "true" : "false");
+    $("wordState").textContent = wordOn ? "On" : "Off";
+    $("listenBtn").hidden = !wordOn;
+    $("hearHint").hidden = !wordOn;
+    updateNotes();
+  }
+  function applyMeaning() {
+    $("meaningToggle").setAttribute("aria-checked", meaningOn ? "true" : "false");
+    $("meaningState").textContent = meaningOn ? "On" : "Off";
+    updateNotes();
+  }
+  function updateNotes() {
+    var msgs = [];
+    if (meaningOn && loaded && words.length) {
+      var c = words.filter(function (w) { return meanings[w]; }).length;
+      if (c === 0) msgs.push("This list has no meanings yet. Add them in the word file as: word | meaning, or in your own list under Custom.");
+      else if (c < words.length) msgs.push(c + " of " + words.length + " words have a meaning.");
+    }
+    if (!wordOn && !spellOn && !meaningOn && !boxesOn) msgs.push("All four hints are off, so students will only see the answer box.");
+    $("hintNote").textContent = msgs.join(" ");
   }
   var BOX_KEY = "spellingStars.boxes.v1", boxesOn = true;
   function applyBoxes() {
     $("boxToggle").setAttribute("aria-checked", boxesOn ? "true" : "false");
     $("boxState").textContent = boxesOn ? "On" : "Off";
     $("tiles").hidden = !boxesOn;
+    updateNotes();
   }
 
   function fetchList(file) {
     return fetch(file, { cache: "no-store" })
       .then(function (r) { if (!r.ok) throw new Error("missing"); return r.text(); })
-      .then(function (t) { return parseWords(t); })
+      .then(function (t) { return parseEntries(t); })
       .catch(function () { return []; });
   }
   /* Custom: the device's own saved list, else the class list in words.txt */
@@ -446,21 +488,24 @@ textarea {
     if (m.id === "custom") {
       try {
         var raw = localStorage.getItem(CUSTOM_KEY);
-        if (raw) { var arr = JSON.parse(raw); if (Array.isArray(arr) && arr.length) return Promise.resolve(arr); }
+        if (raw) {
+          var arr = JSON.parse(raw);
+          if (Array.isArray(arr) && arr.length) return Promise.resolve(arr.map(function (x) { return typeof x === "string" ? { w: x, m: "" } : x; }));
+        }
       } catch (e) {}
-      return fetchList("words.txt").then(function (l) { return l.length ? l : SAMPLE.slice(); });
+      return fetchList("words.txt").then(function (l) { return l.length ? l : SAMPLE.map(function (w) { return { w: w, m: SAMPLE_M[w] || "" }; }); });
     }
     return fetchList(m.file);
   }
   function selectMode(id) {
     var m = MODES.filter(function (x) { return x.id === id; })[0] || MODES[MODES.length - 1];
-    mode = m.id; loaded = false; words = [];
+    mode = m.id; loaded = false; words = []; meanings = {};
     try { localStorage.setItem(MODE_KEY, mode); } catch (e) {}
     var my = ++pick;
     drawModes(); refreshStart();
     loadList(m).then(function (list) {
       if (my !== pick) return;
-      words = list; loaded = true; refreshStart();
+      setEntries(list); loaded = true; refreshStart();
     });
   }
   function drawModes() {
@@ -476,15 +521,32 @@ textarea {
     });
   }
 
-  function parseWords(text) {
-    var seen = {}, out = [];
-    text.split(/[\n,;]+/).forEach(function (w) {
+  /* A line is "word" or "word | meaning" (a tab also works, like a flashcard export).
+     Several plain words can share one line if they are separated by commas. */
+  function parseEntries(text) {
+    var at = {}, out = [];
+    function add(w, m) {
       w = w.trim().toLowerCase().replace(/\s+/g, " ");
-      if (!w || w.length > 30) return;
-      if (!/^[a-z][a-z' -]*$/.test(w)) return;
-      if (!seen[w]) { seen[w] = 1; out.push(w); }
+      if (!w || w.length > 30 || !/^[a-z][a-z' -]*$/.test(w)) return;
+      if (w in at) { if (m && !out[at[w]].m) out[at[w]].m = m; return; }
+      at[w] = out.length; out.push({ w: w, m: m || "" });
+    }
+    text.split(/\r?\n/).forEach(function (line) {
+      if (/^\s*#/.test(line)) return;
+      var i = line.search(/[\t|]/);
+      if (i >= 0) add(line.slice(0, i), line.slice(i + 1).trim().slice(0, 300));
+      else line.split(/[,;]+/).forEach(function (w) { add(w, ""); });
     });
     return out;
+  }
+  function setEntries(list) {
+    words = list.map(function (e) { return e.w; });
+    meanings = {};
+    list.forEach(function (e) { if (e.m) meanings[e.w] = e.m; });
+  }
+  function maskMeaning(m, w) {
+    var re = new RegExp("\\b" + w.replace(/[.*+?^${}()|[\]\\]/g, "\\$&").replace(/ /g, "\\s+") + "\\w*", "gi");
+    return m.replace(re, "_____");
   }
 
   function show(name) {
@@ -498,7 +560,7 @@ textarea {
     $("customCard").hidden = !isCustom;
     if (isCustom && loaded) {
       var box = $("wordsBox");
-      if (document.activeElement !== box) box.value = words.join("\n");
+      if (document.activeElement !== box) box.value = words.map(function (w) { return meanings[w] ? w + " | " + meanings[w] : w; }).join("\n");
       $("countLabel").textContent = n + (n === 1 ? " word" : " words") + " in your list";
     }
     var size = roundSize();
@@ -515,6 +577,7 @@ textarea {
     $("countMinus").disabled = locked || size <= 10;
     $("countPlus").disabled = locked || size >= n;
     $("startBtn").disabled = !loaded || n < 1;
+    updateNotes();
   }
 
   /* sound */
@@ -539,6 +602,50 @@ textarea {
   var LETTER_NAMES = { a:"ay", b:"bee", c:"see", d:"dee", e:"ee", f:"eff", g:"jee", h:"aitch", i:"eye", j:"jay", k:"kay", l:"ell", m:"em", n:"en", o:"oh", p:"pee", q:"cue", r:"ar", s:"ess", t:"tee", u:"you", v:"vee", w:"double you", x:"ex", y:"why", z:"zee" };
   var voice = null, speechToken = 0;
   var hasSpeech = "speechSynthesis" in window;
+
+  /* Recorded clips: audio/index.json and audio/pack-N.mp3 are made by make_audio.py.
+     Each word is fetched from its pack with a byte-range request. */
+  var audioIdx = null, clipCache = {}, currentAudio = null, clipFail = false;
+  function clipsOn() { return !!audioIdx && !clipFail && (savedVoice === "auto" || savedVoice === "recorded"); }
+  function loadAudioIndex() {
+    fetch("audio/index.json", { cache: "no-store" })
+      .then(function (r) { if (!r.ok) throw new Error("no audio"); return r.json(); })
+      .then(function (j) { if (j && j.packs && j.words) { audioIdx = j; fillVoices(); } })
+      .catch(function () {});
+  }
+  function fetchClip(key) {
+    var e = audioIdx && audioIdx.words[key];
+    if (!e) return Promise.resolve(null);
+    if (clipCache[key]) return clipCache[key];
+    var p = fetch("audio/" + audioIdx.packs[e[0]], { headers: { Range: "bytes=" + e[1] + "-" + (e[1] + e[2] - 1) } })
+      .then(function (r) {
+        if (r.status === 206) return r.blob();
+        if (r.status === 200) { clipFail = true; return r.blob().then(function (b) { return b.slice(e[1], e[1] + e[2]); }); }
+        throw new Error("clip");
+      })
+      .then(function (b) { return new Blob([b], { type: "audio/mpeg" }); })
+      .catch(function () { delete clipCache[key]; return null; });
+    clipCache[key] = p;
+    return p;
+  }
+  function prefetchWord(w) {
+    if (!clipsOn() || !w) return;
+    fetchClip(w);
+    w.split("").forEach(function (ch) { if (LETTER_NAMES[ch]) fetchClip("_" + ch); });
+  }
+  function playClip(blob, onStart) {
+    return new Promise(function (resolve) {
+      var url = URL.createObjectURL(blob), a = new Audio(url), done = false;
+      function end(ok) { if (done) return; done = true; if (currentAudio === a) currentAudio = null; URL.revokeObjectURL(url); resolve(ok); }
+      a.playbackRate = Math.min(2, Math.max(0.5, speedMul));
+      a.onplay = function () { if (onStart) onStart(); };
+      a.onended = function () { end(true); };
+      a.onerror = function () { end(false); };
+      a._stop = function () { try { a.pause(); } catch (e) {} end(true); };
+      currentAudio = a;
+      var pr = a.play(); if (pr && pr.catch) pr.catch(function () { end(false); });
+    });
+  }
   var VOICE_KEY = "spellingStars.voice.v1", SPEED_KEY = "spellingStars.speed.v1", savedVoice = "auto", speedMul = 1;
   try {
     savedVoice = localStorage.getItem(VOICE_KEY) || "auto";
@@ -563,10 +670,14 @@ textarea {
     if (!voice && list.length) voice = list.slice().sort(function (a, b) { return rank(b) - rank(a); })[0];
   }
   function fillVoices() {
-    if (!hasSpeech) return;
+    if (!hasSpeech && !audioIdx) return;
     var sel = $("voiceSel"), list = englishVoices().sort(function (a, b) { return rank(b) - rank(a) || a.name.localeCompare(b.name); });
     sel.textContent = "";
-    var auto = document.createElement("option"); auto.value = "auto"; auto.textContent = "Automatic (best voice on this device)"; sel.appendChild(auto);
+    var auto = document.createElement("option"); auto.value = "auto"; auto.textContent = audioIdx ? "Automatic (recorded voice, then device voice)" : "Automatic (best voice on this device)"; sel.appendChild(auto);
+    if (audioIdx) {
+      var nm = /-([A-Za-z]+?)Neural$/.exec(audioIdx.voice || ""), ro = document.createElement("option");
+      ro.value = "recorded"; ro.textContent = "Recorded voice" + (nm ? " (" + nm[1] + ")" : ""); sel.appendChild(ro);
+    }
     list.forEach(function (v) {
       var o = document.createElement("option"); o.value = v.voiceURI || v.name; o.textContent = v.name + " (" + v.lang + ")"; sel.appendChild(o);
     });
@@ -576,7 +687,9 @@ textarea {
     if (!$("speedSel").value) $("speedSel").value = "1";
     applyVoice();
     $("voiceBox").hidden = false;
-    $("voiceNote").textContent = list.length === 0
+    $("voiceNote").textContent = audioIdx
+      ? "A recorded voice is used for the words in the level lists. Other words use the voice of this device."
+      : list.length === 0
       ? "No English voice was found on this device, so the words may not be spoken."
       : list.length === 1 ? "This device has only one English voice." : "Tip: voices with Natural, Google or Enhanced in the name are usually the clearest.";
   }
@@ -584,9 +697,10 @@ textarea {
     try { window.speechSynthesis.onvoiceschanged = fillVoices; } catch (e) {}
     fillVoices(); setTimeout(fillVoices, 700);
   }
+  loadAudioIndex();
   function testVoice() { spellWord("apple", true, true); }
 
-  function say(text, rate, onStart) {
+  function speakText(text, rate, onStart) {
     return new Promise(function (resolve) {
       if (!hasSpeech) { resolve(); return; }
       var done = false;
@@ -602,9 +716,19 @@ textarea {
       } catch (e) { end(); }
     });
   }
+  function say(text, rate, onStart, key) {
+    var tk = speechToken, k = key || text.toLowerCase();
+    var first = clipsOn() ? fetchClip(k) : Promise.resolve(null);
+    return first.then(function (blob) {
+      if (tk !== speechToken) return;
+      if (blob) return playClip(blob, onStart).then(function (ok) { if (!ok && tk === speechToken) return speakText(text, rate, onStart); });
+      return speakText(text, rate, onStart);
+    });
+  }
   function pause(ms) { return new Promise(function (r) { setTimeout(r, ms); }); }
   function cancelSpeech() {
     speechToken++;
+    if (currentAudio && currentAudio._stop) currentAudio._stop();
     try { window.speechSynthesis.cancel(); } catch (e) {}
     lightTile(-1);
     $("listenBtn").classList.remove("playing");
@@ -626,13 +750,13 @@ textarea {
   /* parts: "word" = say the word, "letters" = spell it, in the order given */
   function speakWord(word) {
     cancelSpeech(); var tk = speechToken; var btn = $("listenBtn");
-    if (!hasSpeech) return;
+    if (!hasSpeech && !audioIdx) return;
     say(word, 0.8, function () { if (tk === speechToken) btn.classList.add("playing"); })
       .then(function () { if (tk === speechToken) btn.classList.remove("playing"); });
   }
   function spellWord(word, wordFirst, wordAfter) {
     cancelSpeech(); var tk = speechToken; var btn = $("listenBtn");
-    if (!hasSpeech) return Promise.resolve();
+    if (!hasSpeech && !audioIdx) return Promise.resolve();
     var p = Promise.resolve();
     if (wordFirst) p = p.then(function () { if (tk !== speechToken) return; btn.classList.add("playing"); return say(word, 0.75).then(function () { btn.classList.remove("playing"); return pause(500); }); });
     word.split("").forEach(function (ch, i) {
@@ -642,7 +766,7 @@ textarea {
         var name = LETTER_NAMES[ch];
         if (!name) return;
         lightTile(i);
-        return say(name, 0.7).then(function () { return pause(350); });
+        return say(name, 0.7, null, "_" + ch).then(function () { return pause(350); });
       });
     });
     return p.then(function () {
@@ -673,6 +797,14 @@ textarea {
       box.appendChild(d);
     });
   }
+  function setMeaning(full) {
+    var box = $("meaningBox");
+    if (!meaningOn) { box.hidden = true; return; }
+    var w = session[idx], m = meanings[w], t = $("meaningText");
+    box.hidden = false;
+    t.classList.toggle("none", !m);
+    t.textContent = !m ? "No meaning added for this word." : (full ? m : maskMeaning(m, w));
+  }
   function loadWord() {
     revealed = false;
     $("wordNum").textContent = "Word " + (idx + 1) + " of " + session.length;
@@ -684,7 +816,9 @@ textarea {
     $("nextLabel").textContent = idx === session.length - 1 ? "See my score" : "Next word";
     cancelSpeech();
     drawTiles(session[idx], false);
-    if (spellOn) spellWord(session[idx], true, true); else speakWord(session[idx]);
+    setMeaning(false);
+    prefetchWord(session[idx]); prefetchWord(session[idx + 1]);
+    if (spellOn) spellWord(session[idx], wordOn, wordOn); else if (wordOn) speakWord(session[idx]);
     inp.focus();
   }
   function showWord() {
@@ -708,7 +842,8 @@ textarea {
     beep(ok);
     cancelSpeech();
     drawTiles(target, true);
-    setTimeout(function () { if (revealed && spellOn && session[idx] === target) spellWord(target, false, true); }, 900);
+    setMeaning(true);
+    setTimeout(function () { if (revealed && spellOn && session[idx] === target) spellWord(target, false, wordOn); }, 900);
     $("nextBtn").focus();
   }
   function next() {
@@ -918,7 +1053,7 @@ textarea {
   });
   $("startBtn").addEventListener("click", function () { if (words.length) startRound(); });
   $("listenBtn").addEventListener("click", function () { speakWord(session[idx]); $("answer").focus(); });
-  $("spellBtn").addEventListener("click", function () { spellWord(session[idx], true, true); $("answer").focus(); });
+  $("spellBtn").addEventListener("click", function () { spellWord(session[idx], wordOn, wordOn); $("answer").focus(); });
   $("showBtn").addEventListener("click", showWord);
   $("nextBtn").addEventListener("click", next);
   document.addEventListener("keydown", function (e) {
@@ -928,8 +1063,8 @@ textarea {
     var onButton = tag === "button" || tag === "summary";
     if (!$("screen-quiz").hidden) {
       if (key === "Enter") { if (onButton) return; e.preventDefault(); if (revealed) next(); else showWord(); }
-      else if (key === "ArrowUp") { e.preventDefault(); speakWord(session[idx]); }
-      else if (key === "ArrowDown") { e.preventDefault(); if (spellOn) spellWord(session[idx], true, true); }
+      else if (key === "ArrowUp") { e.preventDefault(); if (wordOn) speakWord(session[idx]); }
+      else if (key === "ArrowDown") { e.preventDefault(); if (spellOn) spellWord(session[idx], wordOn, wordOn); }
       else if (key === "Escape") { e.preventDefault(); $("quizHome").click(); }
     } else if (!$("screen-score").hidden) {
       if (typing) return;
@@ -944,6 +1079,8 @@ textarea {
       else if (key === "Enter") { if (onButton) return; e.preventDefault(); if (!$("startBtn").disabled) startRound(); }
       else if (key === "+" || key === "=") { if (!$("countPlus").disabled) $("countPlus").click(); }
       else if (key === "-" || key === "_") { if (!$("countMinus").disabled) $("countMinus").click(); }
+      else if (k2 === "w") { $("wordToggle").click(); }
+      else if (k2 === "m") { $("meaningToggle").click(); }
       else if (k2 === "l") { $("spellToggle").click(); }
       else if (k2 === "b") { $("boxToggle").click(); }
     }
@@ -952,11 +1089,11 @@ textarea {
   $("homeBtn").addEventListener("click", function () { refreshStart(); show("start"); });
   var BAD = "#d52a46", GOOD = "#0b8a62";
   $("saveBtn").addEventListener("click", function () {
-    var list = parseWords($("wordsBox").value), note = $("note");
+    var list = parseEntries($("wordsBox").value), note = $("note");
     if (!list.length) { note.style.color = BAD; note.textContent = "Please add at least one word using letters."; return; }
     var saved = true;
     try { localStorage.setItem(CUSTOM_KEY, JSON.stringify(list)); } catch (e) { saved = false; }
-    words = list; $("wordsBox").value = list.join("\n"); refreshStart();
+    setEntries(list); $("wordsBox").value = words.map(function (w) { return meanings[w] ? w + " | " + meanings[w] : w; }).join("\n"); refreshStart();
     note.style.color = saved ? GOOD : BAD;
     note.textContent = saved ? "Saved! " + list.length + (list.length === 1 ? " word is" : " words are") + " ready."
                              : "Words are ready for now, but this browser could not save them.";
@@ -976,6 +1113,20 @@ textarea {
   });
   try { spellOn = localStorage.getItem(SPELL_KEY) !== "0"; } catch (e) {}
   applySpell();
+  $("wordToggle").addEventListener("click", function () {
+    wordOn = !wordOn;
+    try { localStorage.setItem(WORD_KEY, wordOn ? "1" : "0"); } catch (e) {}
+    applyWord();
+  });
+  try { wordOn = localStorage.getItem(WORD_KEY) !== "0"; } catch (e) {}
+  applyWord();
+  $("meaningToggle").addEventListener("click", function () {
+    meaningOn = !meaningOn;
+    try { localStorage.setItem(MEAN_KEY, meaningOn ? "1" : "0"); } catch (e) {}
+    applyMeaning();
+  });
+  try { meaningOn = localStorage.getItem(MEAN_KEY) === "1"; } catch (e) {}
+  applyMeaning();
   $("boxToggle").addEventListener("click", function () {
     boxesOn = !boxesOn;
     try { localStorage.setItem(BOX_KEY, boxesOn ? "1" : "0"); } catch (e) {}
