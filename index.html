@@ -225,6 +225,11 @@ textarea {
 .meaning-label { font-family: var(--font-display); font-weight: 800; font-size: 0.85rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--grape); }
 .meaning p { margin: 0; font-weight: 700; font-size: 1.2rem; line-height: 1.35; overflow-wrap: anywhere; }
 .meaning p.none { opacity: 0.65; font-size: 1rem; }
+.name-row { display: grid; gap: 6px; }
+.name-row label { font-family: var(--font-display); font-weight: 800; font-size: 1.1rem; }
+.name-row input { font: inherit; font-weight: 800; font-size: 1.3rem; padding: 10px 14px; border: 3px solid var(--ink); border-radius: 16px; background: #fff; color: var(--ink); width: 100%; box-sizing: border-box; min-width: 0; }
+.name-row input:focus { outline: 4px solid var(--sun); outline-offset: 2px; }
+.who { font-family: var(--font-display); font-weight: 800; font-size: 1.8rem; color: var(--grape); margin: 0; overflow-wrap: anywhere; }
 .sel {
   flex: 1 1 200px; min-width: 0; max-width: 100%;
   font-family: var(--font-body); font-weight: 800; font-size: 1.05rem; color: var(--ink);
@@ -320,6 +325,10 @@ textarea {
         <button class="btn alt blue" id="voiceTest" type="button">Hear this voice</button>
         <p class="muted" id="voiceNote"></p>
       </div>
+      <div class="name-row">
+        <label for="nameInput">My name</label>
+        <input id="nameInput" type="text" maxlength="20" placeholder="Type your name" autocomplete="off" autocapitalize="words" spellcheck="false">
+      </div>
       <button class="btn go big" id="startBtn" type="button">Start<kbd class="key">Enter</kbd></button>
     </div>
     <details class="card keys" id="keysHelp">
@@ -378,6 +387,7 @@ textarea {
   <section id="screen-score" class="wrap" style="gap:18px" hidden>
     <div class="card score">
       <h2>Your score</h2>
+      <p class="who" id="scoreName" hidden></p>
       <div class="when" id="scoreWhen"></div>
       <div class="big-score" id="bigScore"></div>
       <div class="stars" id="stars" aria-hidden="true"></div>
@@ -900,7 +910,9 @@ textarea {
       y.textContent = r.ok ? "Correct" : (r.mine ? "You wrote: " + r.mine : "No answer");
       li.appendChild(b); li.appendChild(y); ul.appendChild(li);
     });
-    lastResult = { when: when, level: lvl ? lvl.label : "", levelId: mode, score: score, total: total, cheer: $("cheer").textContent,
+    var nm = studentName();
+    $("scoreName").hidden = !nm; $("scoreName").textContent = nm;
+    lastResult = { name: nm, when: when, level: lvl ? lvl.label : "", levelId: mode, score: score, total: total, cheer: $("cheer").textContent,
                    results: results.map(function (r) { return { word: r.word, mine: r.mine, ok: r.ok }; }) };
     $("saveNote").textContent = "";
     show("score");
@@ -909,6 +921,7 @@ textarea {
 
   /* result picture, drawn with canvas so it needs no extra library */
   var lastResult = null;
+  function studentName() { return $("nameInput").value.replace(/\s+/g, " ").trim().slice(0, 20); }
   var INK = "#26214f", SKY = "#d9f1ff", SUN = "#ffc82e", CORAL = "#ff5d73", MINT = "#19c58c", GRAPE = "#7a4dff", OCEAN = "#1f9bff";
   var FD = '"Baloo 2","Trebuchet MS","Comic Sans MS",system-ui,sans-serif', FB = '"Nunito","Trebuchet MS",system-ui,sans-serif';
   function rrect(ctx, x, y, w, h, r) {
@@ -956,6 +969,10 @@ textarea {
     if (real) card(ctx, pad, top1, cw, L.c1h);
     ctx.fillStyle = INK; ctx.textAlign = "center"; ctx.font = "800 56px " + FD;
     ctx.fillText("Your score", W / 2, cy + 40); cy += 74;
+    if (d.name) {
+      ctx.font = "800 60px " + FD; ctx.fillStyle = GRAPE; ctx.textAlign = "center";
+      ctx.fillText(fit(ctx, d.name, cw - 2 * inner), W / 2, cy + 46); cy += 74;
+    }
     var label = d.when + (d.level ? " \u00b7 " + d.level : "");
     ctx.font = "800 32px " + FD;
     var pw = ctx.measureText(label).width + 64;
@@ -1012,7 +1029,7 @@ textarea {
   }
   function fileName() {
     var n = new Date(), p = function (v) { return (v < 10 ? "0" : "") + v; };
-    return "spelling-stars-" + n.getFullYear() + "-" + p(n.getMonth() + 1) + "-" + p(n.getDate()) + "-" + lastResult.levelId + ".png";
+    return "spelling-stars-" + n.getFullYear() + "-" + p(n.getMonth() + 1) + "-" + p(n.getDate()) + "-" + lastResult.levelId + (lastResult.name ? "-" + (lastResult.name.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "") || "student") : "") + ".png";
   }
   function saveImage() {
     if (!lastResult) return;
@@ -1107,7 +1124,8 @@ textarea {
     }
   });
   $("againBtn").addEventListener("click", startRound);
-  $("homeBtn").addEventListener("click", function () { refreshStart(); show("start"); });
+  $("homeBtn").addEventListener("click", function () { $("nameInput").value = ""; refreshStart(); show("start"); });
+  $("nameInput").addEventListener("keydown", function (e) { if (e.key === "Enter") { e.preventDefault(); e.stopPropagation(); if (!$("startBtn").disabled) startRound(); } });
   var BAD = "#d52a46", GOOD = "#0b8a62";
   $("saveBtn").addEventListener("click", function () {
     var list = parseEntries($("wordsBox").value), note = $("note");
