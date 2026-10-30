@@ -1,400 +1,400 @@
-# A1 Movers word list: one word per line. Lines starting with # are ignored.
-above
-address
-afraid
-after
-age
-all
-all right
-along
-always
-another
-any
-app
-around
-asleep
-at
-aunt
-awake
-back
-bad
-badly
-balcony
-band
-basement
-bat
-be called
-beard
-because
-before
-below
-best
-better
-blanket
-blond
-boring
-both
-bottle
-bottom
-bowl
-brave
-break
-brilliant
-bring
-build
-building
-bus station
-bus stop
-busy
-buy
-by
-cafe
-cage
-call
-car park
-careful
-carefully
-carry
-catch
-centre
-change
-charlie
-cheese
-cinema
-circle
-circus
-city
-city centre
-clare
-clever
-climb
-cloud
-cloudy
-clown
-coat
-coffee
-cold
-come on
-comic
-comic book
-cook
-cough
-could
-country
-countryside
-cry
-cup
-curly
-daisy
-dance
-dangerous
-daughter
-dentist
-difference
-different
-difficult
-doctor
-dolphin
-down
-downstairs
-dream
-dress up
-drive
-driver
-drop
-dry
-e-book
-earache
-easy
-elevator
-email
-every
-everyone
-everything
-exciting
-excuse me
-fair
-fall
-famous
-farm
-farmer
-fat
-feed
-field
-film
-film star
-fine
-first
-fish
-fix
-floor
-fly
-forest
-fred
-friday
-frightened
-funfair
-get dressed
-get off
-get on
-get undressed
-get up
-glass
-go shopping
-goal
-granddaughter
-grandparent
-grandson
-grass
-ground
-grow
-grown-up
-have to
-headache
-helmet
-help
-hide
-holiday
-homework
-hop
-hospital
-hot
-how
-how much
-how often
-huge
-hundred
-hungry
-hurt
-ice
-ice skates
-ice skating
-idea
-ill
-inside
-internet
-into
-invite
-island
-jack
-jane
-jim
-julia
-jungle
-kangaroo
-kick
-kind
-kitten
-lake
-laptop
-last
-laugh
-leaf
-leaves
-library
-lift
-lily
-lion
-little
-look for
-lose
-loud
-loudly
-machine
-map
-market
-mary
-matter
-mean
-message
-milkshake
-mistake
-model
-monday
-moon
-more
-most
-mountain
-moustache
-move
-movie
-must
-naughty
-near
-neck
-need
-net
-never
-noise
-noodles
-nothing
-nurse
-o'clock
-off
-often
-on
-only
-opposite
-out
-out of
-outside
-pair
-pancake
-panda
-parent
-parrot
-party
-pasta
-paul
-penguin
-peter
-picnic
-pirate
-place
-plant
-plate
-player
-pool
-pop star
-practice
-practise
-present
-pretty
-puppy
-put on
-quick
-quickly
-quiet
-quietly
-rabbit
-rain
-rainbow
-ride
-river
-road
-rock
-roller skates
-roller skating
-roof
-round
-safe
-sail
-salad
-sally
-sandwich
-saturday
-sauce
-scarf
-score
-seat
-second
-send
-shall
-shape
-shark
-shop
-shopping
-shopping centre
-shoulder
-shout
-shower
-sick
-skate
-skip
-sky
-slow
-slowly
-snail
-snow
-someone
-something
-sometimes
-son
-soup
-sports centre
-square
-stair
-star
-station
-stomach
-stomach-ache
-straight
-strong
-sunday
-sunny
-supermarket
-surprised
-sweater
-sweet
-swim
-swimming pool
-swimsuit
-take
-take off
-tall
-tea
-teach
-teeth
-temperature
-terrible
-text
-than
-then
-thin
-think
-third
-thirsty
-thursday
-ticket
-tired
-tooth
-toothache
-toothbrush
-toothpaste
-top
-towel
-town
-town centre
-tractor
-travel
-treasure
-trip
-tuesday
-uncle
-up
-upstairs
-vegetable
-vicky
-video
-village
-wait
-wake
-walk
-wash
-water
-waterfall
-wave
-weak
-weather
-website
-wednesday
-week
-weekend
-well
-wet
-whale
-when
-where
-which
-who
-why
-wind
-windy
-work
-world
-worse
-worst
-would
-wrong
-yesterday
-zoe
+# A1 Movers word list: one word per line. Lines starting with # are ignored. A meaning can follow after a | sign.
+above | Higher than something else. The bird is above the tree.
+address | The name of the street and house where someone lives.
+afraid | Feeling scared. Example: I am afraid of dogs.
+after | Later than something. Example: We eat lunch after class.
+age | How old you are.
+all | Every one of them. Example: All the kids are here.
+all right | Okay or fine. Example: Are you all right?
+along | Moving next to a road or river. Example: We walk along the street.
+always | Every time, never missing.
+another | One more of the same thing.
+any | Some, no matter which. Example: Do you have any pens?
+app | A small program on a phone or tablet.
+around | On all sides of something, or in a circle.
+asleep | Sleeping, not awake.
+at | A small word for a place or time. Example: I am at school.
+aunt | The sister of your mum or dad.
+awake | Not sleeping.
+back | The part of your body behind you, or the opposite of front.
+bad | Not good.
+badly | In a way that is not good. Example: He sings badly.
+balcony | A small place with a fence outside a room on a high floor.
+band | A group of people who play music together.
+basement | A room in a house below the ground.
+bat | An animal that flies at night, or a stick to hit a ball.
+be called | To have a certain name. Example: My cat is called Kitty.
+beard | The hair on a man's chin and face.
+because | A word that gives a reason. Example: I am happy because it is my birthday.
+before | Earlier than something.
+below | Lower than something else.
+best | Better than all the others.
+better | More good than something else.
+blanket | A soft, warm cover for your bed.
+blond | Having light yellow hair.
+boring | Not interesting. It makes you want to sleep.
+both | The two of them together.
+bottle | A glass or plastic thing that holds water or milk.
+bottom | The lowest part of something.
+bowl | A round, deep dish for soup or rice.
+brave | Not afraid when something is scary.
+break | To make something split into pieces.
+brilliant | Very, very good.
+bring | To carry something with you to a place.
+build | To make a house or other big thing.
+building | A place with walls and a roof, like a school.
+bus station | A place where many buses start and stop.
+bus stop | A place where you wait for a bus.
+busy | Having a lot of things to do.
+buy | To give money and get something.
+by | Next to something. Example: The cat is by the door.
+cafe | A small place where you can have a drink and a snack.
+cage | A box with bars to keep a bird or animal inside.
+call | To use the phone to talk to someone, or to shout.
+car park | A place where people leave their cars.
+careful | Thinking about what you do so nothing bad happens.
+carefully | In a way that is safe and slow.
+carry | To hold something and take it to another place.
+catch | To take a ball in your hands.
+centre | The middle of a place.
+change | To make something different.
+charlie | A boy's name.
+cheese | A yellow food made from milk.
+cinema | A place where you watch films on a big screen.
+circle | A round shape, like a ring.
+circus | A show with clowns, animals and acrobats.
+city | A very big town with many people.
+city centre | The middle part of a big town.
+clare | A girl's name.
+clever | Good at learning and thinking.
+climb | To go up something like a tree or a hill.
+cloud | A white or grey shape in the sky.
+cloudy | When the sky is full of grey and white shapes.
+clown | A funny person with a red nose at a circus.
+coat | A warm piece of clothing you wear outside.
+coffee | A hot brown drink that grown-ups like.
+cold | Not warm. Ice is like this.
+come on | Words to say "hurry up" or "let's go".
+comic | A funny story with pictures, or a funny person.
+comic book | A book with stories told in small pictures.
+cook | To make food hot and ready to eat.
+cough | To push air out of your throat with a noise when you are ill.
+could | Was able to. Example: I could swim when I was five.
+country | A big land with its own name, like Vietnam.
+countryside | Land outside towns with fields and trees.
+cry | To make tears come from your eyes.
+cup | A small thing with a handle for hot drinks.
+curly | Hair that is not straight. It goes round and round.
+daisy | A small white flower, or a girl's name.
+dance | To move your body to music.
+dangerous | Something that can hurt you.
+daughter | A girl who is someone's child.
+dentist | A person who looks after your teeth.
+difference | The way two things are not the same.
+different | Not the same.
+difficult | Not easy to do.
+doctor | A person who helps you when you are ill.
+dolphin | A clever grey animal that lives in the sea.
+down | To a lower place.
+downstairs | On a lower floor of a house.
+dream | Pictures and stories in your head when you sleep.
+dress up | To put on special clothes for fun.
+drive | To make a car go.
+driver | A person who makes a bus or car go.
+drop | To let something fall by accident.
+dry | Not wet.
+e-book | A book you read on a screen.
+earache | A pain inside your ear.
+easy | Not difficult to do.
+elevator | A small room that carries people up and down a building.
+email | A message you send with a computer.
+every | Each one. Example: I brush my teeth every day.
+everyone | All the people.
+everything | All the things.
+exciting | Making you feel very happy and full of energy.
+excuse me | Polite words to get someone's attention.
+fair | A place with games and rides, or treating people the same.
+fall | To drop down to the ground.
+famous | Known by many, many people.
+farm | A place with fields and animals where food grows.
+farmer | A person who works on a farm.
+fat | Having a big, round body.
+feed | To give food to a person or animal.
+field | A big flat piece of land with grass or crops.
+film | A story you watch on a screen.
+film star | A famous person who acts in films.
+fine | Good or well. Example: I am fine, thank you.
+first | Number 1, before all the others.
+fish | An animal that lives in water and swims.
+fix | To make something work again.
+floor | The flat part you walk on inside a room.
+fly | To move through the air like a bird.
+forest | A big place with a lot of trees.
+fred | A boy's name.
+friday | The day after Thursday.
+frightened | Feeling very scared.
+funfair | A place with rides and games for fun.
+get dressed | To put your clothes on.
+get off | To leave a bus or train.
+get on | To go onto a bus or train.
+get undressed | To take your clothes off.
+get up | To leave your bed in the morning.
+glass | A clear thing for drinking, or what windows are made from.
+go shopping | To go to shops and buy things.
+goal | The place where you kick a ball to win a point.
+granddaughter | A girl who is the child of your son or daughter.
+grandparent | The mum or dad of your mum or dad.
+grandson | A boy who is the child of your son or daughter.
+grass | Green plants that grow on the ground.
+ground | The earth under your feet.
+grow | To get bigger.
+grown-up | An adult, not a child.
+have to | Must do something. Example: I have to go to school.
+headache | A pain in your head.
+helmet | A hard hat that keeps your head safe.
+help | To do something good for someone.
+hide | To go where nobody can see you.
+holiday | A time away from school or work.
+homework | School work you do at home.
+hop | To jump on one foot, like a rabbit.
+hospital | A place where doctors and nurses help sick people.
+hot | Very warm.
+how | A question word. Example: How are you?
+how much | A question about the price or amount.
+how often | A question about how many times.
+huge | Very, very big.
+hundred | The number 100.
+hungry | Wanting to eat food.
+hurt | To feel pain, or to make someone feel pain.
+ice | Water that is frozen and very cold.
+ice skates | Boots with metal blades for moving on frozen water.
+ice skating | Sliding on frozen water with special boots.
+idea | A thought in your head about what to do.
+ill | Not well. Sick.
+inside | In the middle of something, not outside.
+internet | A big net of computers where you find things and talk to people.
+into | Going in. Example: The cat jumps into the box.
+invite | To ask someone to come to your party.
+island | Land with water all around it.
+jack | A boy's name.
+jane | A girl's name.
+jim | A boy's name.
+julia | A girl's name.
+jungle | A hot place with many trees and wild animals.
+kangaroo | An Australian animal that jumps and has a baby in a pocket.
+kick | To hit something with your foot.
+kind | Nice to other people.
+kitten | A baby cat.
+lake | A big area of water with land around it.
+laptop | A small computer you can carry.
+last | After all the others.
+laugh | To make a happy sound when something is funny.
+leaf | A flat green part of a plant or tree.
+leaves | The flat green parts of a tree.
+library | A place where you can borrow books.
+lift | A small room that carries people up and down a building, or to pick up.
+lily | A girl's name, or a beautiful flower.
+lion | A big wild cat with a large hairy neck.
+little | Small.
+look for | To try to find something.
+lose | To not be able to find something, or to not win.
+loud | Making a lot of noise.
+loudly | In a way that makes a lot of noise.
+machine | A thing with parts that does a job.
+map | A picture that shows where places are.
+market | A place with many small shops outside.
+mary | A girl's name.
+matter | A problem. Example: What's the matter?
+mean | To show what a word is about, or not nice to people.
+message | Words you send to a person.
+milkshake | A cold, sweet drink made with milk.
+mistake | Something that is not right.
+model | A small copy of something, like a toy plane.
+monday | The day after Sunday.
+moon | The big round light in the sky at night.
+more | A bigger number or amount.
+most | The biggest number or amount.
+mountain | A very high hill.
+moustache | The hair above a man's mouth.
+move | To change place.
+movie | A story you watch on a screen.
+must | Have to do something. Example: You must wait.
+naughty | Not behaving well.
+near | Not far away.
+neck | The part of your body between your head and shoulders.
+need | To have to have something.
+net | Strings made into a bag or a wall, like in football.
+never | Not at any time.
+noise | A loud sound.
+noodles | Long thin food made from flour, eaten in soup.
+nothing | Not one thing.
+nurse | A person who helps doctors and looks after sick people.
+o'clock | Word used for exact hours. Example: It is seven o'clock.
+off | Not on. Example: Turn the light off.
+often | Many times.
+on | Touching the top of something. Example: The book is on the table.
+only | Just one, and no more.
+opposite | On the other side, or completely different.
+out | Not inside.
+out of | Going from the inside to the outside.
+outside | Not inside a building.
+pair | Two things that go together, like shoes.
+pancake | A flat, round food cooked in a pan.
+panda | A big black and white animal from China.
+parent | A mum or a dad.
+parrot | A colourful bird that can copy words.
+party | A time when people meet to have fun.
+pasta | Italian food like spaghetti.
+paul | A boy's name.
+penguin | A black and white bird that swims but cannot fly.
+peter | A boy's name.
+picnic | A meal you eat outside on the grass.
+pirate | A bad sailor who steals things from ships.
+place | A town, room or spot where you are.
+plant | A living thing that grows in the ground, like a flower.
+plate | A flat dish you eat food from.
+player | A person who plays a game or sport.
+pool | A place filled with water for swimming.
+pop star | A famous person who sings pop music.
+practice | Doing something many times to get better.
+practise | To do something many times to get better.
+present | A gift that you give someone.
+pretty | Nice to look at, like a flower.
+puppy | A baby dog.
+put on | To dress yourself in clothes.
+quick | Fast.
+quickly | In a fast way.
+quiet | Making very little noise.
+quietly | In a way that makes no noise.
+rabbit | A small animal with long ears that hops.
+rain | Water that falls from clouds.
+rainbow | Colourful curved lines in the sky after rain.
+ride | To sit on a bike or a horse and go.
+river | Long water that flows to the sea.
+road | A long hard way for cars and buses.
+rock | A big hard stone.
+roller skates | Boots with wheels that you wear to move fast.
+roller skating | Moving on boots with wheels.
+roof | The top of a house that covers it.
+round | Shaped like a ball or a circle.
+safe | Not in danger.
+sail | To travel on water in a boat with a big cloth.
+salad | Cold food made with vegetables.
+sally | A girl's name.
+sandwich | Two pieces of bread with food in between.
+saturday | The day after Friday.
+sauce | A thick liquid you put on food.
+scarf | A long piece of cloth you wear on your neck.
+score | To win a point in a game.
+seat | Something you sit on.
+second | Number 2, after the first.
+send | To make something go to another person.
+shall | A word for offers. Example: Shall we go?
+shape | The form of something, like a circle.
+shark | A big fish with sharp teeth.
+shop | A place where you buy things.
+shopping | Going to stores to buy things.
+shopping centre | A big building with many different shops.
+shoulder | The part of your body between your neck and arm.
+shout | To say something in a very loud voice.
+shower | Washing your body under falling water.
+sick | Not well. Ill.
+skate | To move on ice or ground with special boots.
+skip | To jump over a rope, or to jump happily.
+sky | The space above us where clouds and birds are.
+slow | Not fast.
+slowly | In a way that is not fast.
+snail | A small animal with a hard shell on its back.
+snow | Soft white things that fall from the sky when it is very cold.
+someone | A person, but we don't say who.
+something | A thing, but we don't say what.
+sometimes | Not always. At some times.
+son | A boy who is someone's child.
+soup | Hot food made of liquid, vegetables or meat.
+sports centre | A building where people play sports.
+square | A shape with four equal sides.
+stair | One step in a set that goes up to another floor.
+star | A bright light in the sky at night.
+station | A place where trains stop.
+stomach | The part inside your body where food goes.
+stomach-ache | A pain in your tummy.
+straight | Not bending or curving.
+strong | Having power to lift heavy things.
+sunday | The day after Saturday.
+sunny | Bright with light and heat from the sun.
+supermarket | A big shop that sells food and many things.
+surprised | Feeling something you did not know about.
+sweater | A warm piece of clothing for your top half.
+sweet | Tasting like sugar.
+swim | To move through water with your arms and legs.
+swimming pool | A big place filled with water for people to swim in.
+swimsuit | Clothes you wear to go in the water for fun.
+take | To get something and carry it away.
+take off | To remove clothes, or when a plane leaves the ground.
+tall | Very high. Not short.
+tea | A hot drink made from leaves.
+teach | To help someone learn.
+teeth | The hard white parts in your mouth for biting food.
+temperature | How hot or cold something is.
+terrible | Very, very bad.
+text | Words on a page or a phone message.
+than | A word to compare. Example: A cat is smaller than a dog.
+then | After that.
+thin | Not fat.
+think | To use your head and have ideas.
+third | Number 3, after the second.
+thirsty | Wanting to drink water.
+thursday | The day after Wednesday.
+ticket | A piece of paper that lets you go on a bus or see a film.
+tired | Wanting to sleep.
+tooth | One hard white thing in your mouth for biting.
+toothache | A pain in your mouth where you bite food.
+toothbrush | A small brush for cleaning inside your mouth.
+toothpaste | Cream you put on a brush to clean your mouth.
+top | The highest part of something.
+towel | A soft cloth for drying your body.
+town | A place where many people live, smaller than a city.
+town centre | The middle part of a small city.
+tractor | A big farm vehicle that pulls heavy things.
+travel | To go from one place to another.
+treasure | Gold and jewels that pirates hide.
+trip | A short journey to a place.
+tuesday | The day after Monday.
+uncle | The brother of your mum or dad.
+up | To a higher place.
+upstairs | On a higher floor of a house.
+vegetable | A plant you eat, like a carrot.
+vicky | A girl's name.
+video | Moving pictures you watch on a screen.
+village | A very small town in the countryside.
+wait | To stay until something happens.
+wake | To stop sleeping and open your eyes.
+walk | To move on your feet.
+wash | To clean with water and soap.
+water | The clear liquid you drink.
+waterfall | Water that falls from a high place.
+wave | To move your hand, or a moving line of water in the sea.
+weak | Not strong.
+weather | If it is sunny, rainy or windy outside.
+website | A place on the internet with pages to read.
+wednesday | The day after Tuesday.
+week | Seven days.
+weekend | Saturday and Sunday.
+well | In a good way, or healthy.
+wet | Covered with water. Not dry.
+whale | A very big animal that lives in the sea.
+when | A question word about time.
+where | A question word about a place.
+which | A question word to choose one thing.
+who | A question word about a person.
+why | A question word to ask for a reason.
+wind | Air that moves fast outside.
+windy | When the air outside moves a lot.
+work | A job, or to do a job.
+world | The Earth with all its countries.
+worse | More bad than something else.
+worst | The most bad of all.
+would | A word for polite asking. Example: Would you like tea?
+wrong | Not right.
+yesterday | The day before today.
+zoe | A girl's name.

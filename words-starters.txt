@@ -1,495 +1,495 @@
-# Pre A1 Starters word list: one word per line. Lines starting with # are ignored.
-a lot
-a lot of
-about
-add
-afternoon
-again
-alex
-alice
-alien
-alphabet
-an
-and
-angry
-animal
-ann
-anna
-answer
-apartment
-apple
-arm
-armchair
-ask
-at
-baby
-badminton
-bag
-ball
-balloon
-banana
-baseball
-baseball cap
-basketball
-bat
-bath
-bathroom
-be
-beach
-bean
-bear
-beautiful
-bed
-bedroom
-bee
-behind
-ben
-between
-big
-bike
-bill
-bird
-birthday
-black
-blue
-board
-board game
-boat
-body
-book
-bookcase
-bookshop
-boots
-bounce
-box
-boy
-bread
-breakfast
-brother
-brown
-burger
-bus
-but
-bye
-cake
-camera
-can
-candy
-car
-carrot
-cat
-catch
-chair
-chicken
-child
-children
-chips
-chocolate
-choose
-clap
-class
-classmate
-classroom
-clean
-clock
-close
-closed
-clothes
-coconut
-colour
-come
-complete
-computer
-cool
-correct
-count
-cousin
-cow
-crayon
-crocodile
-cross
-cupboard
-dad
-dan
-day
-desk
-dining room
-dinner
-dirty
-do
-dog
-doll
-don't worry
-donkey
-door
-double
-draw
-drawing
-dress
-drink
-drive
-duck
-ear
-eat
-egg
-elephant
-end
-english
-enjoy
-eraser
-eva
-evening
-example
-eye
-face
-family
-fantastic
-father
-favourite
-feet
-find
-fish
-fishing
-flat
-floor
-flower
-fly
-food
-foot
-football
-for
-friend
-fries
-frog
-from
-fruit
-fun
-funny
-game
-garden
-get
-giraffe
-girl
-give
-glasses
-go
-go to bed
-go to sleep
-goat
-good
-goodbye
-grace
-grandfather
-grandma
-grandmother
-grandpa
-grape
-gray
-great
-green
-grey
-guitar
-hair
-hall
-hand
-handbag
-happy
-hat
-have
-have got
-he
-head
-helicopter
-hello
-her
-here
-hers
-hi
-him
-hippo
-his
-hit
-hobby
-hockey
-hold
-home
-hooray
-horse
-house
-how
-how many
-how old
-hugo
-ice cream
-in
-in front of
-it
-its
-jacket
-jeans
-jellyfish
-jill
-juice
-jump
-keyboard
-kick
-kid
-kim
-kitchen
-kite
-kiwi
-know
-lamp
-learn
-leg
-lemon
-lemonade
-lesson
-let's
-letter
-like
-lime
-line
-listen
-live
-living room
-lizard
-long
-look
-look at
-lorry
-lots
-lots of
-love
-lucy
-lunch
-make
-man
-mango
-many
-mark
-mat
-matt
-may
-me
-me too
-meat
-meatballs
-men
-mice
-milk
-mine
-mirror
-monkey
-monster
-morning
-mother
-motorbike
-mouse
-mouth
-mum
-music
-my
-name
-new
-next to
-nice
-nick
-night
-no
-nose
-not
-now
-number
-of
-oh
-oh dear
-old
-on
-one
-onion
-open
-or
-orange
-our
-ours
-page
-paint
-painting
-paper
-pardon
-park
-part
-pat
-pea
-pear
-pen
-pencil
-people
-person
-pet
-phone
-photo
-piano
-pick up
-picture
-pie
-pineapple
-pink
-plane
-play
-playground
-please
-point
-polar bear
-poster
-potato
-purple
-put
-question
-radio
-read
-really
-red
-rice
-ride
-right
-robot
-room
-rubber
-rug
-ruler
-run
-sad
-sam
-sand
-sausage
-say
-scary
-school
-sea
-see
-see you
-sentence
-she
-sheep
-shell
-ship
-shirt
-shoe
-shop
-short
-shorts
-show
-silly
-sing
-sister
-sit
-skateboard
-skateboarding
-skirt
-sleep
-small
-smile
-snake
-so
-soccer
-sock
-sofa
-some
-song
-sorry
-spell
-spider
-sport
-stand
-start
-stop
-store
-story
-street
-sue
-sun
-sweet
-swim
-t-shirt
-table
-table tennis
-tablet
-tail
-take a photo
-take a picture
-talk
-teacher
-teddy
-television
-tell
-tennis
-tennis racket
-thank you
-thanks
-that
-the
-their
-theirs
-them
-then
-there
-these
-they
-thing
-this
-those
-throw
-tick
-tiger
-to
-today
-tom
-tomato
-too
-toy
-train
-tree
-trousers
-truck
-try
-ugly
-under
-understand
-us
-very
-walk
-wall
-want
-watch
-water
-watermelon
-wave
-we
-wear
-well
-well done
-what
-where
-which
-white
-who
-whose
-window
-with
-woman
-women
-word
-would like
-wow
-write
-year
-yellow
-yes
-you
-young
-your
-yours
-zebra
-zoo
+# Pre A1 Starters word list: one word per line. Lines starting with # are ignored. A meaning can follow after a | sign.
+a lot | Very much, or many. "I like cats very much."
+a lot of | Many or much. "She has many books."
+about | Nearly, or on the subject of something. "A book on animals."
+add | To put numbers or things together. "2 and 3 make 5."
+afternoon | The time after morning and before evening.
+again | One more time.
+alex | A boy's name.
+alice | A girl's name.
+alien | A funny or scary creature from another planet.
+alphabet | All the letters from A to Z.
+an | A word before a vowel sound. "an egg"
+and | A word that joins things. "A cat and a dog."
+angry | Feeling very cross and upset.
+animal | A living thing like a cat, a fish or a bird.
+ann | A girl's name.
+anna | A girl's name.
+answer | To say or write what comes after a question.
+apartment | A home on one floor in a big building.
+apple | A round red or green fruit.
+arm | The part of your body between your shoulder and your hand.
+armchair | A soft big chair with sides for your arms.
+ask | To say a question to someone.
+at | A word for a place or time. "We are at school."
+baby | A very young child.
+badminton | A game where you hit a small shuttlecock over a net.
+bag | You carry books or things in it.
+ball | A round thing you throw, kick or catch.
+balloon | A round rubber bag full of air. It floats at parties.
+banana | A long yellow fruit.
+baseball | A game with a bat and a small hard ball.
+baseball cap | A hat with a long front part, for sun.
+basketball | A game where you throw a ball into a high net.
+bat | You hit a ball with this wooden stick.
+bath | You sit in water in this to get clean.
+bathroom | The room where you wash your body.
+be | A word for what someone or something is. "I am happy."
+beach | A sandy place by the sea.
+bean | A small green or brown vegetable seed.
+bear | A big, strong, furry animal.
+beautiful | Very nice to look at.
+bed | You sleep on this.
+bedroom | The room where you sleep.
+bee | A small flying insect that makes honey.
+behind | At the back of something. "The cat is at the back of the box."
+ben | A boy's name.
+between | In the middle of two things. "The ball is in the middle of two boxes."
+big | Not small. Very large.
+bike | You sit on it and ride it with two wheels.
+bill | A boy's name.
+bird | An animal with wings and feathers. Many can fly.
+birthday | The day you were born. Every year it is a party day.
+black | The colour of the night sky.
+blue | The colour of the sky on a sunny day.
+board | A flat place in class where the teacher writes.
+board game | A game you play on a table with pieces and a flat board.
+boat | It carries people on water.
+body | All of a person: head, arms, legs and more.
+book | You read this. It has pages.
+bookcase | A piece of furniture with shelves for books.
+bookshop | A shop where you buy books.
+boots | Strong shoes that cover your feet and legs a little.
+bounce | To jump back up after hitting the ground. A ball does it.
+box | A square container for things.
+boy | A young male child.
+bread | Food made from flour. You make toast from it.
+breakfast | The first meal of the day.
+brother | A boy who has the same parents as you.
+brown | The colour of chocolate or wood.
+burger | Meat in a round bread. You eat it.
+bus | A big vehicle that carries many people.
+but | A word that shows something different. "I like tea but not milk."
+bye | A word you say when you leave.
+cake | A sweet food for birthdays.
+camera | You use it to take photos.
+can | A word for being able to do something. "I can swim."
+candy | Sweet food in small pieces. Sweets.
+car | A vehicle with four wheels for a family.
+carrot | A long orange vegetable.
+cat | A small furry pet that says miaow.
+catch | To get a ball with your hands when it comes to you.
+chair | You sit on this.
+chicken | A farm bird. You can eat its meat.
+child | A young boy or girl.
+children | More than one young boy or girl.
+chips | Long fried pieces of potato.
+chocolate | A sweet brown food.
+choose | To pick the one you like.
+clap | To hit your hands together to make a sound.
+class | A group of students who learn together.
+classmate | A student in your class.
+classroom | A room at school where you learn.
+clean | Not dirty.
+clock | It shows the time on the wall.
+close | To shut a door or a book.
+closed | Not open. Shut.
+clothes | Shirts, dresses and trousers you wear.
+coconut | A big brown fruit with white food and water inside.
+colour | Red, blue or green are examples.
+come | To move to the place where someone is.
+complete | To finish something. To write all the missing words.
+computer | A machine you use for games, work and the internet.
+cool | A little cold. Also very good.
+correct | Right. Not wrong.
+count | To say numbers one by one. "1, 2, 3."
+cousin | The child of your aunt or uncle.
+cow | A farm animal that gives milk.
+crayon | A coloured wax stick for drawing.
+crocodile | A big green animal with a long mouth and sharp teeth.
+cross | A mark like X. To go from one side to the other.
+cupboard | A piece of furniture with doors for plates or food.
+dad | A child's name for father.
+dan | A boy's name.
+day | Twenty-four hours. Monday is one.
+desk | A table where you read and write.
+dining room | The room where a family eats meals.
+dinner | The big meal in the evening.
+dirty | Not clean.
+do | To make or work at something. "I do my homework."
+dog | A pet that says woof.
+doll | A small toy that looks like a person.
+don't worry | Words to say "It's OK, be calm."
+donkey | An animal like a small horse with long ears.
+door | You open it to go in or out of a room.
+double | Two times as much.
+draw | To make a picture with a pencil.
+drawing | A picture made with a pencil.
+dress | A piece of clothing for a girl. It is one piece.
+drink | To take water or juice into your mouth and swallow it.
+drive | To make a car go.
+duck | A bird that swims and says quack.
+ear | You hear with this.
+eat | To put food in your mouth and swallow it.
+egg | A chicken makes it. It is oval and has a shell.
+elephant | A huge grey animal with a long nose.
+end | The last part. The finish.
+english | The language of England. Also the language we learn here.
+enjoy | To feel happy when you do something.
+eraser | You use it to rub out pencil.
+eva | A girl's name.
+evening | The time after afternoon and before night.
+example | A thing that shows what you must do.
+eye | You see with this.
+face | The front of your head. It has eyes, a nose and a mouth.
+family | Mum, dad, brothers, sisters and others at home.
+fantastic | Very, very good.
+father | A man who has a child. Dad.
+favourite | The one you like best.
+feet | More than one foot.
+find | To see something you looked for.
+fish | An animal that lives and swims in water.
+fishing | Catching fish with a rod.
+flat | An apartment. Also not high or round.
+floor | The ground inside a room.
+flower | A pretty plant part, red or yellow.
+fly | To move in the air like a bird.
+food | What we eat.
+foot | The part at the end of your leg.
+football | A game with a round ball and two goals.
+for | A word for who gets something. "A present for you."
+friend | A person you like and play with.
+fries | Long fried pieces of potato.
+frog | A small green animal that jumps and says croak.
+from | A word for where something starts. "I am from Vietnam."
+fruit | Apples, bananas and oranges are examples.
+fun | Something enjoyable that makes you happy.
+funny | Something that makes you laugh.
+game | Something you play with rules.
+garden | A place with grass and flowers by a house.
+get | To receive or take something.
+giraffe | A tall animal with a very long neck.
+girl | A young female child.
+give | To hand something to another person.
+glasses | You wear them on your nose to see better.
+go | To move from one place to another.
+go to bed | To get in bed at night.
+go to sleep | To close your eyes and rest at night.
+goat | A farm animal with horns.
+good | Nice or very well done.
+goodbye | A word you say when you leave.
+grace | A girl's name.
+grandfather | The father of your mum or dad.
+grandma | A child's name for grandmother.
+grandmother | The mother of your mum or dad.
+grandpa | A child's name for grandfather.
+grape | A small round green or purple fruit.
+gray | The colour of a rain cloud.
+great | Very good.
+green | The colour of grass.
+grey | The colour of a rain cloud.
+guitar | A music thing with strings. You play it with your fingers.
+hair | It grows on your head.
+hall | A big room or path inside the door of a house.
+hand | You use it to hold things. It has five fingers.
+handbag | A bag a woman carries with her things.
+happy | Feeling good and glad.
+hat | You wear it on your head.
+have | To own something. "I have a pen."
+have got | To own something. "I've got a bike."
+he | A word for a boy or man. "He is tall."
+head | The top part of your body. It has your face.
+helicopter | A flying machine with a big fan on top.
+hello | A word you say when you meet someone.
+her | A word for a girl or woman. "This is her bag."
+here | In this place.
+hers | Belonging to a girl or woman. "The bag is hers."
+hi | A short way to say hello.
+him | A word for a boy or man. "I see him."
+hippo | A big grey animal that lives near rivers.
+his | Belonging to a boy or man. "It is his hat."
+hit | To touch something hard with your hand or a bat.
+hobby | Something you like to do in free time.
+hockey | A game where you hit a ball with a curved stick.
+hold | To keep something in your hand.
+home | The place where you live.
+hooray | A happy shout when something is good.
+horse | A big animal that people ride.
+house | A building where a family lives.
+how | A word to ask the way. "How are you?"
+how many | A question about numbers. "How many pens?"
+how old | A question about age. "How old are you?"
+hugo | A boy's name.
+ice cream | A cold sweet food that you lick.
+in | Where something is inside. "The cat is in the box."
+in front of | Before something. "The boy is at the front of the girl."
+it | A word for a thing or an animal. "It is red."
+its | Belonging to a thing or an animal. "The dog has its bone."
+jacket | A short coat you wear on top.
+jeans | Blue trousers made of strong cloth.
+jellyfish | A soft sea animal that can sting.
+jill | A girl's name.
+juice | A drink made from fruit.
+jump | To push your body up from the ground.
+keyboard | Keys you press to type on a computer.
+kick | To hit something with your foot.
+kid | A child.
+kim | A girl's name.
+kitchen | The room where we make food.
+kite | A toy that flies in the wind on a string.
+kiwi | A green fruit with small black seeds inside.
+know | To have it in your head. To be sure about it.
+lamp | A light you put on a table.
+learn | To get new things in your head.
+leg | You walk and run with this.
+lemon | A sour yellow fruit.
+lemonade | A sweet fizzy yellow drink.
+lesson | A time at school when you learn.
+let's | Words to say "We can do it together." "Let's play!"
+letter | A, B and C are examples.
+like | To think something is nice.
+lime | A small sour green fruit.
+line | A long thin mark. Also people standing one behind another.
+listen | To hear with care.
+live | To have your home in a place.
+living room | The room with a sofa and TV where a family sits.
+lizard | A small animal with four legs and a long tail. It looks like a tiny dragon.
+long | Not short. Big from one end to the other.
+look | To use your eyes to see.
+look at | To watch something with your eyes. "Look at the bird!"
+lorry | A big vehicle that carries heavy things. A truck.
+lots | A big number of things.
+lots of | Many or much.
+love | To like someone or something very, very much.
+lucy | A girl's name.
+lunch | The meal in the middle of the day.
+make | To build or create something.
+man | A grown-up male person.
+mango | A sweet orange tropical fruit with a big seed.
+many | A big number of things.
+mark | A girl's or boy's name. Also a small spot or sign on something.
+mat | A small flat cover for a floor.
+matt | A boy's name.
+may | A word to ask if you can. "May I come in?"
+me | A word you use for yourself. "Give it to me."
+me too | Words to say "I feel the same."
+meat | Food from animals, like chicken or beef.
+meatballs | Small round balls of meat that you cook.
+men | More than one grown-up male person.
+mice | More than one small grey animal with a long tail.
+milk | A white drink that comes from cows.
+mine | Belonging to me. "This book is mine."
+mirror | You look at yourself in this.
+monkey | An animal that climbs trees and eats bananas.
+monster | A big scary creature in stories.
+morning | The early part of the day.
+mother | A woman who has a child. Mum.
+motorbike | A bike with an engine. It is fast.
+mouse | A small grey animal with a long tail. Also you click it on a computer.
+mouth | You eat and speak with this.
+mum | A child's name for mother.
+music | Songs and sounds that people sing or play.
+my | Belonging to me. "My bag is red."
+name | What people call you. "Her name is Lucy."
+new | Not old. Just bought or made.
+next to | Very near the side of something. "The cat is by the dog."
+nice | Good or kind.
+nick | A boy's name.
+night | The dark time when we sleep.
+no | A word for not agreeing. The opposite of yes.
+nose | You smell with this.
+not | A word that makes a sentence negative. "I am sad."
+now | At this time.
+number | 1, 2 and 3 are examples.
+of | A word that shows what belongs. "A cup of tea."
+oh | A word you say when you are surprised.
+oh dear | Words to say when something is bad.
+old | Not new. Has lived or been here for a long time.
+on | Where something touches the top. "The book is on the desk."
+one | The number 1.
+onion | A round vegetable that can make you cry.
+open | To move a door or box so people can get in.
+or | A word for a choice. "Tea or milk?"
+orange | A round orange fruit. Also the colour of a carrot.
+our | Belonging to us. "This is our school."
+ours | Belonging to us. "The house is ours."
+page | One sheet of paper in a book.
+paint | To make a picture with wet colours.
+painting | A picture made with wet colours.
+paper | You write or draw on this.
+pardon | A word to ask someone to say it again.
+park | A big garden in a town where people play.
+part | A piece of something, not all.
+pat | To touch gently and softly with your hand.
+pea | A small round green vegetable.
+pear | A sweet fruit, thin at the top and wide at the bottom.
+pen | You write with ink with this.
+pencil | You write or draw with this. It is made of wood.
+people | Men, women and children.
+person | One man, woman or child.
+pet | An animal that lives at home with you.
+phone | You use it to talk to people far away.
+photo | A picture you take with a camera.
+piano | A big music thing with black and white keys.
+pick up | To lift something with your hands.
+picture | A drawing, painting or photo.
+pie | Fruit or meat baked in pastry.
+pineapple | A big yellow fruit with a spiky skin.
+pink | The colour between red and white.
+plane | A vehicle that flies in the sky.
+play | To have fun with games and toys.
+playground | A place outside where children play at school.
+please | A polite word when you ask for something.
+point | To show something with your finger.
+polar bear | A big white bear that lives in the cold.
+poster | A big picture you put on a wall.
+potato | A round vegetable. Chips are made from it.
+purple | The colour of some grapes. It is red and blue together.
+put | To place something somewhere.
+question | Words that ask something. "What is your name?"
+radio | You listen to music and news on this.
+read | To look at words and understand them.
+really | Very much. Truly.
+red | The colour of a tomato or blood.
+rice | Small white food that people eat in Vietnam every day.
+ride | To sit on a horse or bike and go.
+right | Correct. Also the opposite of left.
+robot | A machine that moves and works like a person.
+room | A part of a house with walls, like a kitchen.
+rubber | You use it to rub out pencil. An eraser.
+rug | A soft cover for part of a floor.
+ruler | You draw straight lines and measure with this.
+run | To move fast on your feet.
+sad | Feeling unhappy.
+sam | A boy's name.
+sand | The soft yellow ground at the beach.
+sausage | A long round food made of meat.
+say | To speak words.
+scary | Making you feel afraid.
+school | A place where children learn.
+sea | A very big area of salty water.
+see | To use your eyes to notice things.
+see you | Words to say when you leave. "See you tomorrow!"
+sentence | A group of words that tells a whole idea.
+she | A word for a girl or woman. "She is my sister."
+sheep | A farm animal with wool.
+shell | The hard cover of an egg or a sea animal.
+ship | A very big boat.
+shirt | Clothing for the top of your body, with buttons.
+shoe | You wear it on your foot.
+shop | A place where you buy things.
+short | Not long. Not tall.
+shorts | Short trousers that end above the knees.
+show | To let someone see something.
+silly | Funny and not clever.
+sing | To make music with your voice.
+sister | A girl who has the same parents as you.
+sit | To rest on a chair with your bottom down.
+skateboard | A board with wheels. You stand on it and ride.
+skateboarding | Riding on a board with wheels.
+skirt | Clothing for a girl that hangs from her waist.
+sleep | To rest with your eyes closed at night.
+small | Not big. Very little.
+smile | To make a happy face with your mouth.
+snake | A long animal with no legs.
+so | A word that means very. "It is so hot!"
+soccer | A game where two teams kick a ball into a goal.
+sock | You wear it on your foot inside a shoe.
+sofa | A long soft seat for two or three people.
+some | A few or a little. "I have a few apples."
+song | Words you sing with music.
+sorry | A word you say when you did something bad.
+spell | To say the letters of a word one by one.
+spider | A small animal with eight legs that makes webs.
+sport | Games like football and tennis.
+stand | To be on your feet.
+start | To begin.
+stop | To not move or go any more.
+store | A shop.
+story | Words that tell what happened to people. You read it or hear it.
+street | A road in a town with houses and shops.
+sue | A girl's name.
+sun | The bright yellow star in the sky. It gives us light.
+sweet | Tasting like sugar.
+swim | To move through water with your arms and legs.
+t-shirt | A shirt with short sleeves and no buttons.
+table | A piece of furniture with legs. You put things on it.
+table tennis | A game where you hit a small ball over a net on a table.
+tablet | A flat computer you touch with your finger.
+tail | The part at the back of an animal's body.
+take a photo | To use a camera to make a picture.
+take a picture | To use a camera to make a photo.
+talk | To say words to another person.
+teacher | A person who helps you learn at school.
+teddy | A soft toy bear.
+television | A box with a screen that shows programmes.
+tell | To say something to someone.
+tennis | A game where you hit a ball over a net with a racket.
+tennis racket | You hit the ball with this in a game on a court.
+thank you | Words you say when someone helps you.
+thanks | A short way to say thank you.
+that | A word for something far away. "Look at that bird."
+the | A small word before a noun. "The sun is hot."
+their | Belonging to them. "Their house is big."
+theirs | Belonging to them. "The car is theirs."
+them | A word for more than one person. "I see them."
+then | After that. "First wash, then eat."
+there | In that place. "The ball is over there."
+these | A word for things that are near. "These are my pens."
+they | A word for more than one person or thing. "They are happy."
+thing | An object. Any item.
+this | A word for something near. "This is my book."
+those | A word for things that are far. "Those are birds."
+throw | To send something through the air with your hand.
+tick | A mark like a check. It shows an answer is right.
+tiger | A big wild cat with orange and black lines.
+to | A word that shows where you go. "I go to school."
+today | This day.
+tom | A boy's name.
+tomato | A round red vegetable. We put it in salad.
+too | Also. "I like cats, and I like dogs also."
+toy | Something that children play with.
+train | A long vehicle that goes on rails.
+tree | A tall plant with a trunk and leaves.
+trousers | Clothes that cover your legs.
+truck | A big vehicle that carries heavy things.
+try | To make an effort to do something.
+ugly | Not nice to look at.
+under | Below something. "The cat is below the table."
+understand | To know what something means.
+us | A word for me and other people. "Come with us."
+very | A lot. "It is very big."
+walk | To move on your feet, not fast.
+wall | The side of a room. It holds up the roof.
+want | To need or wish to have something.
+watch | To look at something that moves, like TV. Also a small clock on your wrist.
+water | A clear liquid we drink. Rain and rivers are made of it.
+watermelon | A big green fruit with red food inside and black seeds.
+wave | To move your hand to say hello. Also a moving line of sea water.
+we | A word for me and other people. "We are friends."
+wear | To have clothes on your body.
+well | Good. In a healthy way. "I can sing in a good way."
+well done | Words you say when someone did a good job.
+what | A word to ask about a thing. "What is it?"
+where | A word to ask about a place. "Where is my bag?"
+which | A word to ask about a choice. "Which one do you want?"
+white | The colour of snow or milk.
+who | A word to ask about a person. "Who is she?"
+whose | A word to ask who owns something. "Whose bag is this?"
+window | A glass part in a wall. You look through it.
+with | Together. "I go to school together with my friend."
+woman | A grown-up female person.
+women | More than one grown-up female person.
+word | Letters together that mean something.
+would like | A polite way to say want. "I would like some tea."
+wow | A word you say when something is amazing.
+write | To make words with a pen or pencil.
+year | Twelve months.
+yellow | The colour of a banana or the sun.
+yes | A word for agreeing. The opposite of no.
+you | A word for the person you talk to.
+young | Not old. Having lived only a short time.
+your | Belonging to you. "Is this your pen?"
+yours | Belonging to you. "The pen is yours."
+zebra | A horse-like animal with black and white stripes.
+zoo | A place where people see wild animals in cages.

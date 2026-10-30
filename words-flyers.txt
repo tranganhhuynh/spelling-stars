@@ -1,509 +1,509 @@
-# A2 Flyers word list: one word per line. Lines starting with # are ignored.
-a few
-a little
-across
-act
-actor
-actually
-adventure
-after
-ago
-agree
-air
-airport
-alone
-already
-also
-amazing
-ambulance
-anyone
-anything
-anywhere
-appear
-april
-arrive
-art
-artist
-as
-astronaut
-at the moment
-august
-autumn
-away
-backpack
-bandage
-bank
-beetle
-before
-begin
-believe
-belt
-betty
-bicycle
-bin
-biscuit
-bit
-bored
-borrow
-bracelet
-break
-bridge
-broken
-brush
-burn
-business
-businessman
-businesswoman
-butter
-butterfly
-by myself
-by yourself
-calendar
-camel
-camp
-card
-cartoon
-castle
-cave
-century
-cereal
-channel
-chat
-cheap
-chemist
-chess
-chopsticks
-club
-collect
-college
-comb
-competition
-concert
-conversation
-cooker
-cookie
-corner
-costume
-could
-creature
-crown
-cushion
-cut
-cycle
-dark
-date
-david
-dear
-december
-decide
-deep
-delicious
-desert
-design
-designer
-diary
-dictionary
-dinosaur
-disappear
-drum
-during
-each
-eagle
-early
-earth
-east
-elbow
-else
-emma
-empty
-end
-engine
-engineer
-enormous
-enough
-enter
-entrance
-envelope
-environment
-ever
-everywhere
-excellent
-excited
-exit
-expensive
-explain
-explore
-extinct
-factory
-fall
-fall over
-far
-fast
-february
-feel
-festival
-fetch
-file
-find out
-finger
-finish
-fire
-fire engine
-fire fighter
-fire station
-flag
-flashlight
-flour
-fog
-foggy
-follow
-for
-forget
-fork
-frank
-fridge
-friendly
-frightening
-front
-full
-fur
-furry
-future
-gate
-geography
-george
-get to
-glass
-glove
-glue
-go away
-go out
-gold
-golf
-group
-guess
-gym
-half
-happen
-hard
-harry
-hate
-hear
-heavy
-helen
-high
-hill
-history
-hole
-holly
-honey
-hope
-horrible
-hotel
-hour
-how long
-hurry
-husband
-if
-if you want
-important
-improve
-in a minute
-information
-insect
-instead
-instrument
-interested
-interesting
-invent
-invitation
-jam
-january
-job
-join
-journalist
-journey
-july
-june
-just
-katy
-keep
-key
-kilometre
-kind
-king
-knee
-knife
-land
-language
-large
-late
-later
-lazy
-leave
-left
-let
-letter
-lie
-lift
-light
-london
-look after
-look like
-lovely
-low
-lucky
-magazine
-make sure
-manager
-march
-married
-match
-maths
-may
-meal
-mechanic
-medicine
-meet
-meeting
-member
-metal
-michael
-midday
-middle
-midnight
-might
-million
-mind
-minute
-missing
-mix
-money
-month
-motorway
-much
-museum
-necklace
-nest
-news
-newspaper
-next
-no problem
-no-one
-noisy
-north
-november
-nowhere
-ocean
-october
-octopus
-of course
-office
-oliver
-olives
-once
-online
-other
-oven
-over
-pajamas
-passenger
-past
-path
-pepper
-perhaps
-photographer
-piece
-pilot
-pizza
-planet
-plastic
-platform
-pleased
-pocket
-police officer
-police station
-pond
-poor
-pop music
-popular
-post
-post office
-postcard
-prefer
-prepare
-prize
-problem
-programme
-project
-pull
-push
-puzzle
-pyjamas
-pyramid
-quarter
-queen
-quite
-quiz
-race
-racing
-railway
-ready
-remember
-repair
-repeat
-restaurant
-rich
-richard
-right
-ring
-robert
-rock music
-rocket
-rucksack
-salt
-same
-sarah
-save
-science
-scissors
-score
-screen
-search
-secret
-sell
-september
-several
-shampoo
-shelf
-should
-silver
-since
-singer
-ski
-skyscraper
-sledge
-smell
-snack
-snowball
-snowboard
-snowboarding
-snowman
-so
-soap
-soft
-somewhere
-soon
-sophia
-sore
-sound
-south
-space
-spaceship
-speak
-special
-spend
-spoon
-spot
-spotted
-spring
-stadium
-stage
-stamp
-stay
-step
-still
-stone
-storm
-straight on
-strange
-strawberry
-stream
-stripe
-striped
-student
-study
-subject
-such
-suddenly
-sugar
-suitcase
-summer
-sunglasses
-sure
-surname
-surprise
-swan
-swing
-take
-taste
-taxi
-team
-telephone
-tent
-thank
-theatre
-thousand
-through
-tidy
-time
-timetable
-toe
-together
-tomorrow
-tonight
-torch
-tortoise
-touch
-tour
-traffic
-trainers
-tune
-turn
-turn off
-turn on
-twice
-tyre
-umbrella
-unfriendly
-unhappy
-uniform
-university
-unkind
-untidy
-until
-unusual
-use
-usually
-view
-violin
-visit
-volleyball
-waiter
-warm
-way
-west
-wheel
-while
-whisper
-whistle
-wife
-wifi
-wild
-will
-william
-win
-wing
-winner
-winter
-wish
-without
-wonderful
-wood
-wool
-worried
-x-ray
-yet
-yoghurt
-you're welcome
-zero
+# A2 Flyers word list: one word per line. Lines starting with # are ignored. A meaning can follow after a | sign.
+a few | Some, but not many. Example: I have a few books.
+a little | A small amount. Example: I want a little milk.
+across | From one side to the other side. Example: Walk across the road.
+act | To do something, or to play a part in a film or play.
+actor | A man or woman who plays a person in a film or play.
+actually | Used to say what is really true. Example: Actually, I am ten years old.
+adventure | An exciting trip or thing to do, sometimes a little dangerous.
+after | Later than something. Example: We eat lunch after school.
+ago | In the past. Example: I saw him two days ago.
+agree | To think the same as another person.
+air | The invisible gas around us that we breathe.
+airport | A place where planes arrive and leave.
+alone | With no other people. Example: She is at home alone.
+already | Before now. Example: I have already eaten.
+also | As well; too. Example: I like cats and I also like dogs.
+amazing | Very surprising and very good.
+ambulance | A special car that takes sick people to hospital.
+anyone | Any person. Example: Is anyone at home?
+anything | Any thing. Example: I can't see anything.
+anywhere | In or to any place. Example: I can't find my bag anywhere.
+appear | To come into view; to start to be seen.
+april | The fourth month of the year.
+arrive | To get to a place.
+art | Drawing, painting and making beautiful things.
+artist | A person who draws or paints pictures.
+as | In the same way. Example: He is as tall as me.
+astronaut | A person who travels in space.
+at the moment | Now; at this time. Example: I am busy at the moment.
+august | The eighth month of the year.
+autumn | The season after summer, when leaves fall from trees.
+away | Not here; to another place. Example: The bird flew away.
+backpack | A bag you carry on your back.
+bandage | A long, soft strip of cloth you wrap round a hurt arm or leg.
+bank | A place where people keep their money.
+beetle | A small insect with a hard shell on its back.
+before | Earlier than something. Example: Wash your hands before lunch.
+begin | To start.
+believe | To think that something is true.
+belt | A band of leather you wear round your waist to hold up trousers.
+betty | A girl's name.
+bicycle | A two-wheeled vehicle you ride by pushing pedals with your feet.
+bin | A container where you put rubbish.
+biscuit | A small, dry, sweet cake that is flat and crunchy.
+bit | A small piece or amount. Example: Give me a bit of cake.
+bored | Feeling tired because something is not interesting.
+borrow | To take something and give it back later.
+bracelet | A piece of jewellery you wear round your wrist.
+break | To make something fall into pieces.
+bridge | A road or path built over a river or road.
+broken | In pieces, or not working.
+brush | A tool with hairs, used for cleaning, painting or tidying hair.
+burn | To hurt or damage something with fire or heat.
+business | Work that buys and sells things to make money.
+businessman | A man who works in business.
+businesswoman | A woman who works in business.
+butter | A soft yellow food made from milk. You put it on bread.
+butterfly | An insect with big, colourful wings.
+by myself | Alone, with no help. Example: I did my homework by myself.
+by yourself | Alone, with no help from others. Example: Can you carry it by yourself?
+calendar | A list of the days, weeks and months of the year.
+camel | A large animal with humps that lives in the desert.
+camp | To sleep outside in a tent.
+card | A piece of stiff paper, often with a picture and a message.
+cartoon | A funny film or picture made from drawings.
+castle | A big old stone building where kings and queens lived.
+cave | A big hole in a hill or under the ground.
+century | One hundred years.
+cereal | A breakfast food made from grain. You eat it with milk.
+channel | A TV station you can choose to watch.
+chat | To talk in a friendly way.
+cheap | Not costing much money.
+chemist | A shop where you buy medicine.
+chess | A board game for two players with kings, queens and pawns.
+chopsticks | Two thin sticks used to eat food, mostly in Asia.
+club | A group of people who meet to do something they like together.
+collect | To get many things of one kind and keep them together.
+college | A place where people study after school.
+comb | A thing with teeth that you pull through your hair to make it tidy.
+competition | A game where people try to win.
+concert | A show where people play or sing music.
+conversation | A talk between two or more people.
+cooker | A machine in the kitchen used to cook food.
+cookie | A small, flat, sweet cake.
+corner | The place where two walls or roads meet.
+costume | Special clothes you wear for a play or party.
+could | Was able to. Example: I could swim when I was five.
+creature | Any animal or living thing.
+crown | A gold hat that a king or queen wears.
+cushion | A soft bag you sit on or lean against.
+cut | To use scissors or a knife to divide something.
+cycle | To ride a bicycle.
+dark | With no light, or a deep colour.
+date | The day, month and year of a certain day.
+david | A boy's name.
+dear | A word used at the start of a letter. Example: Dear Tom.
+december | The twelfth month of the year.
+decide | To choose what to do.
+deep | Going far down from the top. Example: The lake is deep.
+delicious | Tasting very good.
+desert | A very dry, sandy place with little rain.
+design | To draw a plan for how something will look.
+designer | A person who plans how things will look.
+diary | A book where you write about what happens each day.
+dictionary | A book that tells you what words mean.
+dinosaur | A very big animal that lived millions of years ago.
+disappear | To go away so that you cannot see it any more.
+drum | A musical instrument you hit with sticks.
+during | In the time that something happens. Example: I slept during the film.
+each | Every one of two or more things. Example: Each child has a pen.
+eagle | A big bird that hunts other animals and flies very high.
+early | Before the usual or planned time.
+earth | The planet where we live.
+east | The direction where the sun comes up.
+elbow | The part in the middle of your arm where it bends.
+else | Other or more. Example: Do you want anything else?
+emma | A girl's name.
+empty | With nothing inside.
+end | The last part of something.
+engine | The part of a car or machine that makes it move.
+engineer | A person who plans and builds machines, roads or bridges.
+enormous | Very, very big.
+enough | As much as you need. Example: I have enough money.
+enter | To go into a place.
+entrance | The way in to a place; a door or gate.
+envelope | A paper cover you put a letter in.
+environment | The land, water and air around us; nature.
+ever | At any time. Example: Have you ever been to Hanoi?
+everywhere | In every place. Example: I looked everywhere for my pen.
+excellent | Very, very good.
+excited | Feeling very happy about something that will happen.
+exit | The way out of a place.
+expensive | Costing a lot of money.
+explain | To say something so that people understand it.
+explore | To travel to a new place to find out about it.
+extinct | Not alive any more. Example: Dinosaurs are extinct.
+factory | A big building where people make things with machines.
+fall | To drop down to the ground. Also the season after summer.
+fall over | To drop to the ground from standing.
+far | A long way away.
+fast | Quick; moving at high speed.
+february | The second month of the year.
+feel | To touch something, or to have a feeling like happy or sad.
+festival | A special time when people celebrate with food, music and fun.
+fetch | To go and bring something back.
+file | A folder or box for keeping papers.
+find out | To learn a fact about something.
+finger | One of the five parts at the end of your hand.
+finish | To come to the end of something.
+fire | Hot, bright flames that burn things.
+fire engine | A big red truck that carries firefighters and water.
+fire fighter | A person whose job is to stop fires.
+fire station | A building where fire trucks and firefighters wait.
+flag | A piece of cloth with colours or a picture that stands for a country.
+flashlight | A small lamp you hold in your hand and carry around.
+flour | A white powder from grain that is used to make bread and cakes.
+fog | Thick cloud near the ground that makes it hard to see.
+foggy | When thick cloud near the ground makes it hard to see.
+follow | To go behind someone.
+for | Used to show who gets something. Example: This present is for you.
+forget | To not remember something.
+fork | A tool with points that you use to pick up food.
+frank | A boy's name.
+fridge | A cold machine in the kitchen that keeps food fresh.
+friendly | Kind and nice to other people.
+frightening | Making you feel scared.
+front | The part that is first or faces forward. The opposite of back.
+full | With no more space inside.
+fur | The soft hair on an animal.
+furry | Covered with soft hair, like a cat.
+future | The time that has not happened yet.
+gate | A door in a fence or wall outside.
+geography | A school subject about countries, rivers and mountains.
+george | A boy's name.
+get to | To arrive at a place. Example: How do I get to the park?
+glass | A hard material you can see through. Also a cup you drink from.
+glove | A cover for your hand to keep it warm.
+glue | A sticky stuff used to stick things together.
+go away | To leave a place. Example: Go away, please!
+go out | To leave the house and do something outside.
+gold | A shiny, yellow, expensive metal.
+golf | A game where you hit a small ball into holes with a long stick.
+group | A number of people or things together.
+guess | To say an answer when you are not sure.
+gym | A place with machines where people exercise.
+half | One of two equal parts of something.
+happen | To take place. Example: What will happen next?
+hard | Not soft; or not easy to do.
+harry | A boy's name.
+hate | To not like something at all.
+hear | To know a sound with your ears.
+heavy | Weighing a lot; hard to lift.
+helen | A girl's name.
+high | Far above the ground; tall.
+hill | A piece of land that is higher than the land around it.
+history | A school subject about things that happened in the past.
+hole | An empty space in something, such as in the ground.
+holly | A girl's name.
+honey | A sweet, sticky food that bees make.
+hope | To want something good to happen.
+horrible | Very bad or not nice.
+hotel | A building where you pay to sleep for a night or more.
+hour | Sixty minutes.
+how long | A question about the length of time. Example: How long is the film?
+hurry | To move or do something quickly.
+husband | The man that a woman is married to.
+if | Used to say what could happen. Example: I will go if it is sunny.
+if you want | Used to say "only when you would like it". Example: You can come if you want.
+important | Needing care because it matters a lot.
+improve | To get better or make something better.
+in a minute | Very soon. Example: I will come in a minute.
+information | Facts that tell you about something.
+insect | A small animal with six legs, such as an ant.
+instead | In place of another thing. Example: I had tea instead of milk.
+instrument | A thing you play to make music, like a guitar.
+interested | Wanting to know or learn more about something.
+interesting | Making you want to know more.
+invent | To make or think of something new for the first time.
+invitation | A card or message asking you to come to a party.
+jam | A sweet, sticky food made from fruit. You put it on bread.
+january | The first month of the year.
+job | The work that a person does to earn money.
+join | To become a member of a group, or to put things together.
+journalist | A person who writes news for newspapers or TV.
+journey | A trip from one place to another.
+july | The seventh month of the year.
+june | The sixth month of the year.
+just | A short time ago, or only. Example: I have just arrived.
+katy | A girl's name.
+keep | To have something and not give it away.
+key | A small metal thing that opens a lock.
+kilometre | A length of one thousand metres.
+kind | Nice and helpful to others.
+king | The man who rules a country and is the head of a royal family.
+knee | The part in the middle of your leg where it bends.
+knife | A tool with a sharp edge that is used to cut food.
+land | The ground, not the sea. Or to come down from the sky.
+language | Words people use to speak and write, such as English.
+large | Big.
+late | After the right or usual time.
+later | After this time. Example: See you later!
+lazy | Not wanting to work or be active.
+leave | To go away from a place.
+left | The side opposite to right. Most people write with the right hand.
+let | To allow someone to do something.
+letter | A message you write on paper and send to someone. Also a piece of the alphabet like A or B.
+lie | To put your body flat on a bed or floor. Also to say something not true.
+lift | A machine that takes people up and down in a building. Or to pick up.
+light | Something that makes it bright so you can see. Also not heavy.
+london | The capital city of England.
+look after | To take care of someone or something.
+look like | To have a similar face or shape. Example: You look like your mum.
+lovely | Very nice or beautiful.
+low | Not high.
+lucky | Having good things happen by chance.
+magazine | A thin book with pictures and stories that comes out each week or month.
+make sure | To check that something is certain.
+manager | A person who is the boss of a shop or team.
+march | The third month of the year.
+married | Having a husband or wife.
+match | A game between two teams, or a small stick that makes fire.
+maths | The school subject about numbers.
+may | A word for asking or maybe. Example: May I come in?
+meal | Food you eat at one time, like lunch.
+mechanic | A person who fixes cars and machines.
+medicine | Something you take to feel better when you are ill.
+meet | To see and talk to someone for the first time or by plan.
+meeting | A time when people come together to talk.
+member | A person who belongs to a group or club.
+metal | A hard, shiny material, like iron or gold.
+michael | A boy's name.
+midday | Twelve o'clock in the day.
+middle | The part in the centre.
+midnight | Twelve o'clock at night.
+might | A word for something that is possible. Example: It might rain.
+million | The number 1,000,000.
+mind | Your thinking part, or to be upset about something. Example: I don't mind.
+minute | Sixty seconds.
+missing | Not here. Lost.
+mix | To put different things together.
+money | Coins and notes that you use to buy things.
+month | One of the twelve parts of a year, like May.
+motorway | A very wide road for fast cars.
+much | A lot of something. Example: I don't have much time.
+museum | A place where you look at old and special things.
+necklace | Jewellery you wear around your neck.
+nest | A home that a bird makes for its eggs.
+news | Information about what happened lately.
+newspaper | Big sheets of paper with the news that you read.
+next | Coming after this one.
+no problem | Words to say "that is okay".
+no-one | Not any person.
+noisy | Making a lot of sound.
+north | The direction to the top of a map.
+november | The month after October.
+nowhere | Not in any place.
+ocean | A huge area of salt water.
+october | The month after September.
+octopus | A sea animal with eight arms.
+of course | Words that mean "yes, certainly".
+office | A room where people do desk work.
+oliver | A boy's name.
+olives | Small green or black fruits that grow on trees and taste salty.
+once | One time only.
+online | Connected to the internet.
+other | Not this one. A different one.
+oven | A hot box in a kitchen for baking cakes.
+over | Above something or finished. Example: The plane flies over the house.
+pajamas | Soft clothes you wear in bed.
+passenger | A person who travels on a bus, train or plane.
+past | Time that has gone, or to go by something.
+path | A small way for people to walk on.
+pepper | A hot powder for food, or a vegetable.
+perhaps | Maybe.
+photographer | A person who takes pictures with a camera.
+piece | A part of something. Example: a piece of cake.
+pilot | A person who flies a plane.
+pizza | A flat round Italian food with cheese on top.
+planet | A big round thing in space, like Earth.
+plastic | A light material used to make toys and bottles.
+platform | The place at a station where you wait for a train.
+pleased | Feeling happy about something.
+pocket | A small bag sewn into clothes.
+police officer | A person who keeps people safe and catches bad people.
+police station | A building where police officers work.
+pond | A small area of water in a garden or park.
+poor | Having very little money.
+pop music | Modern songs that many young people like.
+popular | Liked by many people.
+post | Letters and parcels, or to send them.
+post office | A place where you send letters and buy stamps.
+postcard | A card with a picture that you send from a holiday.
+prefer | To like one thing better than another.
+prepare | To get ready.
+prize | A gift you win in a game.
+problem | Something difficult that needs an answer.
+programme | A show on TV or radio.
+project | A piece of school work done over a long time.
+pull | To move something towards you.
+push | To move something away from you.
+puzzle | A game where you put pieces together or solve a question.
+pyjamas | Soft clothes you wear in bed.
+pyramid | A big shape with a square bottom and pointed top, in Egypt.
+quarter | One of four equal parts.
+queen | A woman who rules a country.
+quite | A little, or fairly. Example: It is quite cold.
+quiz | A game where you answer questions.
+race | A contest to see who is the fastest.
+racing | Taking part in a contest to be the fastest.
+railway | A track with metal lines where trains go.
+ready | Prepared and able to start.
+remember | To keep something in your mind.
+repair | To make something work or look good again.
+repeat | To say or do again.
+restaurant | A place where you pay to eat meals.
+rich | Having a lot of money.
+richard | A boy's name.
+right | The opposite of left, or correct.
+ring | A circle of gold you wear on a finger, or to make a bell sound.
+robert | A boy's name.
+rock music | Loud music with guitars and drums.
+rocket | A tall machine that flies into space.
+rucksack | A bag you carry on your back.
+salt | White powder that makes food taste better.
+same | Not different.
+sarah | A girl's name.
+save | To keep something safe, or to not spend money.
+science | The school subject about nature and how things work.
+scissors | A tool with two blades for cutting paper.
+score | The number of points in a game.
+screen | The flat part of a TV or computer that shows pictures.
+search | To look carefully for something.
+secret | Something that only a few people know.
+sell | To give something and get money.
+september | The month after August.
+several | More than two but not very many.
+shampoo | Soap for washing your hair.
+shelf | A flat board on a wall for putting things on.
+should | A word for good ideas. Example: You should sleep early.
+silver | A shiny grey-white metal or colour.
+since | From a past time until now. Example: I've lived here since 2020.
+singer | A person who sings songs.
+ski | To slide on snow with long flat boards.
+skyscraper | A very tall building in a city.
+sledge | A thing you sit on to slide down a snowy hill.
+smell | To use your nose, or the thing your nose notices.
+snack | A small bit of food between meals.
+snowball | A ball made from snow that you can throw.
+snowboard | A board you stand on to slide down a snowy hill.
+snowboarding | Sliding down a snowy hill standing on a board.
+snowman | A figure of a person made from white balls of frozen rain.
+so | For this reason. Example: It was late, so I ran.
+soap | Something you use with water to wash your hands.
+soft | Not hard. Nice to touch.
+somewhere | In some place, but we don't say where.
+soon | In a short time.
+sophia | A girl's name.
+sore | Painful. Example: I have a sore throat.
+sound | Something you hear.
+south | The direction to the bottom of a map.
+space | The huge place beyond Earth with stars and planets.
+spaceship | A vehicle that travels in space.
+speak | To say words with your voice.
+special | Not ordinary. Very important or nice.
+spend | To use money to buy things, or to pass time.
+spoon | A tool for eating soup or ice cream.
+spot | A small round mark.
+spotted | Having small round marks all over it.
+spring | The season after winter when flowers grow.
+stadium | A big place where people watch sports.
+stage | A raised floor where actors and singers perform.
+stamp | A small paper you stick on a letter.
+stay | To not leave. To remain in a place.
+step | One movement of your foot when you walk.
+still | Not moving, or until now. Example: He is still asleep.
+stone | A small hard piece of rock.
+storm | Very bad weather with strong wind and rain.
+straight on | Going forward without turning.
+strange | Not normal. A bit odd.
+strawberry | A small red fruit with seeds on the outside.
+stream | A small river.
+stripe | A long thin line of colour.
+striped | Having long lines of colour.
+student | A person who goes to school or university to learn.
+study | To learn about something from books.
+subject | Something you learn at school, like maths.
+such | Used to say "very". Example: It is such a nice day.
+suddenly | Happening very fast and not expected.
+sugar | A sweet white food that you put in tea.
+suitcase | A big bag for clothes when you travel.
+summer | The hot season after spring.
+sunglasses | Dark glasses that protect your eyes from the sun.
+sure | Certain that something is true.
+surname | Your family name.
+surprise | Something you did not expect.
+swan | A big white bird with a long neck on a lake.
+swing | A seat hanging from ropes that moves forward and back.
+take | To get something and carry it away.
+taste | To use your mouth to find out how food is.
+taxi | A car with a driver that you pay to take you somewhere.
+team | A group of people who play together.
+telephone | A thing you use to speak to someone far away.
+tent | A small house made of cloth for sleeping outside.
+thank | To say you are grateful. Example: I thank my friend.
+theatre | A place where you go to see plays.
+thousand | The number 1,000.
+through | Going in one side and out the other.
+tidy | Neat and in the right place.
+time | What a clock shows, like hours and minutes.
+timetable | A list that shows when lessons or buses start.
+toe | One of the five small parts at the end of your foot.
+together | With each other.
+tomorrow | The day after today.
+tonight | This evening or night.
+torch | A small light you hold in your hand.
+tortoise | A slow animal with a hard round shell.
+touch | To put your hand on something.
+tour | A trip to see many places.
+traffic | Cars and buses on a road.
+trainers | Soft shoes for sports.
+tune | A group of musical notes that make a song.
+turn | To move round, or to change direction.
+turn off | To stop a light or machine.
+turn on | To make a light or machine start.
+twice | Two times.
+tyre | The round rubber part on the outside of a wheel.
+umbrella | Something you hold over your head when it rains.
+unfriendly | Not nice to other people.
+unhappy | Feeling sad.
+uniform | Special clothes that students or workers wear.
+university | A place where adults study after school.
+unkind | Not nice. Not caring about others.
+untidy | Not neat. Messy.
+until | Up to a certain time. Example: Wait until six.
+unusual | Not normal. Different.
+use | To do a job with something.
+usually | Most of the time.
+view | What you can see from a place.
+violin | A music instrument with strings that you play with a bow.
+visit | To go and see a person or place.
+volleyball | A team game where you hit a ball over a high net.
+waiter | A man who brings food to people in a restaurant.
+warm | A little hot, nice and comfortable.
+way | The road or path to a place.
+west | The direction where the sun goes down.
+wheel | A round thing under a car that turns.
+while | During the time that something happens.
+whisper | To speak in a very quiet voice.
+whistle | To make a high sound by blowing through your lips.
+wife | A married woman, the partner of a husband.
+wifi | A way to connect to the internet without wires.
+wild | Living free in nature, not with people.
+will | A word for the future. Example: I will call you.
+william | A boy's name.
+win | To be the best in a game.
+wing | A part of a bird or plane that helps it fly.
+winner | The person who wins.
+winter | The cold season after autumn.
+wish | To want something very much, like a dream.
+without | Not having something. Example: tea without sugar.
+wonderful | Very, very good.
+wood | The hard part of a tree used for tables and chairs.
+wool | Soft hair from a sheep used for warm clothes.
+worried | Feeling afraid something bad may happen.
+x-ray | A special picture of the bones inside your body.
+yet | Until now. Example: I have not finished yet.
+yoghurt | A soft, creamy food made from milk.
+you're welcome | Words you say after someone says thank you.
+zero | The number 0.

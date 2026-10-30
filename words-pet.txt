@@ -1,1607 +1,1607 @@
-# B1 Preliminary (PET) word list: one word per line. Lines starting with # are ignored.
-able
-abroad
-absent
-access
-accident
-accommodation
-ache
-act
-action
-actor
-actress
-ad
-address
-admission
-advanced
-adventure
-advert
-advertise
-advertisement
-aeroplane
-afraid
-africa
-afternoon
-ages
-air
-air conditioning
-airline
-airplane
-airport
-alarm
-alarm clock
-alone
-amazed
-amazing
-ambulance
-amusing
-angry
-animal
-ankle
-announcement
-annoyed
-answer
-antarctica
-antique
-anxious
-apartment
-apartment block
-app
-apple
-application
-apply
-appointment
-approximately
-april
-architect
-area
-argue
-arithmetic
-arm
-armchair
-army
-arrival
-arrive
-art
-article
-artist
-ashamed
-asia
-ask
-aspirin
-assistant
-astronaut
-at
-at sea
-athlete
-athletics
-audience
-august
-australia
-autumn
-awesome
-awful
-baby
-babysitter
-backpack
-backpacker
-backpacking
-bad
-badminton
-bag
-baggage
-bake
-balcony
-ball
-ballet
-banana
-band
-bandage
-bank
-banker
-barbecue
-barber
-bargain
-baseball
-basin
-basketball
-bat
-bath
-bathing suit
-bathroom
-bathtub
-bay
-beach
-bean
-beautiful
-bed
-bedroom
-bee
-beginner
-bell
-belt
-bestseller
-better
-bicycle
-bike
-bill
-bin
-biology
-bird
-birthday
-biscuit
-bitter
-black
-blackboard
-blanket
-bleed
-blind
-block
-blog
-blogger
-blood
-blouse
-blow
-blue
-board
-board game
-boarding pass
-boat
-body
-boil
-boiled
-bone
-book
-bookcase
-booking office
-bookshelf
-bookshop
-bookstore
-boot
-border
-bored
-boring
-boss
-bossy
-bottle
-bottle bank
-bowl
-box
-boxing
-bracelet
-brain
-branch
-brave
-brazil
-brazilian
-bread
-break
-break up
-breakfast
-breaktime
-breath
-breathe
-breeze
-bridge
-brilliant
-broccoli
-brochure
-brown
-brush
-bucket
-building
-bulb
-bunch
-burger
-bus
-bus service
-bus station
-bus stop
-bush
-businessman
-businesswoman
-busy
-butcher
-butter
-butterfly
-button
-buy
-by air
-by land
-by post
-by rail
-by road
-by sea
-cab
-cabbage
-cabin
-cafe
-cafeteria
-cake
-calculator
-call
-call back
-calm
-camera
-cameraman
-camp
-camping
-campsite
-can
-canada
-canadian
-canal
-candidate
-candle
-candy
-canteen
-cap
-capital city
-captain
-car
-car alarm
-car park
-card
-career
-careful
-carpet
-carrot
-cartoon
-case
-cash
-cash machine
-cashpoint
-castle
-catch
-cave
-ceiling
-celebrity
-cell phone
-cellar
-cent
-centigrade
-central heating
-centre
-century
-cereal
-certificate
-chain
-chair
-challenging
-champion
-championship
-change
-changing room
-channel
-charming
-charter
-chat
-chat room
-chat show
-cheap
-check
-check in
-check out
-check-in
-cheerful
-cheese
-chef
-chemist
-chemistry
-cheque
-chess
-chest of drawers
-chicken
-chilli
-chin
-china
-chinese
-chips
-chocolate
-choose
-cinema
-circus
-city centre
-class
-classical music
-classroom
-clean
-cleaner
-clear
-clever
-click
-cliff
-climate
-climate change
-climb
-climbing
-clinic
-clock
-close
-closed
-clothes
-clothes line
-cloud
-cloudy
-club
-coach
-coast
-coat
-coconut
-coffee
-cola
-cold
-collar
-colleague
-collect
-collection
-collector
-college
-comb
-comedy
-comic
-communicate
-communication
-company
-compete
-competition
-competitor
-complain
-composition
-computer
-concert
-conference
-confident
-confirm
-confused
-confusing
-connect
-connection
-contest
-continent
-contract
-cook
-cooker
-cookie
-cool
-corn
-corner
-cost
-costume
-cottage
-cotton
-cough
-country
-countryside
-course
-court
-crazy
-cream
-credit card
-crew
-cricket
-crossing
-crossroads
-cruel
-cruise
-cucumber
-cup
-cupboard
-curious
-currency
-curriculum
-curry
-curtain
-cushion
-customer
-customs
-customs officer
-cut
-cute
-cycle
-cycling
-cyclist
-daily
-damage
-damaged
-dance
-dancer
-dancing
-danger
-dangerous
-dark
-data
-date
-day
-dead
-dear
-december
-degree
-degrees
-delay
-delayed
-delete
-delicious
-delighted
-deliver
-dentist
-depart
-department
-departure
-deposit
-depressed
-desert
-designer
-desk
-dessert
-destination
-detective
-dial
-dial up
-diary
-dictionary
-die
-diet
-different
-difficult
-digital
-digital camera
-dining room
-dinner
-diploma
-direction
-director
-disappointed
-disappointing
-disc
-disc jockey
-disco
-dish
-dishwasher
-disk
-display
-diver
-diving
-doctor
-document
-documentary
-documents
-doll
-dollar
-dolphin
-donkey
-door
-dot
-double room
-download
-downstairs
-drag
-drama
-draw
-drawer
-drawing
-dress
-drink
-drive
-driver
-driver's
-driving
-dry
-duck
-due
-dustbin
-duty-free
-duvet
-ear
-earache
-earn
-earring
-earth
-east
-easy
-eat
-economics
-egg
-electric
-electrical
-electronic
-electronics
-elementary
-elephant
-elevator
-email
-embarrassed
-embarrassing
-embassy
-emergency
-employ
-employee
-employer
-employment
-engaged
-engineer
-enjoyable
-enter
-entrance
-envelope
-environment
-environmental
-equipment
-essay
-euro
-europe
-evening
-excellent
-exchange
-exchange rate
-excited
-exciting
-exercise
-exhibition
-exit
-expensive
-explore
-explorer
-extreme sports
-eye
-face
-facilities
-factory
-fall
-famous
-fan
-fantastic
-far
-fare
-farm
-farmer
-farmland
-fashion
-fasten
-favourite
-fax
-february
-feel better
-feel ill
-feel sick
-ferry
-festival
-fever
-fiction
-field
-file
-film
-film maker
-film star
-fine
-finger
-fire
-fire alarm
-firefighter
-fireworks
-fish
-fishing
-fit
-fitness
-flat
-flatmate
-flavour
-flight
-flood
-floor
-flour
-flower
-flu
-fly
-fog
-foggy
-fold
-folk music
-fond
-food
-foot
-football
-football player
-footballer
-for sale
-forecast
-foreign
-forest
-fork
-fountain
-france
-free
-freeze
-freezer
-freezing
-french
-french fries
-fresh
-friday
-fridge
-fried
-friendly
-frightened
-frightening
-frog
-frozen
-fruit
-fruit juice
-fry
-frying pan
-fuel
-full time
-fun
-funny
-fur
-furniture
-gale
-gallery
-game
-garage
-garden
-garlic
-gas
-gas station
-gate
-generous
-gentle
-geography
-get better
-get dressed
-get wet
-get worse
-giraffe
-glad
-glass
-glasses
-glove
-go
-go jogging
-go out
-go shopping
-goal
-goalkeeper
-gold
-golden
-golf
-good
-grammar
-grape
-grass
-gray
-great
-green
-grey
-grill
-grilled
-grocery store
-ground
-ground floor
-group
-grow
-guard
-guest
-guest-house
-guide
-guidebook
-guilty
-guitar
-guitarist
-gym
-gymnastics
-hair
-hairdresser
-half
-hall
-hand
-handbag
-handkerchief
-handle
-handlebars
-handwriting
-hang out
-hang up
-happy
-harbour
-hard
-hardware
-hat
-head
-headache
-headline
-headphones
-health
-healthy
-hear
-heart
-heat
-heater
-heating
-heavy
-heel
-helicopter
-helmet
-herbs
-hero
-heroine
-hi-fi
-high
-high jump
-hike
-hill
-hip hop
-hire
-history
-hit
-hit song
-hitchhike
-hobby
-hockey
-holidays
-home
-homepage
-homework
-honey
-horror
-horse-riding
-hospital
-hot
-hotel
-hour
-house
-housewife
-housework
-humid
-hungry
-hurt
-ice
-ice cream
-ice hockey
-ice skates
-ice skating
-icy
-ill
-illness
-immigration
-important
-impressed
-india
-indian
-inexpensive
-information
-ingredients
-injure
-install
-instructions
-instructor
-instrument
-intelligent
-interested
-interesting
-intermediate
-internet
-interval
-interview
-interviewer
-invent
-invention
-ireland
-irish
-iron
-island
-italian
-italy
-jacket
-jam
-january
-jazz music
-jealous
-jeans
-jet
-jewellery
-jewelry
-job
-jogging
-join in
-joke
-journalist
-journey
-judge
-jug
-juice
-july
-jumper
-june
-jungle
-kangaroo
-keen
-keen on
-keep fit
-kettle
-key
-keyboard
-kick
-kind
-king
-kit
-kitchen
-knee
-knife
-knit
-know
-lab
-label
-laboratory
-ladder
-lake
-lamb
-lamp
-land
-language
-laptop
-laugh
-laundry
-lawyer
-lazy
-leaf
-league
-learn
-leather
-leave
-lecturer
-left
-leg
-lemon
-lemonade
-lesson
-letter
-lettuce
-level
-librarian
-library
-licence
-lie down
-lift
-light
-lightning
-line
-lion
-listen to
-litter
-living-room
-lock
-locker
-locker room
-logo
-long jump
-look at
-lorry
-lovely
-luck
-lucky
-luggage
-lunch
-luxury
-machine
-mad
-magazine
-magic
-main course
-make-up
-mall
-manager
-map
-march
-mark
-market
-married
-match
-material
-math
-mathematics
-maths
-may
-meal
-mean
-meaning
-meat
-mechanic
-medicine
-meeting
-melon
-member
-membership
-mention
-menu
-message
-mice
-microwave
-midnight
-mild
-milk
-mineral water
-minute
-mirror
-miserable
-miss
-mobile phone
-model
-modern
-moment
-monday
-money
-monkey
-month
-monthly
-monument
-moon
-morning
-mosquito
-motor-racing
-motorbike
-motorway
-mountain
-mouse
-mouse mat
-move
-mug
-museum
-mushroom
-music
-musician
-nationality
-nature
-nature studies
-necklace
-negative
-neighbour
-nervous
-net
-news
-newspaper
-nice
-night
-nightlife
-noisy
-noon
-normal
-north
-north america
-nose
-note
-notice board
-novelist
-november
-nurse
-o'clock
-occupation
-ocean
-october
-office
-officer
-oil
-old
-old-fashioned
-omelette
-on board
-on business
-on foot
-on holiday
-on time
-on vacation
-onion
-online
-opening hours
-opera
-operate
-operation
-operator
-orange
-orchestra
-order
-ordinary
-original
-out of work
-oven
-overnight
-owner
-pain
-painful
-paint
-painter
-painting
-palace
-pale
-pan
-pants
-parcel
-park
-parking lot
-parking space
-parrot
-part time
-party
-passenger
-passport
-password
-past
-pasta
-path
-patient
-pattern
-pavement
-pay
-pea
-peach
-peanut
-pear
-pencil case
-penguin
-penny
-pepper
-perform
-performance
-performer
-perfume
-personal
-petrol
-petrol station
-pharmacy
-phone
-photograph
-photographer
-photography
-physics
-picnic
-pie
-piece of cake
-pill
-pillow
-pilot
-pineapple
-pink
-pipe
-pitch
-pizza
-planet
-plant
-plastic
-plate
-platform
-play
-playground
-pleasant
-plug
-plug in
-pocket
-podcast
-poem
-poet
-point
-points
-police officer
-police station
-policeman
-policewoman
-politician
-pollution
-poor
-pop music
-port
-porter
-positive
-post office
-postcard
-postman
-potato
-pound
-practice
-practise
-prescription
-presenter
-president
-pretty
-price
-primary school
-print
-printer
-prison
-prize
-problem
-production
-profession
-professional
-professor
-program
-programme
-programmer
-prohibited
-project
-pronounce
-pronunciation
-property
-public transport
-publisher
-pullover
-pupil
-purple
-purse
-put on
-qualification
-quarter
-queen
-question
-quick
-quiet
-quit
-quiz
-rabbit
-race
-race track
-racing
-racket
-radio
-rail
-railroad
-railway
-railway station
-rain
-raincoat
-rainforest
-range
-read
-ready
-real
-realistic
-reasonable
-receipt
-reception
-receptionist
-recipe
-recording
-recover
-recycle
-recycled
-recycling
-red
-reduce
-reduced
-refreshments
-refrigerator
-region
-register
-relaxed
-reliable
-relieved
-remember
-remote control
-rent
-repair
-reply
-reporter
-research
-reservation
-reserve
-rest
-restaurant
-retire
-retirement
-return
-review
-rice
-rich
-ride
-rider
-riding
-right
-ring
-ring up
-river
-road
-road sign
-roast
-robot
-rock
-rock music
-rocket
-roll
-romantic
-roof
-room
-roommate
-rope
-roundabout
-route
-row
-rubber
-rubbish
-rubbish bin
-rude
-rugby
-ruin
-ruler
-run
-running
-sad
-safe
-sail
-sailing
-sailor
-salad
-salary
-sales assistant
-salesman
-saleswoman
-salmon
-salt
-sand
-sandal
-sandwich
-satisfied
-saturday
-sauce
-saucepan
-saucer
-sausage
-save
-say
-scarf
-scene
-scenery
-school
-science
-scientist
-scooter
-score
-screen
-sculpture
-sea
-seaside
-season
-seat
-second
-second-hand
-secondary
-secretary
-security guard
-selfie
-sell
-sentence
-september
-series
-serious
-server
-service
-shark
-sheet
-shelf
-ship
-shirt
-shoe
-shoot
-shooting
-shop
-shop assistant
-shopper
-shopping
-shopping centre
-shopping mall
-shorts
-shoulder
-shout
-shower
-sick
-sightseeing
-sign up
-signpost
-silk
-silver
-singer
-single room
-sink
-sitting room
-size
-skateboard
-skating
-skiing
-skin
-skirt
-sky
-sleeve
-sleeveless
-slice
-slide
-slim
-slow
-small
-smart
-smartphone
-snack
-snow
-snowboard
-snowboarding
-snowfall
-soap
-soap opera
-soccer
-social media
-socks
-sofa
-soft
-soft drink
-software
-soldier
-sore throat
-sorry
-soundtrack
-soup
-sour
-south
-south america
-space
-spaceship
-spain
-spanish
-speak
-special
-species
-speed
-spend
-spicy
-spinach
-spoon
-sport
-sports
-sports centre
-sports facilities
-spring
-square
-squash
-stadium
-staff
-stage
-stairs
-star
-station
-stay
-steak
-step
-stomach
-stomach ache
-stone
-store
-storm
-strange
-strawberry
-stream
-street
-stress
-stripe
-strong
-student
-studies
-studio
-study
-stupid
-subject
-subway
-sugar
-suit
-suitcase
-summer
-sun
-sunbathe
-sunday
-sunglasses
-sunny
-sunrise
-sunset
-sunshine
-supermarket
-sure
-surf
-surfboard
-surfboarding
-surfing
-surprised
-surround
-sweater
-sweatshirt
-sweet
-swim
-swimming
-swimming costume
-swimming pool
-swimsuit
-switch
-switch off
-switch on
-t-shirt
-table
-table tennis
-tablet
-take exercise
-take off
-take part
-takeaway
-talk
-talk show
-tall
-tap
-taste
-tasty
-taxi
-taxi driver
-tea
-teach
-teacher
-team
-technology
-telephone
-television
-tell
-temperature
-tennis
-tennis player
-tent
-term
-terrible
-test
-text
-text message
-theatre
-thirsty
-thriller
-throw
-thumb
-thunder
-thunderstorm
-thursday
-ticket
-tie
-tiger
-tights
-time
-tire
-tired
-toast
-today
-toes
-toilet
-tomato
-tomorrow
-tonight
-tooth
-toothache
-toothbrush
-torch
-tour
-tour guide
-tourist
-tourist information
-towel
-tower
-town
-toy
-track
-tracksuit
-trade
-traffic
-traffic jam
-traffic lights
-train
-trainer
-trainers
-training
-tram
-translate
-translation
-travel
-travel agent
-tree
-trip
-trousers
-true
-try on
-tuesday
-tuna
-tunnel
-turkey
-turn off
-turn on
-turning
-typical
-tyre
-umbrella
-unable
-underground
-underpants
-underwear
-undress
-unemployed
-unhappy
-uniform
-university
-unusual
-upload
-upstairs
-useful
-valley
-vase
-vegetable
-vegetarian
-vehicle
-versus
-video
-video clip
-village
-visa
-visit
-visitor
-vocabulary
-volleyball
-volume
-volunteer
-wage
-wages
-waiter
-waiting room
-waitress
-walk
-wall
-wallet
-warm
-wash up
-washing
-watch
-water
-water skiing
-waterfall
-waves
-way
-wear
-weather
-web
-web page
-webcam
-website
-wednesday
-week
-weekday
-weekend
-weekly
-well
-west
-wet
-wheel
-white
-wild
-wildlife
-win
-wind
-window
-windscreen
-windy
-winter
-wonderful
-wood
-wool
-woollen
-word
-work
-worker
-working hours
-workout
-world
-worried
-wrong
-year
-yellow
-yesterday
-yoga
-yoghurt
-yogurt
-young
-zebra
-zoo
+# B1 Preliminary (PET) word list: one word per line. Lines starting with # are ignored. A meaning can follow after a | sign.
+able | Having the skill or power to do something. Example: She is able to swim.
+abroad | In or to a foreign country.
+absent | Not at school or work; not there.
+access | A way to enter a place or reach something.
+accident | A bad event that happens by mistake and may hurt someone.
+accommodation | A place to stay, like a hotel room.
+ache | A pain that lasts for a long time.
+act | To perform a part in a play or film; to do something.
+action | The doing of something; things that happen.
+actor | A man who performs in plays or films.
+actress | A woman who performs in plays or films.
+ad | A short notice or video that tries to sell something.
+address | The street, house number and town where someone lives.
+admission | The money you pay or the right to go into a place.
+advanced | At a high level; not for beginners.
+adventure | An exciting and sometimes dangerous trip or experience.
+advert | A short notice or video that tries to sell something.
+advertise | To tell people about a product so they will buy it.
+advertisement | A short notice or video that tries to sell something.
+aeroplane | A vehicle with wings that flies in the sky.
+afraid | Feeling fear; scared.
+africa | A very large continent with countries like Egypt and Kenya.
+afternoon | The part of the day between noon and evening.
+ages | A very long time. Example: I waited for ages.
+air | The invisible gas around us that we breathe.
+air conditioning | A machine that makes the air in a room cool.
+airline | A company that carries people by plane.
+airplane | A vehicle with wings that flies in the sky.
+airport | A place where planes arrive and leave.
+alarm | A loud sound that warns you or wakes you up.
+alarm clock | A clock that rings to wake you up.
+alone | Without any other people.
+amazed | Very surprised.
+amazing | Very surprising and wonderful.
+ambulance | A special car that takes sick or hurt people to hospital.
+amusing | Funny and making you smile.
+angry | Feeling that you are very upset with someone.
+animal | A living thing that is not a plant or a person, like a dog.
+ankle | The part of the leg where it joins the foot.
+announcement | Important words said or written to tell people something.
+annoyed | A little angry.
+answer | What you say or write when someone asks a question.
+antarctica | The very cold continent around the South Pole.
+antique | A very old and valuable thing.
+anxious | Worried and nervous.
+apartment | A set of rooms for living in, on one floor of a building.
+apartment block | A big building with many homes inside.
+app | A computer program on a phone.
+apple | A round fruit that is red, green or yellow.
+application | A form you fill in when you ask for a job or a place.
+apply | To ask officially for a job, a place or a visa.
+appointment | A time you arranged to meet a doctor or other person.
+approximately | Nearly; not exactly. Example: It costs about ten dollars.
+april | The fourth month of the year.
+architect | A person who designs buildings.
+area | A part of a town, country or space.
+argue | To speak angrily to someone who disagrees with you.
+arithmetic | Working with numbers by adding, taking away, and so on.
+arm | The part of the body between the shoulder and the hand.
+armchair | A soft, big chair with sides for your arms.
+army | A large group of soldiers.
+arrival | The time when someone gets to a place.
+arrive | To get to a place at the end of a trip.
+art | Drawing, painting and making beautiful things.
+article | A piece of writing in a newspaper or magazine.
+artist | A person who paints, draws or makes beautiful things.
+ashamed | Feeling bad because you did something wrong.
+asia | The biggest continent, where Vietnam, China and India are.
+ask | To say something to get an answer or help.
+aspirin | A small pill that takes away pain.
+assistant | A person who helps someone else with their work.
+astronaut | A person who travels into space.
+at | A little word showing a place or time. Example: We meet at school.
+at sea | On a ship far from land.
+athlete | A person who is good at sports and runs, jumps or throws.
+athletics | Sports like running, jumping and throwing.
+audience | The people who watch a show, film or game.
+august | The eighth month of the year.
+australia | A country and a continent south of Asia, with kangaroos.
+autumn | The season after summer, when leaves fall.
+awesome | Very good; great.
+awful | Very bad.
+baby | A very young child.
+babysitter | A person who looks after children when parents are out.
+backpack | A bag you carry on your back.
+backpacker | A person who travels cheaply with a bag on their back.
+backpacking | Travelling cheaply with a bag on your back.
+bad | Not good.
+badminton | A game where players hit a shuttlecock over a net with rackets.
+bag | A container made of paper, plastic or cloth to carry things.
+baggage | The bags and suitcases you take on a trip.
+bake | To cook food like bread or cake in an oven.
+balcony | A small place with a fence outside an upstairs window.
+ball | A round thing used in games.
+ballet | A kind of dance with beautiful, graceful moves.
+banana | A long yellow fruit.
+band | A group of people who play music together.
+bandage | A long piece of cloth you wrap around a hurt part of the body.
+bank | A place that keeps people's money safe.
+banker | A person who works in a bank.
+barbecue | A meal where food is cooked outside over a fire.
+barber | A person who cuts men's hair.
+bargain | Something you buy for a lower price than usual.
+baseball | A team game where players hit a ball with a bat and run.
+basin | A bowl you fill with water to wash in.
+basketball | A team game where players throw a ball into a high net.
+bat | A wooden stick used to hit a ball.
+bath | Washing your body in a tub of water.
+bathing suit | Clothes you wear to swim.
+bathroom | A room with a bath or shower where you wash.
+bathtub | A big container you fill with water to wash in.
+bay | A part of the sea that curves into the land.
+beach | A sandy place next to the sea.
+bean | A small seed you eat as a vegetable.
+beautiful | Very nice to look at.
+bed | Furniture you sleep on.
+bedroom | A room where you sleep.
+bee | A small flying insect that makes honey.
+beginner | A person who has just started to learn something.
+bell | A metal thing that makes a ringing sound.
+belt | A band you wear around your waist to hold up trousers.
+bestseller | A book or product that many people buy.
+better | More good than something else.
+bicycle | A vehicle with two wheels that you ride by pushing pedals.
+bike | A vehicle with two wheels that you ride by pushing pedals.
+bill | A paper that shows how much money you must pay.
+bin | A container for rubbish.
+biology | The study of living things like plants and animals.
+bird | An animal with wings and feathers that can usually fly.
+birthday | The day each year when you were born.
+biscuit | A small, flat, dry sweet cake.
+bitter | Having a sharp, not sweet taste, like strong coffee.
+black | The colour of coal or the night sky.
+blackboard | A dark board in a classroom that you write on with chalk.
+blanket | A thick cover on a bed to keep you warm.
+bleed | To lose blood from a cut.
+blind | Not able to see.
+block | A big piece of something hard; a group of buildings.
+blog | A website where a person writes about their life or ideas.
+blogger | A person who writes a website diary or articles.
+blood | The red liquid that flows in your body.
+blouse | A shirt for a woman or girl.
+blow | To send air out of your mouth or to move with the wind.
+blue | The colour of the sky on a sunny day.
+board | A flat piece of wood or plastic used for writing or games.
+board game | A game played on a special flat board, like chess.
+boarding pass | A card that lets you get on a plane.
+boat | A small vehicle that travels on water.
+body | All the parts of a person or animal.
+boil | To heat water until it bubbles.
+boiled | Cooked in very hot, bubbling water.
+bone | One of the hard white parts inside your body.
+book | Pages with writing, joined together inside a cover.
+bookcase | A piece of furniture with shelves for books.
+booking office | A place where you buy or reserve tickets.
+bookshelf | A shelf where you keep books.
+bookshop | A shop that sells books.
+bookstore | A shop that sells books.
+boot | A strong shoe that covers the foot and ankle.
+border | The line between two countries.
+bored | Feeling tired because something is not interesting.
+boring | Not interesting; making you feel tired.
+boss | The person in charge of a workplace.
+bossy | Always telling other people what to do.
+bottle | A tall container for drinks with a narrow top.
+bottle bank | A big container where you put empty glass bottles to be reused.
+bowl | A round, deep dish for food.
+box | A container with straight sides and often a lid.
+boxing | A sport where two people fight with their hands in big gloves.
+bracelet | A piece of jewellery you wear on your wrist.
+brain | The part inside your head that you use to think.
+branch | A part of a tree that grows out from the trunk.
+brave | Not afraid to do dangerous things.
+brazil | A big country in South America.
+brazilian | A person or thing from Brazil.
+bread | A food made from flour and baked, used for sandwiches.
+break | To make something split into pieces; a rest.
+break up | To end a relationship or to split into pieces.
+breakfast | The first meal of the day.
+breaktime | A short rest time between lessons at school.
+breath | The air that goes in and out of your body.
+breathe | To take air in and out of your body.
+breeze | A light, gentle wind.
+bridge | A structure that lets you cross a river or road.
+brilliant | Very clever or very good.
+broccoli | A green vegetable that looks like a small tree.
+brochure | A thin book with pictures and facts about a place or product.
+brown | The colour of chocolate or earth.
+brush | A tool with hairs used for cleaning, painting or tidying hair.
+bucket | A round container with a handle for carrying water.
+building | A structure with walls and a roof, like a house or school.
+bulb | The glass part of a lamp that gives light.
+bunch | A group of things joined together, like flowers.
+burger | A flat round meat sandwich in a soft bread roll.
+bus | A big vehicle that carries many people along a road.
+bus service | A regular system of buses that travel on set routes.
+bus station | A place where buses start and finish their trips.
+bus stop | A place by the road where a bus stops for people.
+bush | A small plant with many branches, smaller than a tree.
+businessman | A man who works in business and makes money.
+businesswoman | A woman who works in business and makes money.
+busy | Having a lot of things to do.
+butcher | A person who sells meat.
+butter | A soft yellow food made from milk, put on bread.
+butterfly | An insect with big colourful wings.
+button | A small round thing that fastens clothes or that you press.
+buy | To get something by paying money.
+by air | Travelling in a plane.
+by land | Travelling on the ground, not by sea or air.
+by post | Sent in the mail.
+by rail | Travelling on a train.
+by road | Travelling in a car, bus or truck.
+by sea | Travelling on a ship.
+cab | A car with a driver that you pay to take you somewhere.
+cabbage | A big round vegetable with green leaves.
+cabin | A small room on a ship or plane, or a small wooden house.
+cafe | A small place where you can buy drinks and light meals.
+cafeteria | A place in a school or office where you take your own food and eat.
+cake | A sweet baked food, often for birthdays.
+calculator | A small machine that does sums for you.
+call | To use the phone, or to shout to someone.
+call back | To phone someone again.
+calm | Quiet and relaxed; not worried.
+camera | A machine for taking photos.
+cameraman | A man whose job is to film with a camera.
+camp | To stay in a tent; a place with tents.
+camping | Staying outside in a tent for a holiday.
+campsite | A place where people put up tents.
+can | A metal container for drink or food; to be able to.
+canada | A very big country in North America.
+canadian | A person or thing from Canada.
+canal | A long, narrow river made by people for boats.
+candidate | A person who takes an exam or asks for a job.
+candle | A stick of wax that you burn to give light.
+candy | Sweet food, like small sugar sweets.
+canteen | A place at school or work where people eat meals.
+cap | A soft hat with a hard front part.
+capital city | The most important city of a country, where the government is.
+captain | The person in charge of a ship, plane or team.
+car | A road vehicle with four wheels and an engine.
+car alarm | A loud noise a car makes to warn that someone is stealing it.
+car park | A place where you leave your car.
+card | A piece of stiff paper, for messages or games.
+career | The job or work a person does for many years.
+careful | Thinking about what you do so nothing bad happens.
+carpet | A thick soft cover for a floor.
+carrot | A long orange vegetable that grows under the ground.
+cartoon | A funny film or picture made with drawings.
+case | A box or bag for carrying or keeping things.
+cash | Money in coins and paper, not cards.
+cash machine | A machine in the street where you take money out of your bank account.
+cashpoint | A machine in the wall of a bank where you get money with a card.
+castle | A big strong old building with thick walls where kings and queens lived.
+catch | To take and hold something that is moving, like a ball or a bus.
+cave | A large hole in the side of a hill or under the ground.
+ceiling | The flat surface at the top of a room, above your head.
+celebrity | A very famous person, like a film star or singer.
+cell phone | A small phone you carry with you and use anywhere.
+cellar | A room under a house, below the ground, often used for storing things.
+cent | A small coin; one hundredth of a dollar or euro.
+centigrade | A scale for measuring temperature where water freezes at 0 and boils at 100.
+central heating | A system that warms all the rooms in a house with hot water or air.
+centre | The middle of something, or a place for an activity, like a sports place.
+century | A period of one hundred years.
+cereal | A food made from grain, eaten with milk for breakfast.
+certificate | An official paper that shows you passed a test or finished a course.
+chain | A line of metal rings joined together, used to hold or tie things.
+chair | A seat for one person, with a back and four legs.
+challenging | Difficult in a way that tests your skills, but can be interesting.
+champion | The person or team that wins a competition.
+championship | A big competition to find the best player or team.
+change | To become different, or to make something different.
+changing room | A room where you take off your clothes and put on others, like in a shop or gym.
+channel | A television station, such as number 5 on your TV.
+charming | Very nice, pleasant and attractive.
+charter | A flight or boat trip that is hired for a special group of people.
+chat | To talk in a friendly, relaxed way.
+chat room | A place on the internet where people type messages to each other.
+chat show | A TV programme where a host talks to famous guests.
+cheap | Not costing much money.
+check | To look at something to make sure it is correct or safe.
+check in | To tell the hotel or airport you have arrived and get your room or ticket.
+check out | To pay your bill and leave a hotel.
+check-in | The place at an airport where you show your ticket and leave your bags.
+cheerful | Happy and smiling.
+cheese | A yellow or white food made from milk.
+chef | A person who cooks food in a restaurant.
+chemist | A person or shop that sells medicines.
+chemistry | The science that studies what things are made of and how they change.
+cheque | A piece of paper you sign to pay someone from your bank account.
+chess | A board game for two players with kings, queens and other pieces.
+chest of drawers | A piece of furniture with drawers for keeping clothes.
+chicken | A farm bird kept for its eggs and meat.
+chilli | A small, very hot red or green vegetable used in cooking.
+chin | The part of your face below your mouth.
+china | White plates and cups made of fine clay; also a big country in Asia.
+chinese | From China, or the language people speak there.
+chips | Long thin pieces of potato cooked in hot oil.
+chocolate | A sweet brown food made from cocoa.
+choose | To pick the one you want from several things.
+cinema | A place where you go to watch films on a big screen.
+circus | A show with clowns, animals and people doing tricks under a big tent.
+city centre | The middle part of a city where there are many shops and offices.
+class | A group of students who learn together, or a lesson.
+classical music | Serious music of the kind written by Mozart and Beethoven.
+classroom | A room in a school where students have lessons.
+clean | Not dirty.
+cleaner | A person whose job is to make buildings tidy and not dirty.
+clear | Easy to see through or easy to understand.
+clever | Quick at learning and understanding things.
+click | To press a button on a computer mouse.
+cliff | A high steep wall of rock, often by the sea.
+climate | The usual weather in a place over many years.
+climate change | The slow change in the Earth's weather, such as getting hotter.
+climb | To go up something like a hill, tree or wall.
+climbing | The sport of going up mountains or rock walls.
+clinic | A place where people go to see a doctor or nurse for treatment.
+clock | A thing on a wall or table that shows the time.
+close | To shut something, like a door; or near to something.
+closed | Not open; shut.
+clothes | Things you wear, like shirts, trousers and dresses.
+clothes line | A rope outside where you hang wet clothes to dry.
+cloud | A white or grey shape in the sky that can bring rain.
+cloudy | Full of clouds, with little sun.
+club | A group of people who meet to do an activity they like together.
+coach | A comfortable bus for long trips, or a person who trains a sports team.
+coast | The land next to the sea.
+coat | A warm piece of clothing you wear outside over other clothes.
+coconut | A big hard fruit with white food inside and sweet water.
+coffee | A hot brown drink made from roasted beans.
+cola | A sweet brown fizzy drink.
+cold | Not warm; having a low temperature.
+collar | The part of a shirt or coat that goes around your neck.
+colleague | A person you work with.
+collect | To bring things together, or to keep things as a hobby.
+collection | A group of things of one kind that someone keeps, like stamps.
+collector | A person who gathers and keeps things as a hobby.
+college | A school where people study after they leave high school.
+comb | A thing with teeth that you use to make your hair neat.
+comedy | A funny film, play or show that makes people laugh.
+comic | A magazine with stories told in pictures, or a funny person.
+communicate | To share ideas or news with other people by talking or writing.
+communication | Sharing information with other people, like talking or writing.
+company | A business that makes or sells things.
+compete | To try to win against others in a game or race.
+competition | A game or event where people try to win.
+competitor | A person who takes part in a race or game to win.
+complain | To say that you are not happy about something.
+composition | A piece of music or writing that someone has made.
+computer | A machine that stores information and helps you write, play and search.
+concert | A show where musicians play music for people.
+conference | A big meeting where many people talk about a subject.
+confident | Sure that you can do something well.
+confirm | To say that something is true or sure.
+confused | Not able to think clearly or understand.
+confusing | Hard to understand.
+connect | To join one thing to another.
+connection | A link between two things, like a plug and a socket.
+contest | A game or race where people try to win a prize.
+continent | A very large piece of land, like Asia or Africa.
+contract | A written agreement that people sign, like for a job.
+cook | To make food hot and ready to eat; or a person who does this.
+cooker | A kitchen machine with a hot top and oven for making food.
+cookie | A small, flat, sweet baked snack.
+cool | A little cold, in a nice way; or very good and fashionable.
+corn | A tall plant with yellow seeds that you can eat.
+corner | The place where two walls or two roads meet.
+cost | The money you must pay for something.
+costume | Clothes you wear to look like someone else, like at a party.
+cottage | A small house in the countryside.
+cotton | Soft cloth or thread made from a plant, used for clothes.
+cough | To push air out of your throat noisily, often when ill.
+country | A land with its own government, like Vietnam.
+countryside | Land outside towns with fields, farms and trees.
+course | A series of lessons about a subject.
+court | A marked area for playing games like tennis.
+crazy | Very silly or strange; not sensible.
+cream | A thick white liquid from milk, put on cakes or fruit.
+credit card | A plastic card you use to buy things and pay for them later.
+crew | The group of people who work on a ship, plane or film.
+cricket | A game with a bat and ball played by two teams; also a small jumping insect.
+crossing | A place where you can go across a road safely.
+crossroads | A place where two roads cross each other.
+cruel | Very unkind and hurting people or animals on purpose.
+cruise | A holiday on a big ship that visits different places.
+cucumber | A long green vegetable that is eaten in salads.
+cup | A small round container with a handle for drinking tea or coffee.
+cupboard | A piece of furniture with doors for keeping plates or food.
+curious | Wanting to know or learn about things.
+currency | The money used in a country, like dong or dollars.
+curriculum | All the subjects that a school teaches.
+curry | Food cooked with hot spices, often with rice.
+curtain | A piece of cloth that hangs by a window to cover it.
+cushion | A soft bag you put on a chair or sofa to sit on.
+customer | A person who buys things from a shop.
+customs | The place at a border where officials check what people bring into a country.
+customs officer | A person at the border who checks bags for things not allowed.
+cut | To use scissors or a knife to divide something.
+cute | Sweet and pretty, like a small baby or puppy.
+cycle | To ride a bicycle.
+cycling | Riding a bicycle as a sport or for fun.
+cyclist | A person who rides a bicycle.
+daily | Happening every day.
+damage | To hurt or break something so it is not good any more.
+damaged | Broken or hurt, and not in good condition.
+dance | To move your body to music.
+dancer | A person who moves to music, often as a job.
+dancing | Moving your body to music for fun.
+danger | The chance that something bad or harmful may happen.
+dangerous | Likely to hurt you or cause harm.
+dark | With little or no light.
+data | Facts and numbers that are collected and stored, for example on a computer.
+date | A day shown by its day, month and year.
+day | A period of twenty-four hours; there are seven in a week.
+dead | Not alive any more.
+dear | A word used to start a letter, like "Dear Anna"; or costing a lot.
+december | The twelfth and last month of the year.
+degree | A certificate from a university after you finish your studies.
+degrees | Units for measuring temperature, like twenty degrees.
+delay | To make something happen later than planned.
+delayed | Late; not on time.
+delete | To remove words or files from a computer.
+delicious | Tasting very good.
+delighted | Very happy and pleased.
+deliver | To take things like letters or food to people's homes.
+dentist | A person who looks after your teeth.
+depart | To leave, especially on a trip.
+department | One part of a big shop, school or company.
+departure | The act of leaving a place, like a train or plane going.
+deposit | Money you pay first to keep something, or money you put into a bank.
+depressed | Very sad and without hope.
+desert | A very dry place with sand and little rain.
+designer | A person who plans how things like clothes or buildings will look.
+desk | A table where you read, write or work.
+dessert | A sweet food you eat at the end of a meal.
+destination | The place where you are going.
+detective | A person who finds out who did a crime.
+dial | To press the numbers on a phone to call someone.
+dial up | To connect to the internet or a number through a phone line.
+diary | A book where you write what happens each day.
+dictionary | A book that tells you what words mean.
+die | To stop living.
+diet | The food you usually eat, or eating less to lose weight.
+different | Not the same as another.
+difficult | Not easy to do or understand.
+digital | Using numbers and computers, such as a screen showing numbers.
+digital camera | A camera that saves pictures on a card, not on film.
+dining room | A room in a house where people eat meals.
+dinner | The main meal of the day, usually in the evening.
+diploma | A paper that shows you finished a course of study.
+direction | The way you go or look, like left, right or north.
+director | A person who is in charge of a film, play or company.
+disappointed | Sad because something was not as good as you hoped.
+disappointing | Not as good as you hoped, making you sad.
+disc | A flat round object, such as one that stores music or films.
+disc jockey | A person who plays music at a party or on the radio.
+disco | A party or place where people dance to recorded music.
+dish | A plate or bowl for food, or a type of food that is cooked.
+dishwasher | A machine that cleans plates and cups.
+disk | A flat round object used to store computer information.
+display | To show something so that people can see it.
+diver | A person who swims deep under water.
+diving | Jumping into water head first, or swimming deep under the sea.
+doctor | A person who helps sick people to get well.
+document | A paper or computer file with important written information.
+documentary | A film or TV programme that shows real facts about something.
+documents | Papers with important information, like a passport.
+doll | A toy that looks like a small person.
+dollar | Money used in the USA, with one hundred cents.
+dolphin | A clever grey sea animal that jumps and swims fast.
+donkey | An animal like a small horse with long ears.
+door | A thing you open to go into a room or building.
+dot | A very small round mark, like the one in an email address.
+double room | A hotel room with a bed for two people.
+download | To copy a file from the internet to your computer.
+downstairs | On or to a lower floor of a building.
+drag | To pull something heavy along the ground.
+drama | A play for the theatre or TV, often serious.
+draw | To make a picture with a pencil or pen.
+drawer | A box that slides in and out of a desk or cupboard.
+drawing | A picture made with a pencil or pen.
+dress | A piece of clothing for a girl or woman, with the top and skirt together.
+drink | To take a liquid into your mouth and swallow it.
+drive | To control a car and make it go.
+driver | A person who controls a car, bus or train.
+driver's | Belonging to the person who controls a car, as in a licence.
+driving | Controlling a car as it moves along the road.
+dry | Not wet.
+duck | A water bird with a flat beak that says "quack".
+due | Expected to arrive or happen at a certain time.
+dustbin | A container outside where you throw rubbish.
+duty-free | Cheap goods sold at airports without extra tax.
+duvet | A soft thick cover for a bed, filled with feathers or other material.
+ear | The part of the body on the side of your head that you hear with.
+earache | A pain inside your ear.
+earn | To get money for work you do.
+earring | A piece of jewellery you wear on your ear.
+earth | The planet we live on, or the soil in the ground.
+east | The direction where the sun comes up.
+easy | Not difficult; simple to do.
+eat | To put food in your mouth and swallow it.
+economics | The study of money, trade and how businesses and countries make and use it.
+egg | An oval thing a hen lays, which we cook and eat.
+electric | Working with electricity.
+electrical | Connected with or using electricity.
+electronic | Using small parts like chips to control electricity, as in a phone or computer.
+electronics | Things like TVs and phones that work with small chips and electricity.
+elementary | Simple or basic; for beginners.
+elephant | A very big grey animal with a long nose and big ears.
+elevator | A small room that carries people up and down in a building.
+email | A message sent from one computer to another over the internet.
+embarrassed | Feeling shy and uncomfortable because of something that happened.
+embarrassing | Making you feel shy or silly in front of others.
+embassy | The offices of a foreign country's government in another country's capital.
+emergency | A sudden dangerous event when you need help fast.
+employ | To pay a person to work for you.
+employee | A person who is paid to work for a company.
+employer | A person or company that pays people to work.
+employment | Paid work, or having a job.
+engaged | Having promised to marry someone; or busy and not free.
+engineer | A person who designs or fixes machines, roads or buildings.
+enjoyable | Giving you pleasure and fun.
+enter | To go into a place, or to put your name in a competition.
+entrance | The way in to a building.
+envelope | A paper cover you put a letter in before posting.
+environment | The air, water, land and nature around us.
+environmental | About nature and the world around us.
+equipment | The things you need for a special job or activity.
+essay | A piece of writing about one subject, written for school.
+euro | The money used in many countries in Europe.
+europe | A continent that includes France, Italy and Germany.
+evening | The part of the day between afternoon and night.
+excellent | Very, very good.
+exchange | To give one thing and get another in return.
+exchange rate | The price of one country's money in another country's money.
+excited | Very happy and full of energy about something that will happen.
+exciting | Making you feel happy and full of energy.
+exercise | Activity that makes your body strong, or a task for practising at school.
+exhibition | A public show of art or interesting things.
+exit | The way out of a building.
+expensive | Costing a lot of money.
+explore | To travel around a new place to learn about it.
+explorer | A person who travels to new places to find out about them.
+extreme sports | Very dangerous sports, like jumping from planes or climbing cliffs.
+eye | The part of your body you see with.
+face | The front of your head with your eyes, nose and mouth.
+facilities | Rooms, equipment or services that are provided for people to use.
+factory | A big building where machines make things.
+fall | To drop down to a lower place by accident.
+famous | Known by many people.
+fan | A person who loves a singer or team; or a machine that moves air to keep you cool.
+fantastic | Wonderful; very, very good.
+far | A long way away.
+fare | The money you pay for a trip on a bus, train or plane.
+farm | A place with fields and animals where food is grown.
+farmer | A person who grows crops or keeps animals on a farm.
+farmland | Land that is used for growing crops or keeping animals.
+fashion | The style of clothes that is popular now.
+fasten | To close or join something, like a seat belt or button.
+favourite | The one you like best.
+fax | A paper message sent through a phone line by a machine.
+february | The second month of the year.
+feel better | To become less ill or less sad.
+feel ill | To have a sick body and not be well.
+feel sick | To feel that you may throw up.
+ferry | A boat that carries people and cars across water.
+festival | A special time when people celebrate with music, food or events.
+fever | A high body temperature when you are ill.
+fiction | Stories about people and events that are not real.
+field | A large piece of open land with grass or crops.
+file | A set of papers kept together, or information saved on a computer.
+film | A story shown on a screen at the cinema or on TV.
+film maker | A person who makes movies.
+film star | A famous actor or actress in movies.
+fine | Very well and healthy; or a payment for breaking a rule.
+finger | One of the five long parts at the end of your hand.
+fire | Hot bright flames that burn things.
+fire alarm | A loud bell or sound that warns you there is a fire.
+firefighter | A person whose job is to stop fires.
+fireworks | Small bombs that burst in the sky with bright lights and loud bangs.
+fish | An animal that lives in water and swims.
+fishing | Trying to catch animals that swim in rivers or the sea.
+fit | Healthy and strong; or the right size for you.
+fitness | Being strong and healthy because you do exercise.
+flat | A home on one floor in a building; or smooth and level.
+flatmate | A person who shares your home with you.
+flavour | The taste of food or drink.
+flight | A journey by plane.
+flood | Too much water covering land that is usually dry.
+floor | The surface you walk on inside a room, or one level of a building.
+flour | A white or brown powder from grain, used for making bread and cakes.
+flower | The pretty coloured part of a plant.
+flu | An illness with a high temperature, cough and aches.
+fly | To move through the air with wings or in a plane.
+fog | Thick cloud near the ground that makes it hard to see.
+foggy | When thick cloud near the ground makes it hard to see far.
+fold | To bend something so one part lies on top of another.
+folk music | Traditional music of the people of a country or area.
+fond | Liking someone or something very much.
+food | What people and animals eat to stay alive.
+foot | The part of your body at the end of your leg that you stand on.
+football | A game where two teams kick a ball to score goals.
+football player | A person who plays a game kicking a ball into a net.
+footballer | A person who plays a game kicking a ball into a net, often as a job.
+for sale | Being offered to people to buy.
+forecast | A statement about what the weather will probably be like.
+foreign | From another country, not your own.
+forest | A large area full of trees.
+fork | A tool with points that you use to pick up food.
+fountain | A structure that shoots water up into the air.
+france | A country in Europe; its capital is Paris.
+free | Costing no money; or not busy; or able to go where you want.
+freeze | To become hard and turn into ice because of cold.
+freezer | A machine that keeps food very cold and hard like ice.
+freezing | Extremely cold.
+french | From France, or the language people speak there.
+french fries | Long thin pieces of potato cooked in hot oil.
+fresh | New and not old; just made or picked.
+friday | The day after Thursday and before Saturday.
+fridge | A machine in the kitchen that keeps food and drinks cold.
+fried | Cooked in hot oil.
+friendly | Kind and nice to other people.
+frightened | Feeling afraid.
+frightening | Making you feel afraid.
+frog | A small green animal that jumps and lives near water.
+frozen | Made hard like ice by cold.
+fruit | Sweet food that grows on trees and plants, like apples and bananas.
+fruit juice | A drink made from the liquid of apples, oranges or other sweet plants.
+fry | To cook food in hot oil.
+frying pan | A flat pan with a long handle for cooking food in oil.
+fuel | Something burned to give power, like petrol for a car.
+full time | Working or studying for the whole of the normal day.
+fun | Enjoyable; something that makes you happy.
+funny | Making you laugh.
+fur | The soft thick hair that covers some animals.
+furniture | Things like tables, chairs and beds in a room.
+gale | A very strong wind.
+gallery | A building where paintings and art are shown.
+game | An activity with rules that you play for fun.
+garage | A building where you keep a car, or a place where cars are repaired.
+garden | A piece of land by a house with grass, flowers or trees.
+garlic | A small white vegetable with a strong smell, used in cooking.
+gas | Something like air that is not solid or liquid, used for cooking and heating.
+gas station | A place where you buy petrol for your car.
+gate | A door in a fence or wall outside.
+generous | Happy to give money or help to others.
+gentle | Soft and careful; not rough.
+geography | The study of the Earth, countries, mountains and rivers.
+get better | To become well again after being ill.
+get dressed | To put on your clothes.
+get wet | To become covered with water.
+get worse | To become less good or more ill.
+giraffe | A tall animal with a very long neck and spots.
+glad | Happy and pleased.
+glass | Hard clear material in windows, or a container for drinking.
+glasses | Two lenses in a frame that you wear on your nose to see better.
+glove | A cover for your hand with a space for each finger.
+go | To move from one place to another.
+go jogging | To run slowly for exercise.
+go out | To leave your home to do something outside.
+go shopping | To visit shops to buy things.
+goal | The place where you must send the ball to score, or the point you get.
+goalkeeper | The player who stops the ball from going into the net.
+gold | A shiny yellow metal that is very valuable.
+golden | Made of or coloured like a shiny yellow metal.
+golf | A sport where you hit a small ball into holes with a long stick.
+good | Of high quality; nice or well done.
+grammar | The rules for how words are put together in a language.
+grape | A small round green or purple fruit that grows in bunches.
+grass | A green plant that covers fields and gardens.
+gray | The colour of rain clouds; a mix of black and white.
+great | Very good, or very big.
+green | The colour of grass and leaves.
+grey | The colour of rain clouds; a mix of black and white.
+grill | To cook food over or under strong heat.
+grilled | Cooked over or under strong heat.
+grocery store | A shop that sells food and things for the home.
+ground | The surface of the Earth that you stand on.
+ground floor | The level of a building at the same height as the street.
+group | A number of people or things together.
+grow | To get bigger, or to plant seeds and look after them.
+guard | A person who protects a place or people.
+guest | A person who visits your home or stays in a hotel.
+guest-house | A small hotel, often in a family home.
+guide | A person who shows visitors around a place.
+guidebook | A book with information for visitors to a place.
+guilty | Feeling bad because you did something wrong.
+guitar | A musical instrument with strings that you play with your fingers.
+guitarist | A person who plays an instrument with six strings.
+gym | A place with machines where people do exercise.
+gymnastics | A sport with exercises for balance and body movement, like flips.
+hair | The thin threads that grow on your head.
+hairdresser | A person who cuts and styles hair.
+half | One of two equal parts of something.
+hall | A big room for meetings, or the space just inside the front door.
+hand | The part at the end of your arm with fingers.
+handbag | A small bag that women carry with money and keys inside.
+handkerchief | A small piece of cloth you use to wipe your nose.
+handle | The part of a door or cup that you hold.
+handlebars | The bar on a bicycle that you hold to steer.
+handwriting | The way a person writes with a pen or pencil.
+hang out | To spend time relaxing with friends.
+hang up | To end a phone call, or to put clothes on a hook.
+happy | Feeling pleased and cheerful.
+harbour | A place by the sea where boats stay safe.
+hard | Not soft; or difficult.
+hardware | Computer machines and parts that you can touch, not programs.
+hat | Something you wear on your head.
+head | The top part of your body with your face and brain.
+headache | A pain in your head.
+headline | The big words at the top of a newspaper story.
+headphones | Things you wear over your ears to listen to music.
+health | How well or ill your body is.
+healthy | Strong and well; not ill.
+hear | To notice sounds with your ears.
+heart | The part inside your chest that pumps blood; also a love symbol.
+heat | Great warmth, or to make something hot.
+heater | A machine that makes a room warm.
+heating | A system that keeps a building warm.
+heavy | Weighing a lot; hard to lift.
+heel | The back part of your foot, or the back of a shoe.
+helicopter | A flying machine with large blades that spin on top.
+helmet | A hard hat that protects your head.
+herbs | Small green plants like mint and basil that add flavour to food.
+hero | A man who is brave and does good things.
+heroine | A woman who is brave and does good things.
+hi-fi | A set of machines for playing music with very good sound.
+high | Far above the ground; tall.
+high jump | A sport where you jump over a bar that is raised higher each time.
+hike | To go for a long walk in the countryside or mountains.
+hill | A piece of land that is higher than the land around it, but smaller than a mountain.
+hip hop | A style of music and dance with strong beats and spoken words.
+hire | To pay to use something for a short time.
+history | The study of things that happened in the past.
+hit | To touch something hard and fast with your hand or a tool.
+hit song | A very popular song that many people buy.
+hitchhike | To travel by asking drivers to give you a free ride.
+hobby | Something you enjoy doing in your free time.
+hockey | A team game where players hit a ball with a curved stick.
+holidays | Days or weeks when you do not go to school or work.
+home | The place where you live.
+homepage | The first page of a website.
+homework | School work that students do at home.
+honey | A sweet sticky food made by bees.
+horror | A story or film that is made to frighten you.
+horse-riding | The activity of sitting on a horse and making it move.
+hospital | A place where sick or hurt people are looked after by doctors.
+hot | Having a very high temperature.
+hotel | A building where you pay to sleep and eat when travelling.
+hour | A period of sixty minutes.
+house | A building where a family lives.
+housewife | A woman who stays at home to cook, clean and look after the family.
+housework | Jobs you do at home, like cleaning and washing dishes.
+humid | Hot and wet in the air, so you feel sticky.
+hungry | Wanting to eat food.
+hurt | To cause pain to a body or feelings. Or feeling pain.
+ice | Frozen water. It is hard and cold.
+ice cream | A cold, sweet food made from milk and sugar.
+ice hockey | A fast game on ice where players hit a puck with sticks.
+ice skates | Boots with metal blades for moving on ice.
+ice skating | Moving over ice on special boots with blades.
+icy | Very cold, or covered with frozen water.
+ill | Not well. Your body is not healthy.
+illness | A sickness. For example, a cold or flu.
+immigration | Moving to live in a new country. Also the place at the airport where passports are checked.
+important | Very special or needed. It matters a lot.
+impressed | Feeling that someone or something is very good.
+india | A big country in Asia. Its capital is New Delhi.
+indian | From India. Or a person from India.
+inexpensive | Not costing much money. Cheap.
+information | Facts or details about something.
+ingredients | The different foods you put together to make a dish.
+injure | To hurt a person or animal's body.
+install | To put a machine or program in place so it is ready to use.
+instructions | Words that tell you how to do something.
+instructor | A person who teaches a sport or skill, like driving or swimming.
+instrument | A thing you play to make music, like a guitar.
+intelligent | Clever. Good at learning and understanding.
+interested | Wanting to know or learn more about something.
+interesting | Making you want to know more. Not boring.
+intermediate | In the middle level, between easy and hard.
+internet | A big network that connects computers all over the world.
+interval | A short break between parts of a show or game.
+interview | A meeting where someone asks you questions, for example for a job.
+interviewer | A person who asks questions in a meeting.
+invent | To make or think of something completely new.
+invention | A new thing that someone made for the first time.
+ireland | A country in Europe. It is an island next to Britain.
+irish | From Ireland. Or a person from Ireland.
+iron | A hard grey metal. Also a hot tool to make clothes flat.
+island | Land with water all around it.
+italian | From Italy. Or the language spoken there.
+italy | A country in Europe shaped like a boot. Its capital is Rome.
+jacket | A short coat.
+jam | A sweet food made from cooked fruit and sugar. You put it on bread.
+january | The first month of the year.
+jazz music | A style of music with a strong rhythm, often played on saxophone and piano.
+jealous | Unhappy because someone has something that you want.
+jeans | Strong blue trousers made of cotton.
+jet | A fast aeroplane with powerful engines.
+jewellery | Rings, necklaces and other things you wear to look nice.
+jewelry | Rings, necklaces and other things you wear to look nice. (American spelling)
+job | The work a person does to earn money.
+jogging | Running slowly for exercise.
+join in | To take part in an activity with other people.
+joke | Something you say to make people laugh.
+journalist | A person who writes news for newspapers, TV or websites.
+journey | A trip from one place to another place.
+judge | A person who decides who wins or what is right. Also, to decide.
+jug | A container with a handle for pouring liquids like water or milk.
+juice | A drink made from fruit or vegetables.
+july | The seventh month of the year.
+jumper | A warm top made of wool that you pull over your head.
+june | The sixth month of the year.
+jungle | A thick forest in a hot country with many wild animals.
+kangaroo | An Australian animal that jumps and carries its baby in a pouch.
+keen | Very interested and wanting to do something.
+keen on | Liking something very much. Example: She is keen on tennis.
+keep fit | To do exercise to stay strong and healthy.
+kettle | A container you use to boil water for tea.
+key | A small metal object that opens a lock. Also a button on a keyboard.
+keyboard | The board with letters and numbers that you press to type.
+kick | To hit something with your foot.
+kind | Friendly and good to other people.
+king | A man who is the ruler of a country.
+kit | A set of clothes or things you need for a sport or job.
+kitchen | The room where you cook food.
+knee | The middle part of your leg where it bends.
+knife | A tool with a sharp edge for cutting.
+knit | To make clothes from wool using two long needles.
+know | To have something in your mind. To be sure about it.
+lab | A short word for a room where scientists do experiments.
+label | A small piece of paper or cloth on something that gives information.
+laboratory | A room where scientists do experiments.
+ladder | A tool with steps for climbing up to high places.
+lake | A large area of water with land all around it.
+lamb | A baby sheep. Also the meat from it.
+lamp | A thing that gives light, often on a table.
+land | The ground, not the sea. Also, to come down from the air.
+language | The words people use to speak and write, like English or Vietnamese.
+laptop | A small computer you can carry and use on your knees.
+laugh | To make happy sounds when something is funny.
+laundry | Clothes that need washing or are being washed.
+lawyer | A person who gives advice about the law and helps in court.
+lazy | Not wanting to work or be active.
+leaf | A flat, green part of a tree or plant.
+league | A group of sports teams that play against each other.
+learn | To get new knowledge or skills by studying or practising.
+leather | Strong material made from animal skin. Shoes and bags are often made of it.
+leave | To go away from a place. Or to let something stay behind.
+lecturer | A teacher at a university.
+left | The opposite of right. The side where your heart is.
+leg | The part of the body you use to walk.
+lemon | A yellow fruit with sour juice.
+lemonade | A sweet, fizzy or cold drink made with lemons.
+lesson | A period of time when a teacher teaches you.
+letter | A written message you send in an envelope. Also A, B or C.
+lettuce | A green leaf vegetable that you eat in salads.
+level | How high or how good something is. For example, easy or hard.
+librarian | A person who works in a place with many books.
+library | A place where you can borrow books.
+licence | An official paper that says you are allowed to do something, like drive.
+lie down | To put your body flat on a bed or the floor.
+lift | A machine that carries people up and down in a building. Also, to pick up.
+light | What lets you see. Also not heavy.
+lightning | A bright flash in the sky during a storm.
+line | A long thin mark. Also a row of people waiting.
+lion | A big wild cat from Africa. The male has a lot of hair on its neck.
+listen to | To pay attention to sounds, like music or a teacher.
+litter | Rubbish left on the ground in public places.
+living-room | The room in a house where people sit, relax and watch TV.
+lock | To close something with a key. Also the thing on a door that does this.
+locker | A small cupboard with a lock for keeping your things at school or a gym.
+locker room | A room where you change clothes and keep your things for sports.
+logo | A small picture or sign that shows a company or brand.
+long jump | A sport where you run and jump as far as you can.
+look at | To turn your eyes towards something and see it.
+lorry | A big truck that carries heavy things by road.
+lovely | Very nice or beautiful.
+luck | Good or bad things that happen by chance.
+lucky | Having good things happen to you by chance.
+luggage | The bags and suitcases you take on a trip.
+lunch | The meal you eat in the middle of the day.
+luxury | Something very nice and expensive that you do not really need.
+machine | A thing with parts that moves and does work, like a washing machine.
+mad | Very angry. Or a little crazy.
+magazine | A thin book with pictures and stories that comes out every week or month.
+magic | Special tricks or powers that seem impossible.
+main course | The biggest part of a meal, after the starter.
+make-up | Colours that people put on their face to look nicer.
+mall | A big building with many shops inside.
+manager | A person who is the boss of a shop, team or company.
+map | A picture that shows where places are.
+march | The third month of the year. Also, to walk with regular steps like soldiers.
+mark | A number or letter a teacher gives for your work. Also a spot or stain.
+market | A place where people buy and sell things, often outside.
+married | Having a husband or wife.
+match | A sports game between two teams. Also a small stick that makes fire.
+material | Cloth, or anything used to make things.
+math | The American short word for the subject about numbers.
+mathematics | The subject about numbers, shapes and calculating.
+maths | The British short word for the subject about numbers.
+may | The fifth month of the year. Also a word for what is possible or allowed.
+meal | Food you eat at one time, like breakfast or dinner.
+mean | To have a certain idea or sense. Also, unkind.
+meaning | What a word or sign tells you.
+meat | Food that comes from animals, like chicken or beef.
+mechanic | A person who repairs cars and machines.
+medicine | Something you drink or eat to feel better when you are ill.
+meeting | A time when people come together to talk about something.
+melon | A big, round fruit that is sweet and juicy inside.
+member | A person who belongs to a group or club.
+membership | Being a person who belongs to a club or group.
+mention | To say something quickly without many details.
+menu | A list of food and drinks in a restaurant.
+message | Words you send or leave for another person.
+mice | More than one small animal with a long tail, like a mouse.
+microwave | An oven that heats food very fast.
+midnight | Twelve o'clock at night.
+mild | Not strong or extreme. For example, weather that is not too cold.
+milk | A white drink that comes from cows.
+mineral water | Bottled water from the ground that is good to drink.
+minute | A short time of sixty seconds.
+mirror | A glass where you can see your face.
+miserable | Very unhappy.
+miss | To not catch a bus or train. Also, to feel sad that someone is away.
+mobile phone | A small phone you can carry and use anywhere.
+model | A small copy of something. Also a person who shows clothes.
+modern | New and up to date, not old.
+moment | A very short time.
+monday | The day after Sunday.
+money | Coins and notes that you use to buy things.
+monkey | An animal with a long tail that climbs trees and eats bananas.
+month | One of the twelve parts of a year, like May or June.
+monthly | Happening once every month.
+monument | A big building or statue that helps people remember a person or event.
+moon | The bright round thing you see in the sky at night.
+morning | The early part of the day, before noon.
+mosquito | A small insect that bites you and makes your skin itch.
+motor-racing | A sport where fast cars race against each other.
+motorbike | A two-wheeled vehicle with an engine.
+motorway | A very wide road where cars travel fast over long distances.
+mountain | A very high hill.
+mouse | A small animal with a long tail. Also a tool you move to control a computer.
+mouse mat | A flat piece of material you put under a computer's pointing tool.
+move | To change place or position.
+mug | A big cup with a handle for hot drinks.
+museum | A building where old or important things are shown to the public.
+mushroom | A small plant with a round top that you can eat.
+music | Sounds that people sing or play on instruments.
+musician | A person who plays an instrument or sings.
+nationality | The country that a person belongs to.
+nature | Everything in the world that people did not make, like plants and animals.
+nature studies | A school subject about plants, animals and the world around us.
+necklace | Jewellery you wear around your neck.
+negative | Meaning no, or bad. The opposite of positive.
+neighbour | A person who lives next to you or near you.
+nervous | A little afraid or worried about something that will happen.
+net | A material with holes, used in sports like tennis or football.
+news | New information about things that happened lately.
+newspaper | Large sheets of paper with news that you read every day.
+nice | Good, pleasant or kind.
+night | The dark time when the moon is in the sky and people sleep.
+nightlife | Fun things to do in the evening, like clubs and bars.
+noisy | Making a lot of loud sound.
+noon | Twelve o'clock in the middle of the day.
+normal | Usual, not strange.
+north | The direction at the top of a map.
+north america | A large part of the world with Canada, the USA and Mexico.
+nose | The part of the face you use to smell and breathe.
+note | A short piece of writing. Also a musical sound.
+notice board | A board on a wall where you put up papers with information.
+novelist | A person who writes long stories in books.
+november | The eleventh month of the year.
+nurse | A person who looks after ill people in a hospital.
+o'clock | A word used after a number to say the exact hour.
+occupation | A person's job or work.
+ocean | A very big area of salt water, bigger than a sea.
+october | The tenth month of the year.
+office | A room or building where people do desk work.
+officer | A person with an important job, for example in the police or army.
+oil | A thick liquid used for cooking or for making machines work.
+old | Having lived or existed for a long time. Not young or new.
+old-fashioned | Not modern. Belonging to the past.
+omelette | A food made of eggs that are mixed and cooked in a pan.
+on board | On a ship, plane or train.
+on business | Travelling for work, not for fun.
+on foot | By walking.
+on holiday | Away from work or school for fun and rest.
+on time | Not late. At the right time.
+on vacation | Away from work or school for fun and rest. (American English)
+onion | A round vegetable with many layers that makes you cry when you cut it.
+online | Connected to the internet.
+opening hours | The times when a shop or place is open.
+opera | A play where the actors sing all the words, with an orchestra.
+operate | To make a machine work. Or to cut a body to fix a health problem.
+operation | When doctors cut a body to fix a problem.
+operator | A person who works a machine or answers phone calls.
+orange | A round fruit with thick skin. Also a colour between red and yellow.
+orchestra | A big group of musicians who play music together.
+order | To ask for food or goods. Or a way things are arranged.
+ordinary | Usual and normal, not special.
+original | The first one. Not a copy. Also new and different.
+out of work | Without a job.
+oven | A hot box in a kitchen for baking food.
+overnight | During the night, or for the whole night.
+owner | A person who has something that belongs to them.
+pain | A bad feeling in your body when it hurts.
+painful | Causing pain. It hurts a lot.
+paint | A coloured liquid for putting on walls or paper. Also, to use it.
+painter | A person who makes pictures with colours. Or someone who paints walls.
+painting | A picture made with colours.
+palace | A very big house where a king or queen lives.
+pale | Light in colour. Not bright or dark.
+pan | A round metal pot with a handle for cooking.
+pants | Trousers (American English). Or underwear (British English).
+parcel | Something wrapped in paper that you send by post.
+park | A large green place in a town where people can walk and play.
+parking lot | A place outside where you leave your car. (American English)
+parking space | A small area where you can leave one car.
+parrot | A colourful bird that can copy human speech.
+part time | For only some hours of the day or week, not all day.
+party | A fun event where people eat, dance and enjoy themselves.
+passenger | A person who travels in a car, bus, train or plane but does not drive it.
+passport | A small book that shows who you are when you travel to other countries.
+password | A secret word that lets you use a computer or account.
+past | The time before now. Also, going by something.
+pasta | Italian food made from flour, like spaghetti.
+path | A narrow way for people to walk on.
+patient | A person who is getting treatment from a doctor. Also, able to wait calmly.
+pattern | Shapes or lines that repeat on cloth or paper.
+pavement | The path at the side of a road for people who walk.
+pay | To give money for something you buy or for work.
+pea | A small, round, green vegetable that grows in a pod.
+peach | A soft, round, sweet fruit with a fuzzy skin and a big stone.
+peanut | A small nut that grows under the ground.
+pear | A sweet fruit that is wide at the bottom and thin at the top.
+pencil case | A small bag or box for keeping pens and pencils.
+penguin | A black and white bird that cannot fly but swims well.
+penny | A small coin in Britain. One hundred make a pound.
+pepper | A hot black powder for food. Also a red, green or yellow vegetable.
+perform | To act, sing, dance or play music in front of people.
+performance | A show that is done in front of an audience.
+performer | A person who sings, dances or acts for an audience.
+perfume | A liquid with a nice smell that people put on their skin.
+personal | Belonging to one person only. Private.
+petrol | The liquid fuel that makes cars go.
+petrol station | A place where you buy fuel for your car.
+pharmacy | A shop where you buy medicine.
+phone | A machine you use to talk to someone who is far away.
+photograph | A picture taken with a camera.
+photographer | A person who takes pictures with a camera.
+photography | The art or job of taking pictures with a camera.
+physics | The science about light, heat, movement and energy.
+picnic | A meal that you eat outside, for example in a park.
+pie | Food with pastry on the outside and fruit or meat inside.
+piece of cake | Something very easy to do.
+pill | A small round medicine that you swallow.
+pillow | A soft thing you put your head on in bed.
+pilot | A person who flies an aeroplane.
+pineapple | A big tropical fruit with sharp leaves on top and sweet yellow inside.
+pink | A light red colour.
+pipe | A tube that carries water or gas.
+pitch | A field where sports like football are played.
+pizza | A round Italian food with cheese and tomato on a flat bread base.
+planet | A very big round object in space, like Earth or Mars.
+plant | A living thing that grows in soil, like a flower or tree.
+plastic | A light material made by people. Bottles and toys are often made of it.
+plate | A flat dish that you eat food from.
+platform | The place in a station where you wait for a train.
+play | To do something for fun. Or to take part in a game or music.
+playground | An outdoor place where children play at school or in a park.
+pleasant | Nice and enjoyable.
+plug | A thing with metal pins that you put in a wall to get electricity.
+plug in | To connect a machine to electricity.
+pocket | A small bag sewn into clothes for keeping small things.
+podcast | A radio-style programme that you can download and listen to.
+poem | A piece of writing with short lines, often with rhymes.
+poet | A person who writes poems.
+point | The sharp end of something. Also, to show with your finger.
+points | Scores you get in a game or test.
+police officer | A man or woman whose job is to catch criminals and keep people safe.
+police station | A building where police officers work.
+policeman | A man whose job is to keep people safe and catch criminals.
+policewoman | A woman whose job is to keep people safe and catch criminals.
+politician | A person who works in government and makes decisions for a country.
+pollution | Dirty air, water or land that is bad for people and animals.
+poor | Having very little money. Also, not good.
+pop music | Modern popular music that many young people like.
+port | A place by the sea where ships stop and load.
+porter | A person who carries bags in a hotel or station.
+positive | Good, hopeful or sure. The opposite of negative.
+post office | A place where you buy stamps and send letters and parcels.
+postcard | A card with a picture that you send without an envelope.
+postman | A man who brings letters to your house.
+potato | A round vegetable that grows in the ground. You can make chips from it.
+pound | The money used in Britain. Also a weight.
+practice | Doing something again and again to get better.
+practise | To do something again and again to get better.
+prescription | A paper from a doctor that says what medicine you need.
+presenter | A person who introduces a TV or radio programme.
+president | The leader of a country or a company.
+pretty | Nice to look at. Beautiful.
+price | The amount of money you pay for something.
+primary school | A school for children between about six and eleven years old.
+print | To make words or pictures on paper using a machine.
+printer | A machine that puts words or pictures on paper from a computer.
+prison | A place where criminals must stay as a punishment.
+prize | Something you get for winning or doing well.
+problem | Something difficult that you need to solve.
+production | The making of things, or a show or film.
+profession | A job that needs special study, like being a doctor.
+professional | Doing something as a job. Or very skilled.
+professor | A teacher of the highest level at a university.
+program | A set of instructions for a computer.
+programme | A show on TV or radio.
+programmer | A person who writes instructions for computers.
+prohibited | Not allowed. Against the rules.
+project | A piece of school work or a plan that takes time to finish.
+pronounce | To say the sounds of a word.
+pronunciation | The way you say a word.
+property | Things or land that belong to someone.
+public transport | Buses and trains that anyone can use.
+publisher | A company that makes books and magazines to sell.
+pullover | A warm top that you pull over your head.
+pupil | A child who studies at school.
+purple | A colour made from red and blue.
+purse | A small bag for coins and money.
+put on | To dress yourself in clothes.
+qualification | A certificate you get when you pass an exam or course.
+quarter | One of four equal parts. 25 percent.
+queen | A woman who is the ruler of a country.
+question | Something you ask when you want to know the answer.
+quick | Fast. Taking only a short time.
+quiet | Making little or no sound.
+quit | To stop doing something or to leave a job.
+quiz | A game or test where you answer questions.
+rabbit | A small animal with long ears that hops and eats carrots.
+race | A competition to see who is the fastest.
+race track | A path where cars or horses go fast in a competition.
+racing | Taking part in a competition of speed.
+racket | A tool with strings that you use to hit a ball in tennis.
+radio | A machine you use to hear music and news.
+rail | A metal bar that trains run on.
+railroad | A track for trains (American English).
+railway | A track for trains, or the system of trains.
+railway station | A place where trains stop for people to get on and off.
+rain | Water that falls from clouds in drops.
+raincoat | A coat that keeps you dry when it is wet outside.
+rainforest | A thick forest in a hot place where it rains a lot.
+range | A set of different things from low to high. Or a group of mountains.
+read | To look at words and understand them.
+ready | Prepared and able to start.
+real | Not false. True and existing.
+realistic | Showing things as they truly are. Sensible about what is possible.
+reasonable | Fair and sensible. Not too expensive.
+receipt | A small paper that shows you paid for something.
+reception | The desk in a hotel where guests arrive and ask for help.
+receptionist | A person who works at the front desk and welcomes visitors.
+recipe | Instructions for how to cook a food.
+recording | Sound or pictures saved so you can hear or see them later.
+recover | To get better after being ill or hurt.
+recycle | To use old things like paper or bottles to make new things.
+recycled | Made again from old paper, glass or plastic.
+recycling | Using old things to make new things.
+red | The colour of blood or a tomato.
+reduce | To make something smaller or less.
+reduced | Made lower in price or amount.
+refreshments | Small snacks and drinks.
+refrigerator | A cold machine in a kitchen that keeps food fresh.
+region | A large area of a country.
+register | To put your name on an official list. Also a list of names.
+relaxed | Calm and not worried.
+reliable | Someone you can trust to do what they say.
+relieved | Happy because something bad did not happen.
+remember | To keep something in your mind and not forget it.
+remote control | A small tool for changing the TV channel from a distance.
+rent | To pay money to use a house or car that belongs to someone else.
+repair | To fix something that is broken.
+reply | To answer a question or message.
+reporter | A person who finds out news and tells people on TV or in a paper.
+research | Careful study to find out new information.
+reservation | An arrangement to keep a table or room for you.
+reserve | To arrange for a table or seat to be kept for you.
+rest | To stop work and relax. Or the part that is left.
+restaurant | A place where you pay to sit and eat a meal.
+retire | To stop working because you are old.
+retirement | The time of life after you stop working.
+return | To come or go back. Or to give something back.
+review | A short report that gives an opinion about a book, film or show.
+rice | Small white grains that people cook and eat, very common in Asia.
+rich | Having a lot of money.
+ride | To sit on a horse or bike and make it go.
+rider | A person who rides a horse or a bicycle.
+riding | Travelling on a horse or bicycle.
+right | Correct. Also the opposite of left.
+ring | A circle of metal you wear on a finger. Also, to make a bell sound.
+ring up | To telephone someone.
+river | A long, wide stream of water that flows to the sea.
+road | A hard way for cars and buses to drive on.
+road sign | A sign by the road that tells drivers what to do.
+roast | To cook meat or vegetables in an oven.
+robot | A machine that can do jobs like a person.
+rock | A big stone. Also a kind of loud music.
+rock music | Loud music played with electric guitars and drums.
+rocket | A tall vehicle that flies into space.
+roll | To turn over and over like a ball. Also, a small round bread.
+romantic | Connected with love.
+roof | The top of a building that covers it.
+room | A part of a building with walls, a floor and a ceiling.
+roommate | A person who shares a room with you.
+rope | A thick, strong string.
+roundabout | A circle where roads meet and cars go around.
+route | The way you take from one place to another.
+row | A line of people or things next to each other. Or to move a boat with oars.
+rubber | A soft material that stretches. Also, a thing for removing pencil marks.
+rubbish | Things you throw away because you do not want them.
+rubbish bin | A container where you put things you throw away.
+rude | Not polite. Unkind in the way you speak or act.
+rugby | A team sport with an oval ball that players carry and throw.
+ruin | To spoil something completely. Also, old broken buildings.
+ruler | A flat tool for drawing straight lines and measuring.
+run | To move quickly on your feet.
+running | Moving fast on your feet as a sport.
+sad | Unhappy. Feeling like you want to cry.
+safe | Not in danger. Not likely to be hurt.
+sail | To travel on water in a boat. Also, the cloth that catches the wind.
+sailing | The sport of travelling on water in a boat with cloth sails.
+sailor | A person who works on a ship.
+salad | Cold vegetables like lettuce and tomato mixed together.
+salary | The money you get every month for your job.
+sales assistant | A person who helps customers in a shop.
+salesman | A man who sells things.
+saleswoman | A woman who sells things.
+salmon | A large pink fish that people eat.
+salt | A white powder that makes food taste better.
+sand | Very small grains of rock on a beach.
+sandal | A light open shoe for hot weather.
+sandwich | Two slices of bread with food in the middle.
+satisfied | Happy because you got what you wanted.
+saturday | The day after Friday.
+sauce | A thick liquid you put on food to give it taste.
+saucepan | A deep round pot with a handle for cooking.
+saucer | A small plate that goes under a cup.
+sausage | A food made of minced meat in a long thin shape.
+save | To keep money. Also to rescue someone from danger.
+say | To speak words.
+scarf | A long piece of cloth you wear around your neck to stay warm.
+scene | A part of a play or film. Or a place where something happens.
+scenery | The natural views of a place, like mountains and trees.
+school | A place where children go to learn.
+science | The study of nature and how things work, using tests and facts.
+scientist | A person who studies science and does experiments.
+scooter | A small vehicle with two wheels that you stand on or sit on and ride.
+score | The number of points or goals a player or team gets in a game.
+screen | The flat part of a TV or computer where you see pictures.
+sculpture | A piece of art made from stone, metal or wood in a shape, like a statue.
+sea | A large area of salt water.
+seaside | A place near the sea where people go on holiday.
+season | One of the four parts of the year: spring, summer, autumn or winter.
+seat | Something you sit on, like a chair.
+second | A short unit of time; 60 of them make a minute. Also number 2 in order.
+second-hand | Not new; owned by someone else before. A second-hand bike.
+secondary | Coming after primary; a secondary school is for older students.
+secretary | A person who does office work like writing letters and answering phones.
+security guard | A person whose job is to watch a place and keep it safe.
+selfie | A photo that you take of yourself, usually with a phone.
+sell | To give something to a person who pays you money for it.
+sentence | A group of words that tells a complete idea, starting with a capital letter.
+september | The ninth month of the year.
+series | A set of TV shows or books that are connected, one after another.
+serious | Not funny or playful; very important or bad. A serious face.
+server | A person who brings food to the table in a restaurant.
+service | Help given to customers, for example in a shop or restaurant.
+shark | A big sea fish with sharp teeth.
+sheet | A thin flat piece of paper, or a large piece of cloth for a bed.
+shelf | A flat board on a wall or in a cupboard where you put things.
+ship | A very big boat that carries people or things across the sea.
+shirt | Clothing for the top of the body, with a collar and buttons.
+shoe | Something you wear on your foot when you walk outside.
+shoot | To fire a gun, or to kick or throw a ball at the goal.
+shooting | The act of firing a gun, or of trying to score in a game like football.
+shop | A place where you buy things.
+shop assistant | A person who works in a shop and helps customers.
+shopper | A person who buys things in shops.
+shopping | The activity of going to shops to buy things.
+shopping centre | A big building with many shops inside.
+shopping mall | A big building with many shops, restaurants and cafes under one roof.
+shorts | Short trousers that end above the knees.
+shoulder | The part of your body between your neck and your arm.
+shout | To say something very loudly.
+shower | A way of washing yourself under falling water; also a short fall of rain.
+sick | Not well; ill.
+sightseeing | Visiting interesting places as a tourist.
+sign up | To put your name on a list to join something. Sign up for a club.
+signpost | A sign by the road that shows the way to places.
+silk | A soft, smooth cloth made from threads of an insect called a silkworm.
+silver | A shiny grey-white metal, or its colour.
+singer | A person who sings songs.
+single room | A hotel room for one person.
+sink | A bowl in a kitchen or bathroom where you wash your hands or dishes.
+sitting room | A room in a house where people sit and relax.
+size | How big or small something is.
+skateboard | A short board with four small wheels that you stand on and ride.
+skating | Moving smoothly on ice or on the ground with special boots with blades or wheels.
+skiing | Sliding over snow on two long flat boards fixed to your boots.
+skin | The outside layer that covers your body.
+skirt | Clothing that hangs from the waist down, worn by girls and women.
+sky | The space above us where we see the sun, clouds and stars.
+sleeve | The part of a shirt or coat that covers your arm.
+sleeveless | Without arms; a top with no parts for the arms.
+slice | A thin flat piece cut from something, like bread or cake.
+slide | A smooth slope for children to slide down in a playground.
+slim | Thin in a nice way; not fat.
+slow | Not fast; taking a long time.
+small | Not big; little in size.
+smart | Clever; or neat and well dressed.
+smartphone | A mobile phone that can use the internet and apps.
+snack | A small amount of food eaten between meals.
+snow | Soft white flakes of frozen water that fall from the sky in cold weather.
+snowboard | A wide board you stand on to slide down snowy hills.
+snowboarding | The sport of sliding down snowy hills standing on a wide board.
+snowfall | The amount of snow that falls, or the time when snow falls.
+soap | Something you use with water to wash your hands and body.
+soap opera | A TV show about the lives of the same people, shown many times a week.
+soccer | A game where two teams kick a ball to score goals; football.
+social media | Websites and apps where people share photos and messages.
+socks | Soft clothes you wear on your feet inside your shoes.
+sofa | A long soft seat for two or three people.
+soft | Not hard; nice and gentle to touch.
+soft drink | A cold drink that has no alcohol, like lemonade.
+software | Programs that tell a computer what to do.
+soldier | A person who is in the army.
+sore throat | A pain in your throat that hurts when you swallow.
+sorry | A word you say when you feel bad about something you did.
+soundtrack | The music from a film.
+soup | A hot liquid food made by cooking vegetables or meat in water.
+sour | Having a sharp taste, like a lemon.
+south | The direction opposite to north.
+south america | A continent in the southern part of the Americas, with Brazil and Peru.
+space | The huge area beyond Earth where the stars and planets are.
+spaceship | A vehicle that travels in space.
+spain | A country in Europe where people speak Spanish.
+spanish | The language of Spain, or a person or thing from Spain.
+speak | To say words with your voice.
+special | Not ordinary; better or more important than usual.
+species | A group of animals or plants of the same kind.
+speed | How fast something moves.
+spend | To use money to pay for things; or to use time doing something.
+spicy | Having a strong, hot taste from things like chilli.
+spinach | A vegetable with dark green leaves.
+spoon | A tool with a small bowl at the end, used to eat soup or cereal.
+sport | A game or activity for exercise, like football or tennis.
+sports | Games and activities that people play for exercise and fun.
+sports centre | A building with places to play sports and exercise.
+sports facilities | Places and equipment where people can play sports, like pitches and pools.
+spring | The season after winter, when plants start to grow.
+square | A shape with four equal sides and four corners.
+squash | A game played with rackets and a small ball in a closed room.
+stadium | A big place with seats around it, where people watch sport.
+staff | The people who work in a place like a school or shop.
+stage | A raised floor in a theatre where actors perform.
+stairs | Steps that go up or down between floors in a building.
+star | A bright light in the night sky; also a famous actor or singer.
+station | A place where trains or buses stop for people to get on and off.
+stay | To not leave a place; or to live somewhere for a short time.
+steak | A thick flat piece of meat or fish, usually beef.
+step | One movement of your foot when you walk; or a place to put your foot on stairs.
+stomach | The part inside your body where food goes after you swallow it.
+stomach ache | A pain in your belly.
+stone | A small piece of rock.
+store | A shop; or to keep things somewhere for later.
+storm | Very bad weather with strong wind and heavy rain.
+strange | Not normal; unusual and a little odd.
+strawberry | A small, red, sweet fruit with tiny seeds on the outside.
+stream | A small narrow river.
+street | A road in a town with houses or shops along it.
+stress | A worried feeling when there is too much to do.
+stripe | A long thin line of colour, like on a zebra.
+strong | Having great power; not weak.
+student | A person who studies at a school or university.
+studies | Learning about subjects at school or university.
+studio | A room where artists work, or where films, music or TV are made.
+study | To learn about a subject by reading and thinking.
+stupid | Not clever; silly.
+subject | Something you learn at school, like maths or art.
+subway | A train that runs under the ground in a city.
+sugar | A sweet white food you put in tea or cakes.
+suit | A jacket and trousers (or skirt) made from the same cloth.
+suitcase | A big bag with a handle that you pack clothes in for a trip.
+summer | The hottest season of the year.
+sun | The big bright star in the sky that gives us light and heat.
+sunbathe | To lie in the sun so that your skin becomes brown.
+sunday | The day after Saturday.
+sunglasses | Dark glasses that protect your eyes from the sun.
+sunny | Bright with lots of light from the sun.
+sunrise | The time in the morning when the sun comes up.
+sunset | The time in the evening when the sun goes down.
+sunshine | The light and warmth from the sun.
+supermarket | A big shop where you choose food and other things and pay at the end.
+sure | Certain; without doubt.
+surf | To ride on a wave in the sea on a board.
+surfboard | A long board you stand on to ride waves.
+surfboarding | Riding waves in the sea while standing on a long board.
+surfing | The sport of riding waves on a board.
+surprised | Feeling that something happened that you did not expect.
+surround | To be or go all around something.
+sweater | A warm piece of clothing with long sleeves, made of wool.
+sweatshirt | A soft, warm top with long sleeves, often worn for sport.
+sweet | Tasting like sugar; or a small piece of sugary food.
+swim | To move through water using your arms and legs.
+swimming | The sport of moving through water using your arms and legs.
+swimming costume | Clothing that girls and women wear to swim.
+swimming pool | A big hole filled with water for people to swim in.
+swimsuit | Clothing worn by girls and women for swimming.
+switch | A small button you press to turn a light or machine on or off.
+switch off | To stop a light or machine by pressing a button.
+switch on | To start a light or machine by pressing a button.
+t-shirt | A light top with short sleeves and no collar.
+table | A piece of furniture with a flat top and legs.
+table tennis | A game where players hit a small ball over a net on a table; ping-pong.
+tablet | A flat computer with a touch screen; also a small medicine you swallow.
+take exercise | To do sport or move your body to stay fit.
+take off | To remove clothes; or when a plane leaves the ground.
+take part | To join in an activity with other people.
+takeaway | Hot food you buy in a shop and carry home to eat.
+talk | To speak to someone.
+talk show | A TV programme where a host speaks with guests.
+tall | Having a great height; not short.
+tap | A thing you turn to let water come out of a pipe.
+taste | The flavour of food; or to try food in your mouth.
+tasty | Having a very nice flavour.
+taxi | A car with a driver that you pay to take you somewhere.
+taxi driver | A person whose job is to drive a taxi.
+tea | A hot drink made by pouring hot water on dried leaves.
+teach | To help someone learn something.
+teacher | A person whose job is to help students learn.
+team | A group of people who play or work together.
+technology | Machines and equipment made using science, like computers.
+telephone | A machine you use to talk to someone far away.
+television | A machine with a screen where you watch programmes.
+tell | To say something to someone with words.
+temperature | How hot or cold something is.
+tennis | A game where players hit a ball over a net with rackets.
+tennis player | A person who plays tennis.
+tent | A shelter made of cloth that you sleep in when camping.
+term | One of the parts of a school year.
+terrible | Very bad.
+test | A set of questions to show what you know.
+text | Written words; or to send a written message by phone.
+text message | A short written message sent from one phone to another.
+theatre | A building where people watch plays.
+thirsty | Feeling that you want to drink.
+thriller | An exciting film or book with a lot of danger and suspense.
+throw | To send something through the air with your hand.
+thumb | The short, thick finger at the side of your hand.
+thunder | The loud noise in the sky during a storm.
+thunderstorm | A storm with loud thunder, lightning and heavy rain.
+thursday | The day after Wednesday.
+ticket | A piece of paper that lets you travel or enter a place.
+tie | A long thin piece of cloth worn around the neck with a shirt.
+tiger | A big wild cat with orange fur and black stripes.
+tights | Thin, tight clothing that covers the feet and legs.
+time | What clocks show; hours and minutes.
+tire | To make someone feel they need rest.
+tired | Feeling that you need to rest or sleep.
+toast | Bread that is cooked until it is brown and crisp.
+today | This day; the day it is now.
+toes | The five small parts at the end of each foot.
+toilet | A room or a seat where you go to pass waste from your body.
+tomato | A round, soft, red fruit that is eaten as a vegetable.
+tomorrow | The day after today.
+tonight | The evening or night of today.
+tooth | One of the hard white parts in your mouth used for biting.
+toothache | A pain in a tooth.
+toothbrush | A small brush you use to clean your teeth.
+torch | A small light you hold in your hand, with a battery inside.
+tour | A trip to visit several places.
+tour guide | A person who shows tourists around a place and tells them about it.
+tourist | A person who visits a place on holiday.
+tourist information | An office or service that helps visitors with maps and advice.
+towel | A soft cloth used to dry your body.
+tower | A tall, narrow building or part of a building.
+town | A place where people live and work, bigger than a village.
+toy | An object that children play with.
+track | A path or a road; or a song on a CD.
+tracksuit | A warm top and trousers that people wear for sport.
+trade | The buying and selling of things.
+traffic | The cars, buses and lorries on a road.
+traffic jam | A long line of cars that cannot move.
+traffic lights | Red, yellow and green lights that tell cars when to stop and go.
+train | A long vehicle that runs on rails and carries people.
+trainer | A person who helps people get better at a sport.
+trainers | Soft shoes that you wear to do sport.
+training | Practice to get better at a sport or a job.
+tram | A long vehicle that runs on rails in the street and carries people.
+translate | To change words from one language into another.
+translation | Words that have been changed from one language into another.
+travel | To go from one place to another, often far away.
+travel agent | A person who helps you plan and book trips.
+tree | A tall plant with a thick trunk, branches and leaves.
+trip | A journey to a place and back again.
+trousers | Clothing that covers each leg from the waist to the feet.
+true | Right and correct; not false.
+try on | To put on clothes to see if they fit and look good.
+tuesday | The day after Monday.
+tuna | A big sea fish that people often eat from a can.
+tunnel | A long passage that goes under the ground or through a mountain.
+turkey | A big bird that people eat for dinner; also a country in Asia and Europe.
+turn off | To stop a light or machine from working.
+turn on | To make a light or machine start working.
+turning | A place in a road where you can go left or right.
+typical | Showing the usual things about a person or thing; normal for its kind.
+tyre | A thick rubber ring around a wheel of a car or bike.
+umbrella | A thing you hold over your head to keep off the rain.
+unable | Not able to do something; cannot.
+underground | Below the surface of the earth; also a city train under the ground.
+underpants | Clothing worn under trousers, next to the skin.
+underwear | Clothes that you wear under your other clothes.
+undress | To take off your clothes.
+unemployed | Without a job.
+unhappy | Feeling sad; not glad.
+uniform | Special clothes that everyone at a school or job wears.
+university | A place where people study after school to get a degree.
+unusual | Not common; different from what is normal.
+upload | To send a photo or file from your device to the internet.
+upstairs | On or to a higher floor of a building.
+useful | Helpful; good for doing something.
+valley | A low area of land between hills or mountains.
+vase | A pot used to hold cut flowers.
+vegetable | A plant that you eat, like a carrot or a potato.
+vegetarian | A person who does not eat meat or fish.
+vehicle | A machine like a car or bus that carries people or things.
+versus | Against; used to show two sides in a game. Vietnam versus Japan.
+video | A recording of moving pictures that you can watch.
+video clip | A short part of a video.
+village | A very small town in the countryside.
+visa | A paper or stamp that lets you enter a foreign country.
+visit | To go to see a person or a place.
+visitor | A person who comes to see a person or a place.
+vocabulary | All the words that a person knows or learns in a language.
+volleyball | A game where two teams hit a ball over a high net with their hands.
+volume | How loud a sound is.
+volunteer | A person who works to help others without being paid.
+wage | The money a person gets for work, usually each week.
+wages | The money people get for doing their work.
+waiter | A man who brings food and drinks to people in a restaurant.
+waiting room | A room where people sit until it is their turn, for example at a doctor's.
+waitress | A woman who brings food and drinks to people in a restaurant.
+walk | To move on foot at a normal speed.
+wall | The side of a room or building; also something built around a garden.
+wallet | A small flat case for money and cards.
+warm | A little hot; nicely hot but not too hot.
+wash up | To clean the plates and cups after a meal.
+washing | Dirty clothes that need cleaning, or clothes that have just been cleaned.
+watch | To look at something for a time; also a small clock worn on the wrist.
+water | A clear liquid that falls as rain and that we drink.
+water skiing | A sport where a boat pulls you over water while you stand on skis.
+waterfall | Water that falls from a high place over rocks.
+waves | Moving lines of water on the sea.
+way | A road or path to a place; or the manner of doing something.
+wear | To have clothes or shoes on your body.
+weather | What it is like outside, such as sunny, rainy or windy.
+web | A large network of connected websites on the internet; also a spider's net.
+web page | One page of a website that you can see on a screen.
+webcam | A small camera on a computer for video calls.
+website | A group of web pages on the internet about the same thing.
+wednesday | The day after Tuesday.
+week | A period of seven days.
+weekday | Any day from Monday to Friday.
+weekend | Saturday and Sunday.
+weekly | Happening once every seven days.
+well | In a good way; or healthy and not ill.
+west | The direction where the sun goes down.
+wet | Covered with water; not dry.
+wheel | A round thing that turns, on a car or bike.
+white | The colour of snow or milk.
+wild | Living in nature, not looked after by people. A wild animal.
+wildlife | Animals and plants that live in nature.
+win | To be the best or first in a game or race.
+wind | Air that moves outside.
+window | An opening in a wall with glass that lets in light.
+windscreen | The big glass at the front of a car.
+windy | With a lot of wind blowing.
+winter | The coldest season of the year.
+wonderful | Very good; great.
+wood | The hard material from trees, used to make furniture; also a small forest.
+wool | Soft thread from sheep, used to make warm clothes.
+woollen | Made from the soft hair of sheep.
+word | A letter or group of letters that has a meaning when we say or write it.
+work | To do a job or a task; also the job you do.
+worker | A person who does a job.
+working hours | The time each day when a person is at work.
+workout | A session of hard exercise to keep fit.
+world | The Earth and all the countries and people on it.
+worried | Feeling afraid that something bad will happen.
+wrong | Not right; not correct.
+year | A period of twelve months.
+yellow | The colour of a banana or the sun.
+yesterday | The day before today.
+yoga | Gentle exercises for the body and mind with slow movements and deep breathing.
+yoghurt | A thick, soft food made from milk, often sweet and eaten with a spoon.
+yogurt | A thick, soft food made from milk, often sweet and eaten with a spoon.
+young | Not old; having lived for a short time.
+zebra | A wild animal like a horse with black and white stripes.
+zoo | A place where wild animals are kept for people to see.
