@@ -706,11 +706,18 @@ textarea {
       var done = false;
       function end() { if (!done) { done = true; resolve(); } }
       try {
-        var u = new SpeechSynthesisUtterance(text);
+        var u = new SpeechSynthesisUtterance(text), tk = speechToken, started = false, retried = false;
         u.lang = "en-US"; u.rate = rate * speedMul; u.pitch = 1.05;
         if (voice) u.voice = voice;
-        u.onstart = function () { if (onStart) onStart(); };
-        u.onend = end; u.onerror = end;
+        function stale() { try { window.speechSynthesis.cancel(); } catch (e) {} end(); }
+        u.onstart = function () { if (tk !== speechToken) { stale(); return; } started = true; if (onStart) onStart(); };
+        u.onboundary = function () { if (tk !== speechToken) stale(); };
+        u.onend = end;
+        u.onerror = function () {
+          /* another stale clip cancelled this one before it started: try once more */
+          if (!started && !retried && tk === speechToken) { retried = true; try { window.speechSynthesis.speak(u); return; } catch (e) {} }
+          end();
+        };
         window.speechSynthesis.speak(u);
         setTimeout(end, 6000);
       } catch (e) { end(); }
@@ -725,9 +732,20 @@ textarea {
       return speakText(text, rate, onStart);
     });
   }
+  function silence() {
+    cancelSpeech();
+    var t = speechToken;
+    [150, 500, 1200].forEach(function (ms) {
+      silenceTimers.push(setTimeout(function () { if (t === speechToken) { try { window.speechSynthesis.cancel(); } catch (e) {} } }, ms));
+    });
+  }
   function pause(ms) { return new Promise(function (r) { setTimeout(r, ms); }); }
+  var replayTimer = null, silenceTimers = [];
+  function onQuiz() { var q = $("screen-quiz"); return !!q && !q.hidden; }
   function cancelSpeech() {
     speechToken++;
+    clearTimeout(replayTimer);
+    silenceTimers.forEach(clearTimeout); silenceTimers = [];
     if (currentAudio && currentAudio._stop) currentAudio._stop();
     try { window.speechSynthesis.cancel(); } catch (e) {}
     lightTile(-1);
@@ -775,6 +793,9 @@ textarea {
       if (wordAfter) { return pause(400).then(function () { if (tk === speechToken) { btn.classList.add("playing"); return say(word, 0.75).then(function () { btn.classList.remove("playing"); }); } }); }
     });
   }
+
+  document.addEventListener("visibilitychange", function () { if (document.hidden) silence(); });
+  window.addEventListener("pagehide", function () { silence(); });
 
   /* quiz */
   function shuffle(a) {
@@ -843,7 +864,7 @@ textarea {
     cancelSpeech();
     drawTiles(target, true);
     setMeaning(true);
-    setTimeout(function () { if (revealed && spellOn && session[idx] === target) spellWord(target, false, wordOn); }, 900);
+    replayTimer = setTimeout(function () { if (revealed && spellOn && session[idx] === target && onQuiz()) spellWord(target, false, wordOn); }, 900);
     $("nextBtn").focus();
   }
   function next() {
@@ -855,10 +876,10 @@ textarea {
   var STAR = '<svg viewBox="0 0 200 190" aria-hidden="true"><path class="CLS" d="M100 14l24 54 58 6-43 40 12 58-51-30-51 30 12-58-43-40 58-6z"/></svg>';
   var homeTimer = null;
   function disarmHome() { clearTimeout(homeTimer); $("homeLabel").textContent = "Home"; }
-  function leaveQuiz() { cancelSpeech(); disarmHome(); refreshStart(); show("start"); }
+  function leaveQuiz() { silence(); disarmHome(); refreshStart(); show("start"); }
 
   function finish() {
-    cancelSpeech();
+    revealed = false; silence();
     var total = results.length;
     var now = new Date(), when;
     try { when = now.toLocaleDateString("en-GB", { weekday: "short", day: "numeric", month: "short", year: "numeric" }); }
