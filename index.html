@@ -230,6 +230,12 @@ textarea {
 .name-row input { font: inherit; font-weight: 800; font-size: 1.3rem; padding: 10px 14px; border: 3px solid var(--ink); border-radius: 16px; background: #fff; color: var(--ink); width: 100%; box-sizing: border-box; min-width: 0; }
 .name-row input:focus { outline: 4px solid var(--sun); outline-offset: 2px; }
 .who { font-family: var(--font-display); font-weight: 800; font-size: 1.8rem; color: var(--grape); margin: 0; overflow-wrap: anywhere; }
+.opts { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; margin: 2px 0 6px; }
+.opt { display: inline-flex; align-items: center; gap: 6px; font-weight: 800; font-size: 0.95rem; padding: 4px 12px 4px 8px; border: 3px solid var(--ink); border-radius: 999px; background: #fff; }
+.opt i { width: 14px; height: 14px; border-radius: 50%; background: #b9b5d3; border: 2px solid var(--ink); box-sizing: border-box; }
+.opt.on { background: #d7f8ec; }
+.opt.on i { background: #19c58c; }
+.opt.off { opacity: 0.8; }
 .sel {
   flex: 1 1 200px; min-width: 0; max-width: 100%;
   font-family: var(--font-body); font-weight: 800; font-size: 1.05rem; color: var(--ink);
@@ -389,6 +395,7 @@ textarea {
       <h2>Your score</h2>
       <p class="who" id="scoreName" hidden></p>
       <div class="when" id="scoreWhen"></div>
+      <div class="opts" id="scoreOpts" aria-label="Settings used"></div>
       <div class="big-score" id="bigScore"></div>
       <div class="stars" id="stars" aria-hidden="true"></div>
       <div class="cheer" id="cheer"></div>
@@ -910,9 +917,16 @@ textarea {
       y.textContent = r.ok ? "Correct" : (r.mine ? "You wrote: " + r.mine : "No answer");
       li.appendChild(b); li.appendChild(y); ul.appendChild(li);
     });
+    var opts = [["Word sound", wordOn], ["Letter sound", spellOn], ["Meaning", meaningOn], ["Letter boxes", boxesOn]];
+    var oh = $("scoreOpts"); oh.textContent = "";
+    opts.forEach(function (o) {
+      var sp = document.createElement("span"); sp.className = "opt " + (o[1] ? "on" : "off");
+      var dot = document.createElement("i"); sp.appendChild(dot);
+      sp.appendChild(document.createTextNode(o[0] + ": " + (o[1] ? "On" : "Off"))); oh.appendChild(sp);
+    });
     var nm = studentName();
     $("scoreName").hidden = !nm; $("scoreName").textContent = nm;
-    lastResult = { name: nm, when: when, level: lvl ? lvl.label : "", levelId: mode, score: score, total: total, cheer: $("cheer").textContent,
+    lastResult = { opts: opts, name: nm, when: when, level: lvl ? lvl.label : "", levelId: mode, score: score, total: total, cheer: $("cheer").textContent,
                    results: results.map(function (r) { return { word: r.word, mine: r.mine, ok: r.ok }; }) };
     $("saveNote").textContent = "";
     show("score");
@@ -977,7 +991,26 @@ textarea {
     ctx.font = "800 32px " + FD;
     var pw = ctx.measureText(label).width + 64;
     ctx.fillStyle = "#fffbe3"; ctx.strokeStyle = INK; ctx.lineWidth = 4; rrect(ctx, (W - pw) / 2, cy, pw, 58, 29); ctx.fill(); ctx.stroke();
-    ctx.fillStyle = INK; ctx.fillText(label, W / 2, cy + 41); cy += 58 + 20;
+    ctx.fillStyle = INK; ctx.fillText(label, W / 2, cy + 41); cy += 58 + 16;
+    if (d.opts) {
+      ctx.font = "800 26px " + FD;
+      var ph = 46, gap = 14, items = d.opts.map(function (o) { var t = o[0] + ": " + (o[1] ? "On" : "Off"); return { t: t, on: o[1], w: ctx.measureText(t).width + 62 }; });
+      var rowsO = [[], []], tot = items.reduce(function (a, b) { return a + b.w + gap; }, -gap);
+      if (tot <= cw - 2 * inner) rowsO = [items, []]; else rowsO = [items.slice(0, 2), items.slice(2)];
+      rowsO.forEach(function (row) {
+        if (!row.length) return;
+        var rw2 = row.reduce(function (a, b) { return a + b.w + gap; }, -gap), px = (W - rw2) / 2;
+        row.forEach(function (it) {
+          ctx.fillStyle = it.on ? "#d7f8ec" : "#ffffff"; ctx.strokeStyle = INK; ctx.lineWidth = 3.5;
+          rrect(ctx, px, cy, it.w, ph, ph / 2); ctx.fill(); ctx.stroke();
+          ctx.fillStyle = it.on ? MINT : "#b9b5d3"; ctx.beginPath(); ctx.arc(px + 27, cy + ph / 2, 9, 0, 7); ctx.fill(); ctx.lineWidth = 3; ctx.stroke();
+          ctx.fillStyle = INK; ctx.textAlign = "left"; ctx.fillText(it.t, px + 46, cy + 32); ctx.textAlign = "center";
+          px += it.w + gap;
+        });
+        cy += ph + 10;
+      });
+      cy += 8;
+    }
     var big = String(d.score), small = " out of " + d.total;
     ctx.font = "800 190px " + FD; var bw = ctx.measureText(big).width;
     ctx.font = "800 64px " + FD; var sw = ctx.measureText(small).width;
