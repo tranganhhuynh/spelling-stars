@@ -419,8 +419,12 @@ textarea {
   var SAMPLE = ["bird", "mammal", "amphibian", "reptile", "insect", "fish", "penguin", "chick", "colony", "huddle", "hatch", "breed", "mate", "stone", "protect", "temperature", "freezing"];
   var COUNT_KEY = "spellingStars.count.v1", perRound = 10;
   try { var sv = parseInt(localStorage.getItem(COUNT_KEY), 10); if (sv >= 10) perRound = sv; } catch (e) {}
+  /* A person's name cannot be spelled without hearing it, so names are left out while the word sound is off.
+     A word counts as a name when its meaning says "boy's name" or "girl's name". */
+  function isName(w) { return /(boy|girl)'s( or (boy|girl)'s)? name/i.test(meanings[w] || ""); }
+  function pool() { return wordOn ? words : words.filter(function (w) { return !isName(w); }); }
   function roundSize() {
-    var n = words.length;
+    var n = pool().length;
     if (n < 10) return n;
     return Math.min(Math.max(10, perRound), n);
   }
@@ -469,7 +473,7 @@ textarea {
     $("wordState").textContent = wordOn ? "On" : "Off";
     $("listenBtn").hidden = !wordOn;
     $("hearHint").hidden = !wordOn;
-    updateNotes();
+    if (typeof refreshStart === "function" && loaded) refreshStart(); else updateNotes();
   }
   function applyMeaning() {
     $("meaningToggle").setAttribute("aria-checked", meaningOn ? "true" : "false");
@@ -482,6 +486,10 @@ textarea {
       var c = words.filter(function (w) { return meanings[w]; }).length;
       if (c === 0) msgs.push("This list has no meanings yet. Add them in the word file as: word | meaning, or in your own list under Custom.");
       else if (c < words.length) msgs.push(c + " of " + words.length + " words have a meaning.");
+    }
+    if (!wordOn && loaded) {
+      var nn = words.length - pool().length;
+      if (nn > 0) msgs.push("Names are left out while the word sound is off (" + nn + (nn === 1 ? " name" : " names") + ").");
     }
     if (!wordOn && !spellOn && !meaningOn && !boxesOn) msgs.push("All four hints are off, so students will only see the answer box.");
     $("hintNote").textContent = msgs.join(" ");
@@ -572,13 +580,13 @@ textarea {
   }
 
   function refreshStart() {
-    var n = words.length;
+    var n = pool().length;
     var isCustom = mode === "custom";
     $("customCard").hidden = !isCustom;
     if (isCustom && loaded) {
       var box = $("wordsBox");
       if (document.activeElement !== box) box.value = words.map(function (w) { return meanings[w] ? w + " | " + meanings[w] : w; }).join("\n");
-      $("countLabel").textContent = n + (n === 1 ? " word" : " words") + " in your list";
+      $("countLabel").textContent = words.length + (words.length === 1 ? " word" : " words") + " in your list";
     }
     var size = roundSize();
     $("roundInfo").textContent = !loaded
@@ -821,7 +829,7 @@ textarea {
     return a;
   }
   function startRound() {
-    session = shuffle(words).slice(0, roundSize());
+    session = shuffle(pool()).slice(0, roundSize());
     idx = 0; results = [];
     disarmHome();
     show("quiz");
@@ -1117,12 +1125,12 @@ textarea {
     clearTimeout(homeTimer); homeTimer = setTimeout(disarmHome, 3000);
   });
   $("countMinus").addEventListener("click", function () { setRound(Math.max(10, roundSize() - 5)); });
-  $("countPlus").addEventListener("click", function () { setRound(Math.min(words.length, roundSize() + 5)); });
+  $("countPlus").addEventListener("click", function () { setRound(Math.min(pool().length, roundSize() + 5)); });
   $("countInput").addEventListener("change", function () {
     var v = parseInt($("countInput").value, 10);
-    setRound(isNaN(v) ? 10 : Math.min(Math.max(10, v), Math.max(10, words.length)));
+    setRound(isNaN(v) ? 10 : Math.min(Math.max(10, v), Math.max(10, pool().length)));
   });
-  $("startBtn").addEventListener("click", function () { if (words.length) startRound(); });
+  $("startBtn").addEventListener("click", function () { if (pool().length) startRound(); });
   $("listenBtn").addEventListener("click", function () { speakWord(session[idx]); $("answer").focus(); });
   $("spellBtn").addEventListener("click", function () { spellWord(session[idx], wordOn, wordOn); $("answer").focus(); });
   $("showBtn").addEventListener("click", showWord);
